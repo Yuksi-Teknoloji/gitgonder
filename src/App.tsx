@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
 import Services from './pages/Services'
+import Help from './pages/Help'
 
 function App() {
     return (
@@ -10,6 +11,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/services" element={<Services />} />
+                <Route path="/help" element={<Help />} />
             </Routes>
         </BrowserRouter>
     )

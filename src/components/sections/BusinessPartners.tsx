@@ -1,25 +1,9 @@
-import arrowRightIcon from '../../assets/icons/arrow-right.svg'
-
-const partners = [
-    {
-        title: 'Yüksi Ülger Bayi Ankara OSTİM\'de hizmet vermektedir.',
-        date: '15 Ağustos 2025',
-    },
-    {
-        title: 'Yüksi Ülger Bayi Ankara OSTİM\'de hizmet vermektedir.',
-        date: '15 Ağustos 2025',
-    },
-    {
-        title: 'Yüksi Ülger Bayi Ankara OSTİM\'de hizmet vermektedir.',
-        date: '15 Ağustos 2025',
-    },
-    {
-        title: 'Yüksi Ülger Bayi Ankara OSTİM\'de hizmet vermektedir.',
-        date: '15 Ağustos 2025',
-    },
-]
+import { usePartners } from '../../hooks/usePartners';
+import { PartnerCard } from '../molecules/PartnerCard';
 
 export function BusinessPartners() {
+    const { partners, loading, error } = usePartners(100, 0);
+
     return (
         <section className="w-full bg-white text-gray-900">
             <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20 lg:py-24 xl:py-28">
@@ -27,61 +11,55 @@ export function BusinessPartners() {
                     İş Ortaklarımız
                 </h2>
 
-                {/* Mobile & tablet: horizontal scroll cards */}
-                <div className="w-full lg:hidden">
-                    <div className="flex gap-6 overflow-x-auto [-webkit-overflow-scrolling:touch] px-1 pb-2"
-                        style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
-                        <style>{`
-                            div::-webkit-scrollbar { display: none; }
-                        `}</style>
-                        {partners.map((partner, index) => (
-                            <div
-                                key={index}
-                                className="min-w-[260px] flex flex-col gap-3"
-                            >
-                                <div className="w-full aspect-[4/5] bg-[#FF5B04] rounded-[12px]" />
-                                <p className="text-xs text-[#797979] font-normal">
-                                    {partner.date}
-                                </p>
-                                <p className="text-base text-[#333333] font-medium leading-tight">
-                                    {partner.title}
-                                </p>
-                                <button className="w-12 h-12 bg-[#FF5B04] rounded-full flex items-center justify-center hover:bg-orange-600 transition-colors self-start mt-1">
-                                    <img
-                                        src={arrowRightIcon}
-                                        alt="Sağa ok"
-                                        className="w-5 h-5"
-                                        style={{ filter: 'brightness(0) invert(1)' }}
-                                    />
-                                </button>
-                            </div>
-                        ))}
+                {loading && (
+                    <div className="text-center py-12">
+                        <p className="text-[#333333]">Yükleniyor...</p>
                     </div>
-                </div>
+                )}
 
-                {/* Desktop grid, hidden on mobile & tablet */}
-                <div className="hidden lg:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10 lg:gap-12">
-                    {partners.map((partner, index) => (
-                        <div key={index} className="flex flex-col gap-4 sm:gap-5 md:gap-6">
-                            <div className="w-full aspect-square bg-[#FF5B04] rounded-lg sm:rounded-xl flex items-center justify-center" />
-                            <p className="text-sm sm:text-base text-[#797979] font-normal">
-                                {partner.date}
-                            </p>
-                            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-[#333333] font-medium leading-tight">
-                                {partner.title}
-                            </p>
-                            <button className="w-14 h-14 sm:w-16 sm:h-16 md:w-[72px] md:h-[72px] lg:w-20 lg:h-20 bg-[#FF5B04] rounded-full flex items-center justify-center hover:bg-orange-600 transition-colors self-start mt-2 sm:mt-4">
-                                <img 
-                                    src={arrowRightIcon} 
-                                    alt="Sağa ok" 
-                                    className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7"
-                                    style={{ filter: 'brightness(0) invert(1)' }}
-                                />
-                            </button>
+                {error && (
+                    <div className="text-center py-12">
+                        <p className="text-red-600">Veri yüklenirken bir hata oluştu: {error.message}</p>
+                    </div>
+                )}
+
+                {!loading && !error && partners.length === 0 && (
+                    <div className="text-center py-12">
+                        <p className="text-[#333333]">Henüz iş ortağı bulunmamaktadır.</p>
+                    </div>
+                )}
+
+                {!loading && !error && partners.length > 0 && (
+                    <>
+                        {/* Mobile & tablet: horizontal scroll cards */}
+                        <div className="w-full lg:hidden">
+                            <div className="flex gap-6 overflow-x-auto [-webkit-overflow-scrolling:touch] px-1 pb-2"
+                                style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+                                <style>{`
+                                    div::-webkit-scrollbar { display: none; }
+                                `}</style>
+                                {partners.map((partner, index) => (
+                                    <PartnerCard
+                                        key={partner.id || index}
+                                        partner={partner}
+                                        className="min-w-[260px]"
+                                    />
+                                ))}
+                            </div>
                         </div>
-                    ))}
-                </div>
+
+                        {/* Desktop grid, hidden on mobile & tablet */}
+                        <div className="hidden lg:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10 lg:gap-12">
+                            {partners.map((partner, index) => (
+                                <PartnerCard
+                                    key={partner.id || index}
+                                    partner={partner}
+                                />
+                            ))}
+                        </div>
+                    </>
+                )}
             </div>
         </section>
-    )
+    );
 }

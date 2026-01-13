@@ -19,7 +19,7 @@ export function AboutUs() {
             <div className="relative z-10 w-full px-4 sm:px-6 xl:px-8 py-4 sm:py-8 md:py-12 xl:py-20">
                 <div className="relative w-full">
                     {/* Left Side - Text Content */}
-                    <div className="w-full lg:max-w-[50%] pl-4 sm:pl-6 md:pl-8 xl:pl-12 flex flex-col gap-4 sm:gap-5 md:gap-6 xl:gap-8">
+                    <div className="w-full lg:max-w-[60%] pl-4 sm:pl-6 md:pl-8 xl:pl-12 flex flex-col gap-4 sm:gap-5 md:gap-6 xl:gap-8">
                         {/* Main Title */}
                         <div
                             className="text-white text-[28px] sm:text-[36px] md:text-[45px] xl:text-[65px] font-bold leading-tight sm:leading-normal whitespace-pre-wrap"
