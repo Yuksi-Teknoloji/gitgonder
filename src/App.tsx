@@ -3,6 +3,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Services from './pages/Services'
 import Help from './pages/Help'
+import Carrier from './pages/Carrier'
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
                 <Route path="/about" element={<About />} />
                 <Route path="/services" element={<Services />} />
                 <Route path="/help" element={<Help />} />
+                <Route path="/carrier" element={<Carrier />} />
             </Routes>
         </BrowserRouter>
     )

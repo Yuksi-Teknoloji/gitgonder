@@ -45,7 +45,6 @@ export const Header: React.FC<HeaderProps> = ({
       { label: 'Hizmetler', href: '/services' },
       { label: 'Yardım', href: '/help' },
       { label: 'İletişim', href: '/contact' },
-      { label: 'Başvur', href: '/apply' },
     ];
 
   const headerBg = isScrolled

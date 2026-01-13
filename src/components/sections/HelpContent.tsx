@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import arrowRightIcon from '../../assets/icons/arrow-right.svg';
 
 export function HelpContent() {
@@ -18,13 +19,14 @@ export function HelpContent() {
 
                         {/* Buttons */}
                         <div className="flex flex-col gap-4 sm:gap-5 lg:gap-6">
-                            <button
+                            <Link
+                                to="/carrier"
                                 className="bg-[#FF5B04] hover:bg-[#E55103] text-white font-medium text-[18px] sm:text-[20px] lg:text-[24px] py-4 sm:py-5 px-6 sm:px-8 rounded-[35px] flex items-center justify-between transition-colors w-full sm:w-auto sm:max-w-[600px]"
                                 style={{ fontFamily: 'Roboto, sans-serif', fontVariationSettings: '"wdth" 100' }}
                             >
                                 <span>Taşıyıcı Olmak İstiyorum</span>
                                 <img src={arrowRightIcon} alt="" className="w-5 h-5 flex-shrink-0" style={{ filter: 'brightness(0) invert(1)' }} />
-                            </button>
+                            </Link>
 
                             <button
                                 className="bg-[#FF5B04] hover:bg-[#E55103] text-white font-medium text-[18px] sm:text-[20px] lg:text-[24px] py-4 sm:py-5 px-6 sm:px-8 rounded-[35px] flex items-center justify-between transition-colors w-full sm:w-auto sm:max-w-[600px]"
