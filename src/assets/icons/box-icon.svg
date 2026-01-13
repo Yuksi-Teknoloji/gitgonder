@@ -1,0 +1,6 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 53 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon">
+<path d="M26.5 1.5L51.5 16.5V46.5L26.5 61.5L1.5 46.5V16.5L26.5 1.5Z" fill="var(--fill-0, white)"/>
+<path d="M26.5 61.5L51.5 46.5V16.5L26.5 1.5L1.5 16.5V46.5L26.5 61.5ZM26.5 61.5V33.375M26.5 33.375L3.04514 18.375M26.5 33.375L49.9549 18.375" stroke="var(--stroke-0, #FF5B04)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

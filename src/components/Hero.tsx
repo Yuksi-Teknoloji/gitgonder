@@ -19,26 +19,19 @@ export default function Hero() {
 
     return (
         <section className="relative w-full h-[1080px] bg-white overflow-hidden font-roboto selection:bg-orange-200">
-            {/* 1. Left Image Panel (Clipped by Arc) */}
             <div
                 className="absolute top-0 left-0 z-10 w-full h-full"
                 style={{
-                    // Use clip-path to create the exact curve
-                    // Radius: 1250 (Matches HeroOverlay ring)
-                    // Center: -100px 540px
-                    clipPath: 'circle(1250px at -100px 540px)',
+                    clipPath: 'circle(1250px at 50px 540px)',
                 }}
             >
                 <img src={heroBg} className="w-[60%] h-full object-cover object-left" alt="Logistics Background" />
 
-                {/* Optional Gradient Overlay for text readability if needed */}
                 <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent"></div>
             </div>
 
-            {/* 2. SVG Overlay (Arc + Text + Slides) */}
             <HeroOverlay activeIndex={currentKangaroo} />
 
-            {/* 3. Kangaroo Mascot (Bottom Right) */}
             <div className="absolute bottom-0 right-0 z-40">
                 <img
                     src={kangaroos[currentKangaroo]}
@@ -47,7 +40,6 @@ export default function Hero() {
                 />
             </div>
 
-            {/* 4. Decorative Floating Boxes (Optional - keep existing simple ones) */}
             <div className="absolute top-32 left-20 z-30 animate-bounce">
                 <div className="w-16 h-16 bg-white/80 backdrop-blur-sm rounded-xl shadow-lg border border-orange-100 flex items-center justify-center transform rotate-12">
                     <div className="w-8 h-8 rounded-full bg-orange-500/20"></div>
