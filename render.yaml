@@ -2,7 +2,7 @@ services:
   - type: web
     name: yuksi-landing-page
     env: static
-    buildCommand: npm run build
+    buildCommand: pnpm run build
     staticPublishPath: ./dist
     routes:
       - type: rewrite
