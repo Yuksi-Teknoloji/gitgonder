@@ -31,7 +31,6 @@ export function CarrierHero() {
                     <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left order-1 lg:order-2 lg:pl-8 xl:pl-12 pt-8 lg:pt-16">
                         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[65px] font-bold text-[#FF5B04] leading-tight mb-4 sm:mb-6">
                             TAŞIYICI OL
-                            <br />
                             SEN DE ARAMIZA KATIL!
                         </h1>
                         <p className="text-lg sm:text-xl lg:text-2xl text-[#FF5B04] font-medium">

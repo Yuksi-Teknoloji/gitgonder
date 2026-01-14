@@ -58,8 +58,8 @@ export function ContactFormSection() {
             <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start lg:items-stretch">
                     {/* Left - Mascot image (from Figma) */}
-                    <div className="w-full lg:w-[55%] flex items-center justify-center lg:justify-start ">
-                        <div className="relative w-full max-w-[800px] lg:max-w-none lg:translate-x-[-40px]">
+                    <div className="w-full lg:w-[55%] flex items-center justify-center lg:justify-start">
+                        <div className="relative w-full max-w-[800px] lg:max-w-none lg:translate-x-[-40px] transform translate-y-8 lg:translate-y-13">
                             <img
                                 src={figmaContactHero}
                                 alt="Yüksi maskotu kutu taşırken"

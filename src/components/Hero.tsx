@@ -3,7 +3,7 @@ import heroBg from '../assets/hero/hero-bg.png';
 import kanguru1 from '../assets/hero/kanguru1.png';
 import kanguru2 from '../assets/hero/kanguru2.png';
 import kanguru3 from '../assets/hero/kanguru3.png';
-import kangarooCta from '../assets/hero/kangaroo-cta.png';
+import kanguruGif from '../assets/hero/kanguru.gif';
 import { HeroOverlay } from './atoms/HeroOverlay';
 import { Button } from './atoms/Button';
 
@@ -30,7 +30,7 @@ export default function Hero() {
                 />
                 <div className="absolute bottom-14 left-5 flex flex-col items-start gap-0 z-10">
                     <img
-                        src={kangarooCta}
+                        src={kanguruGif}
                         alt="Yüksi kanguru"
                         className="w-[130px] h-auto object-contain"
                     />

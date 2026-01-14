@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import arac1 from '../../assets/about/arac1.png'
 import arac2 from '../../assets/about/arac2.png'
 import arac3 from '../../assets/about/arac3.png'
@@ -14,6 +15,7 @@ const vehicles = [
 ]
 
 export function VehicleShowcase() {
+    const navigate = useNavigate();
     const scrollContainerRef = useRef<HTMLDivElement>(null);
     const [scrollPosition, setScrollPosition] = useState(0);
     const [containerWidth, setContainerWidth] = useState(0);
@@ -125,14 +127,20 @@ export function VehicleShowcase() {
                     ))}
                 </div>
 
-                <button className="md:hidden mt-4 inline-flex items-center gap-2 bg-[#FF5B04] hover:bg-[#E55103] text-white font-medium text-[16px] px-6 py-3 rounded-[26px] shadow-md transition-colors self-start">
+                <button
+                    className="md:hidden mt-4 inline-flex items-center gap-2 bg-[#FF5B04] hover:bg-[#E55103] text-white font-medium text-[16px] px-6 py-3 rounded-[26px] shadow-md transition-colors self-start"
+                    onClick={() => navigate('/vehiclese')}
+                >
                     İncele
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6 12L10 8L6 4" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                 </button>
 
-                <button className="hidden md:inline-flex mt-2 sm:mt-4 md:mt-6 items-center gap-2 sm:gap-3 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm sm:text-base md:text-lg lg:text-xl px-6 sm:px-7 md:px-8 lg:px-10 py-2 sm:py-2.5 md:py-3 lg:py-4 rounded-full sm:rounded-2xl md:rounded-3xl shadow-md transition-colors self-start sm:self-center lg:self-start">
+                <button
+                    className="hidden md:inline-flex mt-2 sm:mt-4 md:mt-6 items-center gap-2 sm:gap-3 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm sm:text-base md:text-lg lg:text-xl px-6 sm:px-7 md:px-8 lg:px-10 py-2 sm:py-2.5 md:py-3 lg:py-4 rounded-full sm:rounded-2xl md:rounded-3xl shadow-md transition-colors self-start sm:self-center lg:self-start"
+                    onClick={() => navigate('/vehiclese')}
+                >
                     İncele
                     <span aria-hidden className="text-base sm:text-lg md:text-xl lg:text-2xl">→</span>
                 </button>

@@ -93,11 +93,11 @@ export function CarrierForm() {
                 <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
                     {/* Left Side - Kangaroo (%50) */}
                     <div className="w-full lg:w-[50%] flex items-center justify-center lg:justify-start order-2 lg:order-1 relative overflow-visible">
-                        <div className="w-full h-full relative -ml-8 lg:-ml-24 xl:-ml-32">
+                        <div className="w-full h-full relative ml-4 lg:ml-8 xl:ml-10">
                             <img
                                 src={kangarooCarrier}
                                 alt="Kangaroo Carrier"
-                                className="w-full h-full object-contain kangaroo-animate"
+                                className="w-full h-full object-contain kangaroo-animate transform scale-[1.08] lg:scale-[1.15]"
                             />
                         </div>
                     </div>
