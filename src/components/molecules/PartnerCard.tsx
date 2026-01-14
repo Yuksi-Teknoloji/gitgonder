@@ -1,5 +1,5 @@
 import arrowRightIcon from '../../assets/icons/arrow-right.svg';
-import { type Partner } from '../../services/api';
+import type { Partner } from '../../types/partner';
 
 interface PartnerCardProps {
     partner: Partner;
