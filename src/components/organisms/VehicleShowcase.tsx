@@ -1,10 +1,12 @@
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import arac1 from '../../assets/about/arac1.png'
-import arac2 from '../../assets/about/arac2.png'
-import arac3 from '../../assets/about/arac3.png'
-import arac4 from '../../assets/about/arac4.png'
-import arac5 from '../../assets/about/arac5.png'
+import arac1 from '../../assets/about/arac1.png';
+import arac2 from '../../assets/about/arac2.png';
+import arac3 from '../../assets/about/arac3.png';
+import arac4 from '../../assets/about/arac4.png';
+import arac5 from '../../assets/about/arac5.png';
+import arrowRight from '../../assets/icons/arrow-right.svg';
+import { Icon } from '../atoms/Icon';
 
 const vehicles = [
     { src: arac1, alt: 'Motosiklet' },
@@ -87,6 +89,7 @@ export function VehicleShowcase() {
                             const zIndex = Math.floor(10 - normalizedDistance * 8);
                             
                             const translateX = (scrollCenter - cardCenter) * 0.1;
+                            
                             const translateZ = normalizedDistance * -20;
                             
                             return (
@@ -132,9 +135,7 @@ export function VehicleShowcase() {
                     onClick={() => navigate('/vehiclese')}
                 >
                     İncele
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 12L10 8L6 4" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
+                    <Icon src={arrowRight} alt="İleri" className="w-4 h-4" />
                 </button>
 
                 <button

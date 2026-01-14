@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { Logo } from '../atoms/Logo';
 import { Navigation } from '../molecules/Navigation';
 import { Button } from '../atoms/Button';
+import { Icon } from '../atoms/Icon';
+import menuIcon from '../../assets/icons/menu.svg';
+import closeIcon from '../../assets/icons/close.svg';
 
 interface NavigationItem {
   label: string;
@@ -18,6 +21,14 @@ interface HeaderProps {
   activeItem?: string;
 }
 
+const BASE_NAV_ITEMS: NavigationItem[] = [
+  { label: 'Ana Sayfa', href: '/' },
+  { label: 'Hakkımızda', href: '/about' },
+  { label: 'Hizmetler', href: '/services' },
+  { label: 'Yardım', href: '/help' },
+  { label: 'İletişim', href: '/contact' },
+];
+
 export const Header: React.FC<HeaderProps> = ({
   logo,
   navigationItems = [],
@@ -27,37 +38,34 @@ export const Header: React.FC<HeaderProps> = ({
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
+    if (typeof window === 'undefined') return;
+
     const onScroll = () => setIsScrolled(window.scrollY > 50);
-    if (typeof window !== 'undefined') {
-      onScroll();
-      window.addEventListener('scroll', onScroll);
-    }
+    onScroll();
+    window.addEventListener('scroll', onScroll);
+
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
+
   const resolvedActiveItem =
     activeItem ?? (typeof window !== 'undefined' ? window.location.pathname : undefined);
 
-  const defaultNavItems: NavigationItem[] = navigationItems.length > 0
-    ? navigationItems
-    : [
-      { label: 'Ana Sayfa', href: '/' },
-      { label: 'Hakkımızda', href: '/about' },
-      { label: 'Hizmetler', href: '/services' },
-      { label: 'Yardım', href: '/help' },
-      { label: 'İletişim', href: '/contact' },
-    ];
+  const defaultNavItems: NavigationItem[] =
+    navigationItems.length > 0 ? navigationItems : BASE_NAV_ITEMS;
 
   const headerBg = isScrolled
     ? 'bg-white text-gray-900 lg:bg-white lg:text-gray-900'
     : 'bg-[#FF5B04] text-white lg:bg-white lg:text-gray-900';
-  const iconColor = isScrolled ? 'text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:ring-orange-500' : 'text-white hover:text-white hover:bg-white/10 focus:ring-white/50';
-  const iconStroke = isScrolled ? 'currentColor' : 'white';
+
+  const iconColor = isScrolled
+    ? 'text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:ring-orange-500'
+    : 'text-white hover:text-white hover:bg-white/10 focus:ring-white/50';
+
   const barVisible = !isScrolled;
   const logoWrapper = isScrolled ? 'w-[140px] lg:w-auto' : 'w-[150px] lg:w-auto';
-  const logoFilter =
-    !isScrolled
-      ? 'brightness-0 invert lg:filter-none lg:brightness-100 lg:invert-0'
-      : 'filter-none';
+  const logoFilter = !isScrolled
+    ? 'brightness-0 invert lg:filter-none lg:brightness-100 lg:invert-0'
+    : 'filter-none';
 
   return (
     <>
@@ -65,10 +73,7 @@ export const Header: React.FC<HeaderProps> = ({
         <div className="mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex justify-between items-center h-16 sm:h-20 md:h-24 lg:h-28">
             <div
-              className={`flex-shrink-0 ${logoWrapper} order-2 lg:order-1 ${
-                // Mobilde logo daha sağda: pl-4 ekliyoruz, lg'de sıfırlıyoruz
-                'pl-4 lg:pl-0'
-              }`}
+              className={`flex-shrink-0 ${logoWrapper} order-2 lg:order-1 pl-4 lg:pl-0`}
             >
               <Logo
                 src={logo?.src}
@@ -156,30 +161,13 @@ export const Header: React.FC<HeaderProps> = ({
               <button
                 className={`inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-inset ${iconColor}`}
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                aria-label="Toggle menu"
+                aria-label={isMobileMenuOpen ? 'Menüyü kapat' : 'Menüyü aç'}
               >
-                <svg
+                <Icon
+                  src={isMobileMenuOpen ? closeIcon : menuIcon}
+                  alt={isMobileMenuOpen ? 'Kapat' : 'Menü'}
                   className="h-6 w-6"
-                  stroke={iconStroke}
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  {isMobileMenuOpen ? (
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  ) : (
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M4 6h16M4 12h16M4 18h16"
-                    />
-                  )}
-                </svg>
+                />
               </button>
             </div>
           </div>

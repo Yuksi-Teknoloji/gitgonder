@@ -1,9 +1,10 @@
+import { ImageGallery } from '../molecules/ImageGallery';
+
 export function AboutContent() {
-    const placeholderCards = [1, 2, 3];
+    const aboutImages: string[] | undefined = undefined;
 
     return (
         <div className="w-full bg-white">
-            {/* Hakkımızda Section */}
             <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16 lg:py-24">
                 <h2 
                     className="text-[32px] sm:text-[40px] lg:text-[65px] font-bold text-[#FF5B04] mb-4 sm:mb-6 lg:mb-8"
@@ -18,41 +19,9 @@ export function AboutContent() {
                     Yüksi, lojistik ve taşımacılık sektörüne yenilikçi çözümler sunmak amacıyla geliştirilmiş dijital bir platformdur. Yüksi mobil uygulaması sayesinde, yük verenlerle taşıyıcıları güvenli, hızlı ve verimli bir şekilde bir araya getiriyoruz.
                 </p>
                 
-                {/* Placeholder Cards - Mobile & Tablet Scrollable */}
-                <div className="xl:hidden w-full">
-                    <div 
-                        className="flex gap-4 overflow-x-auto py-4 [-webkit-overflow-scrolling:touch] -mx-4 px-4 justify-center"
-                        style={{
-                            scrollbarWidth: 'none',
-                            msOverflowStyle: 'none',
-                        }}
-                    >
-                        <style>{`
-                            div::-webkit-scrollbar {
-                                display: none;
-                            }
-                        `}</style>
-                        {placeholderCards.map((item) => (
-                            <div 
-                                key={item}
-                                className="bg-[#FF5B04] rounded-[10px] aspect-square min-w-[150px] w-[150px] flex-shrink-0"
-                            />
-                        ))}
-                    </div>
-                </div>
-
-                {/* Placeholder Cards - Desktop Grid */}
-                <div className="hidden xl:grid grid-cols-3 gap-4 sm:gap-6 justify-center max-w-4xl mx-auto">
-                    {placeholderCards.map((item) => (
-                        <div 
-                            key={item}
-                            className="bg-[#FF5B04] rounded-[10px] aspect-square w-full"
-                        />
-                    ))}
-                </div>
+                <ImageGallery images={aboutImages} />
             </section>
 
-            {/* Hizmet Özellikleri Section */}
             <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16 lg:py-24">
                 <h2 
                     className="text-[32px] sm:text-[40px] lg:text-[50px] font-bold text-[#FF5B04] mb-6 sm:mb-8 lg:mb-12"
@@ -91,41 +60,9 @@ export function AboutContent() {
                     </div>
                 </div>
 
-                {/* Placeholder Cards - Mobile & Tablet Scrollable */}
-                <div className="xl:hidden w-full">
-                    <div 
-                        className="flex gap-4 overflow-x-auto py-4 [-webkit-overflow-scrolling:touch] -mx-4 px-4 justify-center"
-                        style={{
-                            scrollbarWidth: 'none',
-                            msOverflowStyle: 'none',
-                        }}
-                    >
-                        <style>{`
-                            div::-webkit-scrollbar {
-                                display: none;
-                            }
-                        `}</style>
-                        {placeholderCards.map((item) => (
-                            <div 
-                                key={item}
-                                className="bg-[#FF5B04] rounded-[10px] aspect-square min-w-[150px] w-[150px] flex-shrink-0"
-                            />
-                        ))}
-                    </div>
-                </div>
-
-                {/* Placeholder Cards - Desktop Grid */}
-                <div className="hidden xl:grid grid-cols-3 gap-4 sm:gap-6 justify-center max-w-4xl mx-auto">
-                    {placeholderCards.map((item) => (
-                        <div 
-                            key={item}
-                            className="bg-[#FF5B04] rounded-[10px] aspect-square w-full"
-                        />
-                    ))}
-                </div>
+                <ImageGallery images={undefined} />
             </section>
 
-            {/* Müşteri Avantajları Section */}
             <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16 lg:py-24">
                 <h2 
                     className="text-[32px] sm:text-[40px] lg:text-[50px] font-bold text-[#FF5B04] mb-6 sm:mb-8 lg:mb-12"
@@ -157,41 +94,9 @@ export function AboutContent() {
                     </div>
                 </div>
 
-                {/* Placeholder Cards - Mobile & Tablet Scrollable */}
-                <div className="xl:hidden w-full">
-                    <div 
-                        className="flex gap-4 overflow-x-auto py-4 [-webkit-overflow-scrolling:touch] -mx-4 px-4 justify-center"
-                        style={{
-                            scrollbarWidth: 'none',
-                            msOverflowStyle: 'none',
-                        }}
-                    >
-                        <style>{`
-                            div::-webkit-scrollbar {
-                                display: none;
-                            }
-                        `}</style>
-                        {placeholderCards.map((item) => (
-                            <div 
-                                key={item}
-                                className="bg-[#FF5B04] rounded-[10px] aspect-square min-w-[150px] w-[150px] flex-shrink-0"
-                            />
-                        ))}
-                    </div>
-                </div>
-
-                {/* Placeholder Cards - Desktop Grid */}
-                <div className="hidden xl:grid grid-cols-3 gap-4 sm:gap-6 justify-center max-w-4xl mx-auto">
-                    {placeholderCards.map((item) => (
-                        <div 
-                            key={item}
-                            className="bg-[#FF5B04] rounded-[10px] aspect-square w-full"
-                        />
-                    ))}
-                </div>
+                <ImageGallery images={undefined} />
             </section>
 
-            {/* Teknolojik Altyapı Section */}
             <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16 lg:py-24">
                 <h2 
                     className="text-[32px] sm:text-[40px] lg:text-[50px] font-bold text-[#FF5B04] mb-6 sm:mb-8 lg:mb-12"
@@ -223,38 +128,7 @@ export function AboutContent() {
                     </div>
                 </div>
 
-                {/* Placeholder Cards - Mobile & Tablet Scrollable */}
-                <div className="xl:hidden w-full">
-                    <div 
-                        className="flex gap-4 overflow-x-auto py-4 [-webkit-overflow-scrolling:touch] -mx-4 px-4 justify-center"
-                        style={{
-                            scrollbarWidth: 'none',
-                            msOverflowStyle: 'none',
-                        }}
-                    >
-                        <style>{`
-                            div::-webkit-scrollbar {
-                                display: none;
-                            }
-                        `}</style>
-                        {placeholderCards.map((item) => (
-                            <div 
-                                key={item}
-                                className="bg-[#FF5B04] rounded-[10px] aspect-square min-w-[150px] w-[150px] flex-shrink-0"
-                            />
-                        ))}
-                    </div>
-                </div>
-
-                {/* Placeholder Cards - Desktop Grid */}
-                <div className="hidden xl:grid grid-cols-3 gap-4 sm:gap-6 justify-center max-w-4xl mx-auto">
-                    {placeholderCards.map((item) => (
-                        <div 
-                            key={item}
-                            className="bg-[#FF5B04] rounded-[10px] aspect-square w-full"
-                        />
-                    ))}
-                </div>
+                <ImageGallery images={undefined} />
             </section>
         </div>
     )

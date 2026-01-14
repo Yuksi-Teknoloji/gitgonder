@@ -3,3 +3,4 @@ export { PartnerCard } from './PartnerCard';
 export { FormField } from './FormField';
 export { HeroOverlay } from './HeroOverlay';
 export { FooterLink } from './FooterLink';
+export { ImageGallery } from './ImageGallery';
