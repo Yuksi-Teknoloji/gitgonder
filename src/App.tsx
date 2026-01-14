@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Toaster } from 'react-hot-toast'
 import Home from './pages/Home'
 import About from './pages/About'
 import Services from './pages/Services'
@@ -15,6 +16,14 @@ function App() {
                 <Route path="/help" element={<Help />} />
                 <Route path="/carrier" element={<Carrier />} />
             </Routes>
+            <Toaster
+                position="top-right"
+                toastOptions={{
+                    style: {
+                        fontSize: '14px',
+                    },
+                }}
+            />
         </BrowserRouter>
     )
 }

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { fetchPartners, type Partner } from '../services/api';
+import { fetchPartners } from '../services/partnerService';
+import type { Partner } from '../types/partner';
 
 interface UsePartnersReturn {
     partners: Partner[];

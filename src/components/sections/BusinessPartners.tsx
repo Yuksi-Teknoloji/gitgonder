@@ -31,26 +31,26 @@ export function BusinessPartners() {
 
                 {!loading && !error && partners.length > 0 && (
                     <>
-                        {/* Mobile & tablet: horizontal scroll cards */}
-                        <div className="w-full lg:hidden">
-                            <div className="flex gap-6 overflow-x-auto [-webkit-overflow-scrolling:touch] px-1 pb-2"
-                                style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
-                                <style>{`
-                                    div::-webkit-scrollbar { display: none; }
-                                `}</style>
-                                {partners.map((partner, index) => (
+                {/* Mobile & tablet: horizontal scroll cards */}
+                <div className="w-full lg:hidden">
+                    <div className="flex gap-6 overflow-x-auto [-webkit-overflow-scrolling:touch] px-1 pb-2"
+                        style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+                        <style>{`
+                            div::-webkit-scrollbar { display: none; }
+                        `}</style>
+                        {partners.map((partner, index) => (
                                     <PartnerCard
                                         key={partner.id || index}
                                         partner={partner}
                                         className="min-w-[260px]"
                                     />
-                                ))}
-                            </div>
-                        </div>
+                        ))}
+                    </div>
+                </div>
 
-                        {/* Desktop grid, hidden on mobile & tablet */}
-                        <div className="hidden lg:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10 lg:gap-12">
-                            {partners.map((partner, index) => (
+                {/* Desktop grid, hidden on mobile & tablet */}
+                <div className="hidden lg:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10 lg:gap-12">
+                    {partners.map((partner, index) => (
                                 <PartnerCard
                                     key={partner.id || index}
                                     partner={partner}

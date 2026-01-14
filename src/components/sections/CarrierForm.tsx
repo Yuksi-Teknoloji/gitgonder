@@ -1,7 +1,9 @@
-import { useState } from 'react';
+import { useFormik } from 'formik';
+import toast from 'react-hot-toast';
 import kangarooCarrier from '../../assets/carrier/kangaroo-carrier.png';
+import { submitCarrierApplication } from '../../services/carrierService';
 
-interface FormData {
+interface FormValues {
     firstName: string;
     lastName: string;
     city: string;
@@ -15,55 +17,59 @@ interface FormData {
 }
 
 export function CarrierForm() {
-    const [formData, setFormData] = useState<FormData>({
-        firstName: '',
-        lastName: '',
-        city: '',
-        email: '',
-        phone: '',
-        vehicleType: '',
-        vehicleYear: '',
-        vehicleDocument: null,
-        carrierDocument: null,
-        acceptedTerms: false,
-    });
+    const formik = useFormik<FormValues>({
+        initialValues: {
+            firstName: '',
+            lastName: '',
+            city: '',
+            email: '',
+            phone: '',
+            vehicleType: '',
+            vehicleYear: '',
+            vehicleDocument: null,
+            carrierDocument: null,
+            acceptedTerms: false,
+        },
+        validate: (values) => {
+            const errors: Partial<Record<keyof FormValues, string>> = {};
 
-    const [vehicleDocName, setVehicleDocName] = useState<string>('');
-    const [carrierDocName, setCarrierDocName] = useState<string>('');
+            if (!values.firstName) errors.firstName = 'Zorunlu';
+            if (!values.lastName) errors.lastName = 'Zorunlu';
+            if (!values.city) errors.city = 'Zorunlu';
+            if (!values.email) errors.email = 'Zorunlu';
+            if (!values.phone) errors.phone = 'Zorunlu';
+            if (!values.vehicleType) errors.vehicleType = 'Zorunlu';
+            if (!values.vehicleYear) errors.vehicleYear = 'Zorunlu';
+            if (values.vehicleYear && Number.isNaN(Number(values.vehicleYear))) errors.vehicleYear = 'Yıl sayı olmalı';
+            if (!values.vehicleDocument) errors.vehicleDocument = 'Zorunlu';
+            if (!values.carrierDocument) errors.carrierDocument = 'Zorunlu';
+            if (!values.acceptedTerms) errors.acceptedTerms = 'Zorunlu';
 
-    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
-        const { name, value } = e.target;
-        setFormData(prev => ({
-            ...prev,
-            [name]: value,
-        }));
-    };
+            return errors;
+        },
+        onSubmit: async (values, helpers) => {
+            try {
+                await submitCarrierApplication({
+                    first_name: values.firstName,
+                    last_name: values.lastName,
+                    city: values.city,
+                    email: values.email,
+                    phone_number: values.phone,
+                    vehicle_type: values.vehicleType,
+                    vehicle_registration_year: Number(values.vehicleYear),
+                    terms_accepted: values.acceptedTerms,
+                    vehicle_documents: values.vehicleDocument as File,
+                    carrier_documents: values.carrierDocument as File,
+                });
 
-    const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>, type: 'vehicle' | 'carrier') => {
-        const file = e.target.files?.[0];
-        if (file) {
-            if (type === 'vehicle') {
-                setFormData(prev => ({ ...prev, vehicleDocument: file }));
-                setVehicleDocName(file.name);
-            } else {
-                setFormData(prev => ({ ...prev, carrierDocument: file }));
-                setCarrierDocName(file.name);
+                toast.success('Başvurunuz başarıyla gönderildi.');
+                helpers.resetForm();
+            } catch (error) {
+                console.error('Carrier application error:', error);
+                toast.error('Form gönderilirken bir hata oluştu. Lütfen tekrar deneyin.');
             }
-        }
-    };
-
-    const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setFormData(prev => ({
-            ...prev,
-            acceptedTerms: e.target.checked,
-        }));
-    };
-
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        // Form submission logic will be added here
-        console.log('Form submitted:', formData);
-    };
+        },
+    });
 
     return (
         <section className="w-full bg-white py-12 lg:py-20">
@@ -108,14 +114,15 @@ export function CarrierForm() {
                                 Taşıyıcı olmak için formu doldur
                             </p>
                         </div>
-                        <form onSubmit={handleSubmit} className="max-w-[532px] mx-auto lg:mx-0 space-y-6">
+                        <form onSubmit={formik.handleSubmit} className="max-w-[532px] mx-auto lg:mx-0 space-y-6">
                     {/* İsim */}
                     <div className="relative">
                         <input
                             type="text"
                             name="firstName"
-                            value={formData.firstName}
-                            onChange={handleInputChange}
+                            value={formik.values.firstName}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
                             placeholder="İsim"
                             className="w-full h-16 bg-[#FF5B04] rounded-[5px] px-6 text-white placeholder-white font-semibold text-base shadow-[0px_4px_15px_0px_rgba(0,0,0,0.09)] focus:outline-none focus:ring-2 focus:ring-[#FF5B04]/50"
                             required
@@ -127,8 +134,9 @@ export function CarrierForm() {
                         <input
                             type="text"
                             name="lastName"
-                            value={formData.lastName}
-                            onChange={handleInputChange}
+                            value={formik.values.lastName}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
                             placeholder="Soy İsim"
                             className="w-full h-16 bg-[#FF5B04] rounded-[5px] px-6 text-white placeholder-white font-semibold text-base shadow-[0px_4px_15px_0px_rgba(0,0,0,0.09)] focus:outline-none focus:ring-2 focus:ring-[#FF5B04]/50"
                             required
@@ -140,8 +148,9 @@ export function CarrierForm() {
                         <input
                             type="text"
                             name="city"
-                            value={formData.city}
-                            onChange={handleInputChange}
+                            value={formik.values.city}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
                             placeholder="Şehir"
                             className="w-full h-16 bg-[#FF5B04] rounded-[5px] px-6 text-white placeholder-white font-semibold text-base shadow-[0px_4px_15px_0px_rgba(0,0,0,0.09)] focus:outline-none focus:ring-2 focus:ring-[#FF5B04]/50"
                             required
@@ -153,8 +162,9 @@ export function CarrierForm() {
                         <input
                             type="email"
                             name="email"
-                            value={formData.email}
-                            onChange={handleInputChange}
+                            value={formik.values.email}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
                             placeholder="E-mail"
                             className="w-full h-16 bg-[#FF5B04] rounded-[5px] px-6 text-white placeholder-white font-semibold text-base shadow-[0px_4px_15px_0px_rgba(0,0,0,0.09)] focus:outline-none focus:ring-2 focus:ring-[#FF5B04]/50"
                             required
@@ -166,8 +176,9 @@ export function CarrierForm() {
                         <input
                             type="tel"
                             name="phone"
-                            value={formData.phone}
-                            onChange={handleInputChange}
+                            value={formik.values.phone}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
                             placeholder="Telefon Numarası"
                             className="w-full h-16 bg-[#FF5B04] rounded-[5px] px-6 text-white placeholder-white font-semibold text-base shadow-[0px_4px_15px_0px_rgba(0,0,0,0.09)] focus:outline-none focus:ring-2 focus:ring-[#FF5B04]/50"
                             required
@@ -178,8 +189,9 @@ export function CarrierForm() {
                     <div className="relative">
                         <select
                             name="vehicleType"
-                            value={formData.vehicleType}
-                            onChange={handleInputChange}
+                            value={formik.values.vehicleType}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
                             className="w-full h-16 bg-[#FF5B04] rounded-[5px] px-6 pr-12 text-white font-semibold text-base shadow-[0px_4px_15px_0px_rgba(0,0,0,0.09)] focus:outline-none focus:ring-2 focus:ring-[#FF5B04]/50 appearance-none cursor-pointer"
                             required
                         >
@@ -214,8 +226,9 @@ export function CarrierForm() {
                         <input
                             type="text"
                             name="vehicleYear"
-                            value={formData.vehicleYear}
-                            onChange={handleInputChange}
+                            value={formik.values.vehicleYear}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
                             placeholder="Trafiğe Çıkış Yılı"
                             className="w-full h-16 bg-[#FF5B04] rounded-[5px] px-6 text-white placeholder-white font-semibold text-base shadow-[0px_4px_15px_0px_rgba(0,0,0,0.09)] focus:outline-none focus:ring-2 focus:ring-[#FF5B04]/50"
                             required
@@ -230,7 +243,10 @@ export function CarrierForm() {
                                     type="file"
                                     id="vehicleDocument"
                                     accept=".pdf,.jpg,.jpeg,.png"
-                                    onChange={(e) => handleFileChange(e, 'vehicle')}
+                                    onChange={(e) => {
+                                        const file = e.currentTarget.files?.[0] || null;
+                                        void formik.setFieldValue('vehicleDocument', file);
+                                    }}
                                     className="hidden"
                                 />
                                 <label
@@ -238,7 +254,7 @@ export function CarrierForm() {
                                     className="w-full h-16 bg-[#FF5B04] rounded-[5px] px-6 flex items-center text-white font-semibold text-base shadow-[0px_4px_15px_0px_rgba(0,0,0,0.09)] cursor-pointer"
                                 >
                                     <span className="flex-1 text-left">
-                                        {vehicleDocName || 'Araç Belgeri Yükle'}
+                                        {formik.values.vehicleDocument?.name || 'Araç Belgeri Yükle'}
                                     </span>
                                 </label>
                             </div>
@@ -262,7 +278,10 @@ export function CarrierForm() {
                                     type="file"
                                     id="carrierDocument"
                                     accept=".pdf,.jpg,.jpeg,.png"
-                                    onChange={(e) => handleFileChange(e, 'carrier')}
+                                    onChange={(e) => {
+                                        const file = e.currentTarget.files?.[0] || null;
+                                        void formik.setFieldValue('carrierDocument', file);
+                                    }}
                                     className="hidden"
                                 />
                                 <label
@@ -270,7 +289,7 @@ export function CarrierForm() {
                                     className="w-full h-16 bg-[#FF5B04] rounded-[5px] px-6 flex items-center text-white font-semibold text-base shadow-[0px_4px_15px_0px_rgba(0,0,0,0.09)] cursor-pointer"
                                 >
                                     <span className="flex-1 text-left">
-                                        {carrierDocName || 'Taşıyıcı Belgelerini Yükle'}
+                                        {formik.values.carrierDocument?.name || 'Taşıyıcı Belgelerini Yükle'}
                                     </span>
                                 </label>
                             </div>
@@ -291,8 +310,9 @@ export function CarrierForm() {
                         <input
                             type="checkbox"
                             id="acceptedTerms"
-                            checked={formData.acceptedTerms}
-                            onChange={handleCheckboxChange}
+                            name="acceptedTerms"
+                            checked={formik.values.acceptedTerms}
+                            onChange={formik.handleChange}
                             className="w-5 h-5 rounded-[5px] border-2 border-[#FF5B04] bg-[#ffc3a3] text-[#FF5B04] focus:ring-[#FF5B04] cursor-pointer"
                             required
                         />
@@ -308,9 +328,10 @@ export function CarrierForm() {
                     <div className="pt-4">
                         <button
                             type="submit"
-                            className="w-full h-16 bg-[#333] rounded-[5px] text-white font-bold text-2xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.09)] hover:bg-[#2a2a2a] transition-colors"
+                            disabled={formik.isSubmitting}
+                            className="w-full h-16 bg-[#333] rounded-[5px] text-white font-bold text-2xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.09)] hover:bg-[#2a2a2a] transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
                         >
-                            Gönder
+                            {formik.isSubmitting ? 'Gönderiliyor...' : 'Gönder'}
                         </button>
                     </div>
                         </form>
