@@ -99,6 +99,8 @@ export function CarrierForm() {
                                 alt="Kangaroo Carrier"
                                 className="w-full h-full object-contain kangaroo-animate transform scale-[1.08] lg:scale-[1.15]"
                             />
+
+                            
                         </div>
                     </div>
 
