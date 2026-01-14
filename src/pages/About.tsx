@@ -1,7 +1,7 @@
 import { Header } from '../components/organisms/Header'
-import { AboutUs } from '../components/sections/AboutUs'
-import { AboutContent } from '../components/sections/AboutContent'
-import { Footer } from '../components/sections/Footer'
+import { AboutUs } from '../components/organisms/AboutUs'
+import { AboutContent } from '../components/organisms/AboutContent'
+import { Footer } from '../components/organisms/Footer'
 
 export default function About() {
     return (

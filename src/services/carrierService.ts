@@ -17,7 +17,6 @@ export async function submitCarrierApplication(payload: CarrierApplicationPayloa
     formData.append('carrier_documents', payload.carrier_documents);
 
     return apiPost<string>(API_ENDPOINTS.CARRIER_APPLICATIONS, formData, {
-        // FormData kullanıldığı için Content-Type elle vermiyoruz
         asJson: false,
     });
 }

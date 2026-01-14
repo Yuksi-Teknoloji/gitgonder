@@ -1,10 +1,10 @@
-import Hero from '../components/Hero'
+import Hero from '../components/organisms/Hero'
 import { Header } from '../components/organisms/Header'
-import { VehicleShowcase } from '../components/sections/VehicleShowcase'
-import { BusinessPartners } from '../components/sections/BusinessPartners'
-import { MobileJoin } from '../components/sections/MobileJoin'
-import { ContactCTA } from '../components/sections/ContactCTA'
-import { Footer } from '../components/sections/Footer'
+import { VehicleShowcase } from '../components/organisms/VehicleShowcase'
+import { BusinessPartners } from '../components/organisms/BusinessPartners'
+import { MobileJoin } from '../components/organisms/MobileJoin'
+import { ContactCTA } from '../components/organisms/ContactCTA'
+import { Footer } from '../components/organisms/Footer'
 
 export default function Home() {
     return (

@@ -1,9 +1,5 @@
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
-if (!API_BASE_URL) {
-    // Geliştirme sırasında env unutulursa uyarı verelim
-    console.warn('VITE_API_BASE_URL is not set. API is disabled.');
-}
 
 type HttpMethod = 'GET' | 'POST' | 'PUT' | 'DELETE';
 
@@ -12,9 +8,7 @@ interface RequestOptions extends RequestInit {
 }
 
 async function request<T>(path: string, method: HttpMethod, options: RequestOptions = {}): Promise<T> {
-    if (!API_BASE_URL) {
-        throw new Error('API base URL is not configured');
-    }
+    
 
     const { asJson = true, headers, body, ...rest } = options;
 
@@ -35,7 +29,6 @@ async function request<T>(path: string, method: HttpMethod, options: RequestOpti
         throw new Error(`HTTP error ${response.status}: ${errorText}`);
     }
 
-    // Bazı endpointler düz string döndürüyor
     const contentType = response.headers.get('Content-Type') || '';
     if (contentType.includes('application/json')) {
         return response.json() as Promise<T>;

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Header } from '../components/organisms/Header';
-import { Footer } from '../components/sections/Footer';
+import { Footer } from '../components/organisms/Footer';
 import motorcycleImg from '../assets/services/motorcycle.png';
 import minivanImg from '../assets/services/minivan.png';
 import panelvanImg from '../assets/services/panelvan.png';

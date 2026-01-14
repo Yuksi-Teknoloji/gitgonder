@@ -2,9 +2,9 @@ import React from 'react';
 import truckIcon from '../../assets/icons/truck-icon.svg';
 import boxIcon from '../../assets/icons/box-icon.svg';
 import bikeIcon from '../../assets/icons/bike-icon.svg';
-import { CircleArc } from './CircleArc';
-import { DashedRing } from './DashedRing';
-import { CircleMarker } from './CircleMarker';
+import { CircleArc } from '../atoms/CircleArc';
+import { DashedRing } from '../atoms/DashedRing';
+import { CircleMarker } from '../atoms/CircleMarker';
 
 interface HeroOverlayProps {
     activeIndex: number;

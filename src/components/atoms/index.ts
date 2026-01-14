@@ -1,3 +1,9 @@
 export { Button } from './Button';
 export { Logo } from './Logo';
 export { NavLink } from './NavLink';
+export { Input } from './Input';
+export { Textarea } from './Textarea';
+export { Select } from './Select';
+export { Checkbox } from './Checkbox';
+export { FileUpload } from './FileUpload';
+export { Icon } from './Icon';

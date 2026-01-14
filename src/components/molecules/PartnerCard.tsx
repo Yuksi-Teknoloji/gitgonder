@@ -1,5 +1,6 @@
 import arrowRightIcon from '../../assets/icons/arrow-right.svg';
 import type { Partner } from '../../types/partner';
+import { Icon } from '../atoms/Icon';
 
 interface PartnerCardProps {
     partner: Partner;
@@ -29,11 +30,11 @@ export function PartnerCard({ partner, onClick, className = '' }: PartnerCardPro
                 onClick={onClick}
                 className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-[#FF5B04] rounded-full flex items-center justify-center hover:bg-orange-600 transition-colors self-start mt-1 sm:mt-2 md:mt-4"
             >
-                <img
+                <Icon
                     src={arrowRightIcon}
                     alt="Sağa ok"
                     className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7"
-                    style={{ filter: 'brightness(0) invert(1)' }}
+                    invert
                 />
             </button>
         </div>

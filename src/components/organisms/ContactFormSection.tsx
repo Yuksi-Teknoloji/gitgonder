@@ -1,13 +1,11 @@
 import { useFormik } from 'formik';
 import toast from 'react-hot-toast';
-
-// Figma mascot/hero image for the iletişim sayfası
-const figmaContactHero =
-    'https://www.figma.com/api/mcp/asset/d3738739-580e-4061-9ae2-5fbe4e8623ee';
-
-// Figma Instagram icon for iletişim sayfası
-const figmaInstagramIcon =
-    'https://www.figma.com/api/mcp/asset/edab0a76-c70c-4526-9bf3-5b264dc1d7df';
+import { Input } from '../atoms/Input';
+import { Textarea } from '../atoms/Textarea';
+import { Checkbox } from '../atoms/Checkbox';
+import { Button } from '../atoms/Button';
+import contactHero from '../../assets/contact/contact-hero.png';
+import instagramIcon from '../../assets/contact/instagram.svg';
 
 interface ContactFormValues {
     firstName: string;
@@ -57,11 +55,11 @@ export function ContactFormSection() {
         <section className="w-full bg-white pt-12 lg:pt-20 pb-8 lg:pb-0">
             <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start lg:items-stretch">
-                    {/* Left - Mascot image (from Figma) */}
+                    {/* Left - Mascot image */}
                     <div className="w-full lg:w-[55%] flex items-center justify-center lg:justify-start">
                         <div className="relative w-full max-w-[800px] lg:max-w-none lg:translate-x-[-40px] transform translate-y-8 lg:translate-y-13">
                             <img
-                                src={figmaContactHero}
+                                src={contactHero}
                                 alt="Yüksi maskotu kutu taşırken"
                                 className="w-full h-auto object-contain"
                             />
@@ -83,97 +81,73 @@ export function ContactFormSection() {
                                 className="max-w-[532px] mx-auto lg:mx-0 space-y-4"
                             >
                                 {/* Soy İsim (single name field per design) */}
-                                <div>
-                                    <input
-                                        type="text"
-                                        name="firstName"
-                                        value={formik.values.firstName}
-                                        onChange={formik.handleChange}
-                                        onBlur={formik.handleBlur}
-                                        placeholder="Soy İsim"
-                                        className="w-full h-16 bg-[#FF5B04] rounded-[5px] px-6 text-white placeholder-white font-semibold text-base shadow-[0px_4px_15px_0px_rgba(0,0,0,0.09)] focus:outline-none focus:ring-2 focus:ring-[#FF5B04]/50"
-                                    />
-                                </div>
+                                <Input
+                                    type="text"
+                                    name="firstName"
+                                    value={formik.values.firstName}
+                                    onChange={formik.handleChange}
+                                    onBlur={formik.handleBlur}
+                                    placeholder="Soy İsim"
+                                />
 
                                 {/* E-mail */}
-                                <div>
-                                    <input
-                                        type="email"
-                                        name="email"
-                                        value={formik.values.email}
-                                        onChange={formik.handleChange}
-                                        onBlur={formik.handleBlur}
-                                        placeholder="E-mail"
-                                        className="w-full h-16 bg-[#FF5B04] rounded-[5px] px-6 text-white placeholder-white font-semibold text-base shadow-[0px_4px_15px_0px_rgba(0,0,0,0.09)] focus:outline-none focus:ring-2 focus:ring-[#FF5B04]/50"
-                                    />
-                                </div>
+                                <Input
+                                    type="email"
+                                    name="email"
+                                    value={formik.values.email}
+                                    onChange={formik.handleChange}
+                                    onBlur={formik.handleBlur}
+                                    placeholder="E-mail"
+                                />
 
                                 {/* Telefon Numarası */}
-                                <div>
-                                    <input
-                                        type="tel"
-                                        name="phone"
-                                        value={formik.values.phone}
-                                        onChange={formik.handleChange}
-                                        onBlur={formik.handleBlur}
-                                        placeholder="Telefon Numarası"
-                                        className="w-full h-16 bg-[#FF5B04] rounded-[5px] px-6 text-white placeholder-white font-semibold text-base shadow-[0px_4px_15px_0px_rgba(0,0,0,0.09)] focus:outline-none focus:ring-2 focus:ring-[#FF5B04]/50"
-                                    />
-                                </div>
+                                <Input
+                                    type="tel"
+                                    name="phone"
+                                    value={formik.values.phone}
+                                    onChange={formik.handleChange}
+                                    onBlur={formik.handleBlur}
+                                    placeholder="Telefon Numarası"
+                                />
 
                                 {/* Mesajınızın Konusu */}
-                                <div>
-                                    <input
-                                        type="text"
-                                        name="subject"
-                                        value={formik.values.subject}
-                                        onChange={formik.handleChange}
-                                        onBlur={formik.handleBlur}
-                                        placeholder="Mesajınızın Konusu"
-                                        className="w-full h-16 bg-[#FF5B04] rounded-[5px] px-6 text-white placeholder-white font-semibold text-base shadow-[0px_4px_15px_0px_rgba(0,0,0,0.09)] focus:outline-none focus:ring-2 focus:ring-[#FF5B04]/50"
-                                    />
-                                </div>
+                                <Input
+                                    type="text"
+                                    name="subject"
+                                    value={formik.values.subject}
+                                    onChange={formik.handleChange}
+                                    onBlur={formik.handleBlur}
+                                    placeholder="Mesajınızın Konusu"
+                                />
 
                                 {/* Mesaj */}
-                                <div>
-                                    <textarea
-                                        name="message"
-                                        value={formik.values.message}
-                                        onChange={formik.handleChange}
-                                        onBlur={formik.handleBlur}
-                                        placeholder="Mesaj"
-                                        className="w-full h-[182px] bg-[#FF5B04] rounded-[5px] px-6 py-4 text-white placeholder-white font-semibold text-base shadow-[0px_4px_15px_0px_rgba(0,0,0,0.09)] focus:outline-none focus:ring-2 focus:ring-[#FF5B04]/50 resize-none"
-                                    />
-                                </div>
+                                <Textarea
+                                    name="message"
+                                    value={formik.values.message}
+                                    onChange={formik.handleChange}
+                                    onBlur={formik.handleBlur}
+                                    placeholder="Mesaj"
+                                    className="h-[182px]"
+                                />
 
                                 {/* Kabul onay tiki */}
-                                <div className="flex items-center gap-3">
-                                    <input
-                                        type="checkbox"
-                                        id="acceptedTerms"
-                                        name="acceptedTerms"
-                                        checked={formik.values.acceptedTerms}
-                                        onChange={formik.handleChange}
-                                        className="w-5 h-5 rounded-[5px] border-2 border-[#FF5B04] bg-[#ffc3a3] text-[#FF5B04] focus:ring-[#FF5B04] cursor-pointer"
-                                        style={{ accentColor: '#FF5B04' }}
-                                    />
-                                    <label
-                                        htmlFor="acceptedTerms"
-                                        className="text-[#FF5B04] font-semibold text-base cursor-pointer"
-                                    >
-                                        Kabul onay tiki
-                                    </label>
-                                </div>
+                                <Checkbox
+                                    id="acceptedTerms"
+                                    name="acceptedTerms"
+                                    checked={formik.values.acceptedTerms}
+                                    onChange={formik.handleChange}
+                                    label="Kabul onay tiki"
+                                />
 
                                 {/* Gönder Butonu */}
                                 <div className="pt-2">
-                                    <button
+                                    <Button
                                         type="submit"
                                         disabled={formik.isSubmitting}
-                                        className="w-full h-16 bg-[#333333] rounded-[5px] text-white font-bold text-xl sm:text-2xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.09)] hover:bg-[#2a2a2a] transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+                                        className="w-full h-16 bg-[#333333] hover:bg-[#2a2a2a] text-white font-bold text-xl sm:text-2xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.09)] disabled:opacity-60 disabled:cursor-not-allowed"
                                     >
                                         {formik.isSubmitting ? 'Gönderiliyor...' : 'Gönder'}
-                                    </button>
+                                    </Button>
                                 </div>
                             </form>
                         </div>
@@ -208,7 +182,7 @@ export function ContactFormSection() {
                 </div>
 
                 {/* Instagram block (yuksi.tr) */}
-                <div className="mt-2 lg:mt-4 flex justify-center lg:justify-end">
+                        <div className="mt-2 lg:mt-4 flex justify-center lg:justify-end">
                     <a
                         href="https://instagram.com/yuksi.tr"
                         target="_blank"
@@ -217,7 +191,7 @@ export function ContactFormSection() {
                         style={{ fontFamily: 'Roboto, sans-serif', fontVariationSettings: '"wdth" 100' }}
                     >
                         <img
-                            src={figmaInstagramIcon}
+                            src={instagramIcon}
                             alt="Instagram"
                             className="w-8 h-8"
                         />

@@ -1,7 +1,7 @@
 import { Header } from '../components/organisms/Header';
-import { HelpHero } from '../components/sections/HelpHero';
-import { HelpContent } from '../components/sections/HelpContent';
-import { Footer } from '../components/sections/Footer';
+import { HelpHero } from '../components/organisms/HelpHero';
+import { HelpContent } from '../components/organisms/HelpContent';
+import { Footer } from '../components/organisms/Footer';
 
 export default function Help() {
     return (

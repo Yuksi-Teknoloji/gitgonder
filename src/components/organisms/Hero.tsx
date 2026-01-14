@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
-import heroBg from '../assets/hero/hero-bg.png';
-import kanguru1 from '../assets/hero/kanguru1.png';
-import kanguru2 from '../assets/hero/kanguru2.png';
-import kanguru3 from '../assets/hero/kanguru3.png';
-import kanguruGif from '../assets/hero/kanguru.gif';
-import { HeroOverlay } from './atoms/HeroOverlay';
-import { Button } from './atoms/Button';
+import heroBg from '../../assets/hero/hero-bg.png';
+import kanguru1 from '../../assets/hero/kanguru1.png';
+import kanguru2 from '../../assets/hero/kanguru2.png';
+import kanguru3 from '../../assets/hero/kanguru3.png';
+import kanguruGif from '../../assets/hero/kanguru.gif';
+import { HeroOverlay } from '../../components/molecules/HeroOverlay';
+import { Button } from '../atoms/Button';
 
 const kangaroos = [kanguru1, kanguru2, kanguru3];
 

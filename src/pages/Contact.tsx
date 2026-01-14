@@ -1,6 +1,6 @@
 import { Header } from '../components/organisms/Header';
-import { Footer } from '../components/sections/Footer';
-import { ContactFormSection } from '../components/sections/ContactFormSection';
+import { Footer } from '../components/organisms/Footer';
+import { ContactFormSection } from '../components/organisms/ContactFormSection';
 
 export default function Contact() {
     return (
