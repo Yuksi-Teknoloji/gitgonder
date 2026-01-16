@@ -60,20 +60,4 @@
         <priority>0.6</priority>
     </url>
     
-    <!-- Bayi Başvurusu -->
-    <url>
-        <loc>https://yuksi.com.tr/dealer</loc>
-        <lastmod>2024-01-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    
-    <!-- Kurumsal Üyelik -->
-    <url>
-        <loc>https://yuksi.com.tr/corporate</loc>
-        <lastmod>2024-01-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    
 </urlset>

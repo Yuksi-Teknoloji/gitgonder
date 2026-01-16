@@ -141,24 +141,20 @@ export const Header: React.FC<HeaderProps> = ({
                         </div>
                       </div>
                     </div>
-                    <Link to="/dealer">
-                      <Button
-                        variant="secondary"
-                        size="sm"
-                        className="w-full h-[34px] !rounded-[8px] !bg-[#F4F4F4] !text-[#FF5B04] text-[11px] leading-[13px] flex items-center justify-start px-3"
-                      >
-                        Franchising Başvuru
-                      </Button>
-                    </Link>
-                    <Link to="/corporate">
-                      <Button
-                        variant="secondary"
-                        size="sm"
-                        className="w-full h-[34px] !rounded-[8px] !bg-[#F4F4F4] !text-[#FF5B04] text-[11px] leading-[13px] flex items-center justify-start px-3"
-                      >
-                        Kurumsal Üyelik - Yüksicik
-                      </Button>
-                    </Link>
+                    <Button
+                      variant="secondary"
+                      size="sm"
+                      className="w-full h-[34px] !rounded-[8px] !bg-[#F4F4F4] !text-[#FF5B04] text-[11px] leading-[13px] flex items-center justify-start px-3"
+                    >
+                      Franchising Başvuru
+                    </Button>
+                    <Button
+                      variant="secondary"
+                      size="sm"
+                      className="w-full h-[34px] !rounded-[8px] !bg-[#F4F4F4] !text-[#FF5B04] text-[11px] leading-[13px] flex items-center justify-start px-3"
+                    >
+                      Kurumsal Üyelik - Yüksicik
+                    </Button>
                   </div>
                 </div>
               </div>
@@ -289,24 +285,20 @@ export const Header: React.FC<HeaderProps> = ({
                         </Button>
                       </div>
                     </div>
-                    <Link to="/dealer" onClick={() => setIsMobileMenuOpen(false)}>
-                      <Button
-                        variant="secondary"
-                        size="sm"
-                        className="w-full h-[34px] !rounded-[8px] !bg-[#F4F4F4] !text-[#FF5B04] text-[14px] leading-[16px] flex items-center justify-start px-3"
-                      >
-                        Franchising Başvuru
-                      </Button>
-                    </Link>
-                    <Link to="/corporate" onClick={() => setIsMobileMenuOpen(false)}>
-                      <Button
-                        variant="secondary"
-                        size="sm"
-                        className="w-full h-[34px] !rounded-[8px] !bg-[#F4F4F4] !text-[#FF5B04] text-[14px] leading-[16px] flex items-center justify-start px-3"
-                      >
-                        Kurumsal Üyelik - Yüksicik
-                      </Button>
-                    </Link>
+                    <Button
+                      variant="secondary"
+                      size="sm"
+                      className="w-full h-[34px] !rounded-[8px] !bg-[#F4F4F4] !text-[#FF5B04] text-[14px] leading-[16px] flex items-center justify-start px-3"
+                    >
+                      Franchising Başvuru
+                    </Button>
+                    <Button
+                      variant="secondary"
+                      size="sm"
+                      className="w-full h-[34px] !rounded-[8px] !bg-[#F4F4F4] !text-[#FF5B04] text-[14px] leading-[16px] flex items-center justify-start px-3"
+                    >
+                      Kurumsal Üyelik - Yüksicik
+                    </Button>
                   </div>
                 )}
               </div>
