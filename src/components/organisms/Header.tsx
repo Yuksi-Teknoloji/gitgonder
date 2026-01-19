@@ -148,24 +148,6 @@ export const Header: React.FC<HeaderProps> = ({
                         </div>
                       </div>
                     </div>
-                    <Link to={getLocalizedPath('dealer', currentLang)}>
-                      <Button
-                        variant="secondary"
-                        size="sm"
-                        className="w-full h-[34px] !rounded-[8px] !bg-[#F4F4F4] !text-[#FF5B04] text-[11px] leading-[13px] flex items-center justify-start px-3"
-                      >
-                        {t('nav.franchiseApplication')}
-                      </Button>
-                    </Link>
-                    <Link to={getLocalizedPath('corporate', currentLang)}>
-                      <Button
-                        variant="secondary"
-                        size="sm"
-                        className="w-full h-[34px] !rounded-[8px] !bg-[#F4F4F4] !text-[#FF5B04] text-[11px] leading-[13px] flex items-center justify-start px-3"
-                      >
-                        {t('nav.corporateMembership')}
-                      </Button>
-                    </Link>
                   </div>
                 </div>
               </div>
@@ -365,18 +347,6 @@ export const Header: React.FC<HeaderProps> = ({
                             <span className="text-[10px] bg-orange-100 text-orange-600 px-2 py-0.5 rounded-full font-bold uppercase">{t('nav.logisticsCourier')}</span>
                             <span className="text-[10px] bg-orange-100 text-orange-600 px-2 py-0.5 rounded-full font-bold uppercase">{t('nav.restaurantCourier')}</span>
                           </div>
-                        </div>
-                      </Link>
-                      <Link to={getLocalizedPath('dealer', currentLang)} onClick={() => setIsMobileMenuOpen(false)}>
-                        <div className="p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:border-orange-200 flex items-center justify-between">
-                          <span className="text-[14px] font-bold text-gray-900">{t('nav.franchiseApplication')}</span>
-                          <span className="text-orange-500">→</span>
-                        </div>
-                      </Link>
-                      <Link to={getLocalizedPath('corporate', currentLang)} onClick={() => setIsMobileMenuOpen(false)}>
-                        <div className="p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:border-orange-200 flex items-center justify-between">
-                          <span className="text-[14px] font-bold text-gray-900">{t('nav.corporateMembership')}</span>
-                          <span className="text-orange-500">→</span>
                         </div>
                       </Link>
                     </div>
