@@ -22,9 +22,11 @@ export async function fetchStates(
     offset: number = 0
 ): Promise<StateItem[]> {
     const query = `?country_id=${countryId}&limit=${limit}&offset=${offset}`;
-    const response = await apiGet<StatesResponse>(`${API_ENDPOINTS.LOGISTICS_STATES}${query}`);
+    const response = await apiGet<StatesResponse | StateItem[]>(`${API_ENDPOINTS.LOGISTICS_STATES}${query}`);
 
-    const rawList = response.states || response.data || response.results || response.items || [];
+    const rawList = Array.isArray(response)
+        ? response
+        : response.states || response.data || response.results || response.items || [];
 
     const normalized = (Array.isArray(rawList) ? rawList : [])
         .map((item) => ({
