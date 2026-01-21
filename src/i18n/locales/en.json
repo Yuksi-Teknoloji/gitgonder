@@ -251,7 +251,7 @@
   "contact": {
     "seo": {
       "title": "Contact - Yüksi",
-      "description": "Get in touch with Yüksi. Contact us for your questions, suggestions or support requests. Our Bursa office: Ahmet Vefik Paşa OSB Mah. Bursa caddesi No:73, Kestel/BURSA. Phone: 0850 241 93 16 | Email: info@yuksi.tr"
+      "description": "Get in touch with Yüksi. Contact us for your questions, suggestions or support requests. Phone: 0850 241 93 16 | Email: info@yuksi.tr"
     },
     "title": "Contact",
     "subtitle": "Get in Touch With Us",
@@ -287,8 +287,6 @@
       "phoneLabel": "Contact Number"
     },
     "info": {
-      "address": "Address",
-      "addressValue": "Ahmet Vefik Paşa OSB Mah. Bursa caddesi No:73, Kestel/BURSA",
       "phone": "Phone",
       "phoneValue": "0850 241 93 16",
       "email": "Email",

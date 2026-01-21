@@ -19,15 +19,9 @@ export default function About() {
             <SEOHead
                 title={t('about.seo.title')}
                 description={t('about.seo.description')}
-                keywords="yüksi hakkında, lojistik firması, taşımacılık şirketi, Bursa lojistik, güvenilir nakliye, müşteri odaklı lojistik"
+                keywords="yüksi hakkında, lojistik firması, taşımacılık şirketi, güvenilir nakliye, müşteri odaklı lojistik"
                 canonical={currentPath}
                 lang={currentLang}
-                geoData={{
-                    address: 'Ahmet Vefik Paşa OSB Mah. Bursa caddesi No:73',
-                    city: 'Kestel',
-                    region: 'Bursa',
-                    country: 'TR',
-                }}
                 alternateLanguages={alternateUrls}
             />
             <div className="w-full min-h-screen relative bg-white">

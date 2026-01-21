@@ -201,12 +201,6 @@ export default function Vehiclese() {
                 keywords={`${activeVehicle.title.toLowerCase()}, yüksi ${activeVehicle.title.toLowerCase()}, lojistik, taşımacılık, ${activeVehicle.title.toLowerCase()} hizmeti`}
                 canonical={getLocalizedPath('vehiclese', currentLang)}
                 lang={currentLang}
-                geoData={{
-                    address: 'Ahmet Vefik Paşa OSB Mah. Bursa caddesi No:73',
-                    city: 'Kestel',
-                    region: 'Bursa',
-                    country: 'TR',
-                }}
             />
             <div className="w-full min-h-screen" style={{ background: activeVehicle.background }}>
                 <div className="relative z-10">

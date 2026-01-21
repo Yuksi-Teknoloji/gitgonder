@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import { useNavigate } from 'react-router-dom'
 import { Header } from '../components/organisms/Header'
 import { ServicesHero } from '../components/organisms/ServicesHero'
 import { VehicleServiceSection } from '../components/organisms/VehicleServiceSection'
@@ -14,10 +15,12 @@ import kamyonImg from '../assets/services/kamyon.png'
 
 export default function Services() {
     const { t } = useTranslation()
+    const navigate = useNavigate()
     const currentLang = useLanguageFromUrl()
 
     const currentPath = getLocalizedPath('services', currentLang)
     const alternateUrls = getAlternateUrls('services')
+    const carrierPath = getLocalizedPath('carrier', currentLang)
 
     const vehicles = [
         {
@@ -65,12 +68,6 @@ export default function Services() {
                 keywords="lojistik hizmetleri, motorsiklet kurye, minivan taşımacılık, panelvan nakliye, kamyonet sevkiyat, kamyon taşımacılık, şehir içi lojistik, şehirler arası taşımacılık"
                 canonical={currentPath}
                 lang={currentLang}
-                geoData={{
-                    address: 'Ahmet Vefik Paşa OSB Mah. Bursa caddesi No:73',
-                    city: 'Kestel',
-                    region: 'Bursa',
-                    country: 'TR',
-                }}
                 alternateLanguages={alternateUrls}
             />
             <div className="w-full min-h-screen relative bg-white">
@@ -107,6 +104,7 @@ export default function Services() {
                         image={vehicle.image}
                         imageAlt={vehicle.imageAlt}
                         secondaryButtonText={vehicle.secondaryButtonText}
+                        onSecondaryClick={() => { navigate(carrierPath); window.scrollTo(0, 0); }}
                     />
                 ))}
                 <Footer />

@@ -18,15 +18,9 @@ export default function Carrier() {
             <SEOHead
                 title={t('carrier.seo.title')}
                 description={t('carrier.seo.description')}
-                keywords="kurye iş ilanları, taşıyıcı başvurusu, lojistik iş fırsatları, kurye olmak, taşımacılık işi, Bursa kurye işi"
+                keywords="kurye iş ilanları, taşıyıcı başvurusu, lojistik iş fırsatları, kurye olmak, taşımacılık işi, kurye işi"
                 canonical={currentPath}
                 lang={currentLang}
-                geoData={{
-                    address: 'Ahmet Vefik Paşa OSB Mah. Bursa caddesi No:73',
-                    city: 'Kestel',
-                    region: 'Bursa',
-                    country: 'TR',
-                }}
                 alternateLanguages={alternateUrls}
             />
             <Header activeItem={currentPath} />

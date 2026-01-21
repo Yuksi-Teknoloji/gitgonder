@@ -18,31 +18,18 @@ export default function Dealer() {
             <SEOHead
                 title={t('dealer.seo.title')}
                 description={t('dealer.seo.description')}
-                keywords="yüksi bayi, franchise, bayi başvurusu, lojistik bayi, taşımacılık bayi, Bursa bayi, Türkiye bayi"
+                keywords="yüksi bayi, franchise, bayi başvurusu, lojistik bayi, taşımacılık bayi, Türkiye bayi"
                 canonical={currentPath}
                 lang={currentLang}
-                geoData={{
-                    address: 'Ahmet Vefik Paşa OSB Mah. Bursa caddesi No:73',
-                    city: 'Kestel',
-                    region: 'Bursa',
-                    country: 'TR',
-                }}
                 alternateLanguages={alternateUrls}
                 structuredData={{
                     '@context': 'https://schema.org',
                     '@type': 'ContactPage',
                     mainEntity: {
-                        '@type': 'LocalBusiness',
+                        '@type': 'Organization',
                         name: 'Yüksi',
                         telephone: '+908502419316',
                         email: 'info@yuksi.tr',
-                        address: {
-                            '@type': 'PostalAddress',
-                            streetAddress: 'Ahmet Vefik Paşa OSB Mah. Bursa caddesi No:73',
-                            addressLocality: 'Kestel',
-                            addressRegion: 'Bursa',
-                            addressCountry: 'TR',
-                        },
                     },
                 }}
             />

@@ -22,12 +22,6 @@ export default function Help() {
                 keywords="yüksi yardım, lojistik destek, müşteri hizmetleri, sık sorulan sorular, teknik destek, kullanım kılavuzu"
                 canonical={currentPath}
                 lang={currentLang}
-                geoData={{
-                    address: 'Ahmet Vefik Paşa OSB Mah. Bursa caddesi No:73',
-                    city: 'Kestel',
-                    region: 'Bursa',
-                    country: 'TR',
-                }}
                 alternateLanguages={alternateUrls}
             />
             <div className="w-full min-h-screen relative bg-white">

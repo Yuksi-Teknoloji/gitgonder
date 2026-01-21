@@ -49,10 +49,10 @@ export function SEOHead({
     const fullOgImage = ogImage.startsWith('http') ? ogImage : `${baseUrl}${ogImage}`;
     const fullTitle = title.includes('Yüksi') ? title : `${title} | Yüksi`;
 
-    // Default structured data for LocalBusiness
+    // Default structured data for Organization
     const defaultStructuredData = {
         '@context': 'https://schema.org',
-        '@type': 'LocalBusiness',
+        '@type': 'Organization',
         '@id': baseUrl,
         name: 'Yüksi',
         alternateName: 'Yüksi',
@@ -62,21 +62,6 @@ export function SEOHead({
         description: description,
         telephone: '+908502419316',
         email: 'info@yuksi.tr',
-        address: {
-            '@type': 'PostalAddress',
-            streetAddress: geoData?.address || 'Ahmet Vefik Paşa OSB Mah. Bursa caddesi No:73',
-            addressLocality: geoData?.city || 'Kestel',
-            addressRegion: geoData?.region || 'Bursa',
-            postalCode: geoData?.postalCode || '',
-            addressCountry: geoData?.country || 'TR',
-        },
-        geo: geoData?.latitude && geoData?.longitude
-            ? {
-                  '@type': 'GeoCoordinates',
-                  latitude: geoData.latitude,
-                  longitude: geoData.longitude,
-              }
-            : undefined,
         priceRange: '$$',
         areaServed: {
             '@type': 'Country',
@@ -106,13 +91,6 @@ export function SEOHead({
             email: 'info@yuksi.tr',
             areaServed: 'TR',
             availableLanguage: ['tr', 'en'],
-        },
-        address: {
-            '@type': 'PostalAddress',
-            streetAddress: 'Ahmet Vefik Paşa OSB Mah. Bursa caddesi No:73',
-            addressLocality: 'Kestel',
-            addressRegion: 'Bursa',
-            addressCountry: 'TR',
         },
     };
 
@@ -159,7 +137,6 @@ export function SEOHead({
             {geoData?.latitude && geoData?.longitude && (
                 <>
                     <meta name="geo.region" content={geoData.region || 'TR-16'} />
-                    <meta name="geo.placename" content={geoData.city || 'Kestel'} />
                     <meta name="geo.position" content={`${geoData.latitude};${geoData.longitude}`} />
                     <meta name="ICBM" content={`${geoData.latitude}, ${geoData.longitude}`} />
                 </>

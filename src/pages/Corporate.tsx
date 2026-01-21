@@ -18,31 +18,18 @@ export default function Corporate() {
             <SEOHead
                 title={t('corporate.seo.title')}
                 description={t('corporate.seo.description')}
-                keywords="yüksi kurumsal üyelik, kurumsal lojistik, kurumsal taşımacılık, işletme lojistik, kurumsal müşteri, Bursa kurumsal lojistik"
+                keywords="yüksi kurumsal üyelik, kurumsal lojistik, kurumsal taşımacılık, işletme lojistik, kurumsal müşteri"
                 canonical={currentPath}
                 lang={currentLang}
-                geoData={{
-                    address: 'Ahmet Vefik Paşa OSB Mah. Bursa caddesi No:73',
-                    city: 'Kestel',
-                    region: 'Bursa',
-                    country: 'TR',
-                }}
                 alternateLanguages={alternateUrls}
                 structuredData={{
                     '@context': 'https://schema.org',
                     '@type': 'ContactPage',
                     mainEntity: {
-                        '@type': 'LocalBusiness',
+                        '@type': 'Organization',
                         name: 'Yüksi',
                         telephone: '+908502419316',
                         email: 'info@yuksi.tr',
-                        address: {
-                            '@type': 'PostalAddress',
-                            streetAddress: 'Ahmet Vefik Paşa OSB Mah. Bursa caddesi No:73',
-                            addressLocality: 'Kestel',
-                            addressRegion: 'Bursa',
-                            addressCountry: 'TR',
-                        },
                     },
                 }}
             />

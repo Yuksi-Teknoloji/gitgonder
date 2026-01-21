@@ -20,19 +20,13 @@ export default function Home() {
             <SEOHead
                 title={t('home.seo.title')}
                 description={t('home.seo.description')}
-                keywords="yüksi, lojistik, kurye, nakliye, taşımacılık, motorsiklet kurye, minivan, panelvan, kamyonet, kamyon, Bursa lojistik, Türkiye lojistik, hızlı teslimat, güvenilir lojistik"
+                keywords="yüksi, lojistik, kurye, nakliye, taşımacılık, motorsiklet kurye, minivan, panelvan, kamyonet, kamyon, Türkiye lojistik, hızlı teslimat, güvenilir lojistik"
                 canonical="/"
                 lang={currentLang}
-                geoData={{
-                    address: 'Ahmet Vefik Paşa OSB Mah. Bursa caddesi No:73',
-                    city: 'Kestel',
-                    region: 'Bursa',
-                    country: 'TR',
-                }}
                 alternateLanguages={alternateUrls}
                 structuredData={{
                     '@context': 'https://schema.org',
-                    '@type': 'LocalBusiness',
+                    '@type': 'Organization',
                     '@id': 'https://yuksi.com.tr',
                     name: 'Yüksi',
                     alternateName: 'Yüksi',
@@ -41,13 +35,6 @@ export default function Home() {
                     description: t('home.seo.description'),
                     telephone: '+908502419316',
                     email: 'info@yuksi.tr',
-                    address: {
-                        '@type': 'PostalAddress',
-                        streetAddress: 'Ahmet Vefik Paşa OSB Mah. Bursa caddesi No:73',
-                        addressLocality: 'Kestel',
-                        addressRegion: 'Bursa',
-                        addressCountry: 'TR',
-                    },
                     priceRange: '$$',
                     areaServed: {
                         '@type': 'Country',

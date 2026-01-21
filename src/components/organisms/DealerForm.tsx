@@ -112,8 +112,8 @@ export function DealerForm() {
             <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start lg:items-stretch">
                     {/* Left - Bayi Image */}
-                    <div className="w-full lg:w-[55%] flex items-center justify-center lg:justify-start">
-                        <div className="relative w-full max-w-[800px] lg:max-w-none lg:translate-x-[-40px] transform translate-y-8 lg:translate-y-13">
+                    <div className="w-full lg:w-[55%] flex items-start justify-center lg:justify-start">
+                        <div className="relative w-full max-w-[800px] lg:max-w-none lg:translate-x-[-40px]">
                             <img
                                 src={bayiImage}
                                 alt="Yüksi Bayi"
@@ -247,12 +247,6 @@ export function DealerForm() {
                             <p style={{ fontFamily: 'Roboto, sans-serif', fontVariationSettings: '"wdth" 100' }}>
                                 {t('dealer.form.phoneLabel')}:
                                 <span className="font-medium"> 0850 241 93 16</span>
-                            </p>
-                            <p
-                                className="font-semibold"
-                                style={{ fontFamily: 'Roboto, sans-serif', fontVariationSettings: '"wdth" 100' }}
-                            >
-                                Ahmet Vefik Paşa OSB Mah. Bursa caddesi No:73 Kestel/BURSA
                             </p>
                         </div>
                     </div>

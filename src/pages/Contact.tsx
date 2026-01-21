@@ -18,31 +18,18 @@ export default function Contact() {
             <SEOHead
                 title={t('contact.seo.title')}
                 description={t('contact.seo.description')}
-                keywords="yüksi iletişim, lojistik firması iletişim, Bursa lojistik adres, taşımacılık telefon, nakliye email"
+                keywords="yüksi iletişim, lojistik firması iletişim, taşımacılık telefon, nakliye email"
                 canonical={currentPath}
                 lang={currentLang}
-                geoData={{
-                    address: 'Ahmet Vefik Paşa OSB Mah. Bursa caddesi No:73',
-                    city: 'Kestel',
-                    region: 'Bursa',
-                    country: 'TR',
-                }}
                 alternateLanguages={alternateUrls}
                 structuredData={{
                     '@context': 'https://schema.org',
                     '@type': 'ContactPage',
                     mainEntity: {
-                        '@type': 'LocalBusiness',
+                        '@type': 'Organization',
                         name: 'Yüksi',
                         telephone: '+908502419316',
                         email: 'info@yuksi.tr',
-                        address: {
-                            '@type': 'PostalAddress',
-                            streetAddress: 'Ahmet Vefik Paşa OSB Mah. Bursa caddesi No:73',
-                            addressLocality: 'Kestel',
-                            addressRegion: 'Bursa',
-                            addressCountry: 'TR',
-                        },
                     },
                 }}
             />

@@ -116,8 +116,8 @@ export function ContactFormSection() {
             <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start lg:items-stretch">
                     {/* Left - Mascot image */}
-                    <div className="w-full lg:w-[55%] flex items-center justify-center lg:justify-start">
-                        <div className="relative w-full max-w-[800px] lg:max-w-none lg:translate-x-[-40px] transform translate-y-8 lg:translate-y-13">
+                    <div className="w-full lg:w-[55%] flex items-start justify-center lg:justify-start">
+                        <div className="relative w-full max-w-[800px] lg:max-w-none lg:translate-x-[-40px]">
                             <img
                                 src={contactHero}
                                 alt="Yüksi maskotu kutu taşırken"
@@ -252,32 +252,23 @@ export function ContactFormSection() {
                                 {t('contact.form.phoneLabel')}:
                                 <span className="font-medium"> 0850 241 93 16</span>
                             </p>
-                            <p
-                                className="font-semibold"
+                            {/* Instagram */}
+                            <a
+                                href="https://instagram.com/yuksi.tr"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="inline-flex items-center gap-2 text-[#333333] hover:text-[#FF5B04] transition-colors"
                                 style={{ fontFamily: 'Roboto, sans-serif', fontVariationSettings: '"wdth" 100' }}
                             >
-                                Ahmet Vefik Paşa OSB Mah. Bursa caddesi No:73 Kestel/BURSA
-                            </p>
+                                <img
+                                    src={instagramIcon}
+                                    alt="Instagram"
+                                    className="w-6 h-6"
+                                />
+                                <span className="font-semibold">yuksi.tr</span>
+                            </a>
                         </div>
                     </div>
-                </div>
-
-                {/* Instagram block (yuksi.tr) */}
-                <div className="mt-2 lg:mt-4 flex justify-center lg:justify-end">
-                    <a
-                        href="https://instagram.com/yuksi.tr"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="inline-flex items-center gap-3 text-[#333333]"
-                        style={{ fontFamily: 'Roboto, sans-serif', fontVariationSettings: '"wdth" 100' }}
-                    >
-                        <img
-                            src={instagramIcon}
-                            alt="Instagram"
-                            className="w-8 h-8"
-                        />
-                        <span className="font-semibold text-[16px] lg:text-[24px]">yuksi.tr</span>
-                    </a>
                 </div>
             </div>
         </section>

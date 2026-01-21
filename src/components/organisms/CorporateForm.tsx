@@ -276,12 +276,6 @@ export function CorporateForm() {
                                 {t('corporate.form.phoneLabel')}:
                                 <span className="font-medium"> 0850 241 93 16</span>
                             </p>
-                            <p
-                                className="font-semibold"
-                                style={{ fontFamily: 'Roboto, sans-serif', fontVariationSettings: '"wdth" 100' }}
-                            >
-                                Ahmet Vefik Paşa OSB Mah. Bursa caddesi No:73 Kestel/BURSA
-                            </p>
                         </div>
                     </div>
                 </div>
