@@ -8,6 +8,7 @@ export interface StateItem {
     title?: string;
     plate_code?: number | string;
     fips_code?: number | string;
+    iso2?: string;
 }
 
 interface StatesResponse {
@@ -19,7 +20,7 @@ interface StatesResponse {
 
 export async function fetchStates(
     countryId: number = 225,
-    limit: number = 1000,
+    limit: number = 100,
     offset: number = 0
 ): Promise<StateItem[]> {
     const query = `?country_id=${countryId}&limit=${limit}&offset=${offset}`;
@@ -32,29 +33,21 @@ export async function fetchStates(
             id: item.id,
             plate_code: item.plate_code,
             fips_code: item.fips_code,
+            iso2: item.iso2,
             name: (item.name || item.state_name || item.title || '').trim(),
         }))
         .filter((item) => item.name.length > 0);
 
-    const parseNumber = (value: number | string | undefined) => {
-        if (value === undefined || value === null) return Number.NaN;
-        const num = typeof value === 'number' ? value : parseInt(String(value).trim(), 10);
-        return Number.isFinite(num) ? num : Number.NaN;
-    };
-
     return normalized.sort((a, b) => {
-        const fipsA = parseNumber(a.fips_code);
-        const fipsB = parseNumber(b.fips_code);
+        if (a.iso2 && b.iso2) {
+            const numA = parseInt(a.iso2, 10);
+            const numB = parseInt(b.iso2, 10);
 
-        if (!Number.isNaN(fipsA) && !Number.isNaN(fipsB)) {
-            return fipsA - fipsB;
-        }
+            if (!Number.isNaN(numA) && !Number.isNaN(numB)) {
+                return numA - numB;
+            }
 
-        const plateA = parseNumber(a.plate_code ?? a.id);
-        const plateB = parseNumber(b.plate_code ?? b.id);
-
-        if (!Number.isNaN(plateA) && !Number.isNaN(plateB)) {
-            return plateA - plateB;
+            return a.iso2.localeCompare(b.iso2, 'tr', { sensitivity: 'base' });
         }
 
         return a.name.localeCompare(b.name, 'tr');
