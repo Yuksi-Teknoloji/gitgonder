@@ -23,6 +23,9 @@ import trendyolGoLogo from '../../assets/partners/trendyol-go.png';
 import netlogLojistikLogo from '../../assets/partners/netlog-lojistik.png';
 import trendyolExpressLogo from '../../assets/partners/trendyol-express.png';
 import allianceHealthcareLogo from '../../assets/partners/alliance.png';
+import allianzLogo from '../../assets/partners/Allianz.svg.png';
+import anadoluSigortaLogo from '../../assets/partners/anadolu_sigprta.png';
+import turkiyeSigortaLogo from '../../assets/partners/turkiye_sigorta.png';
 import fedexCargoLogo from '../../assets/partners/Fedex.png';
 import upsKargoLogo from '../../assets/partners/ups.png';
 import dhlLogo from '../../assets/partners/DHL.png';
@@ -73,6 +76,9 @@ export function BusinessPartners() {
         { name: 'Netlog Lojistik', logo: netlogLojistikLogo },
         { name: 'Trendyol Express', logo: trendyolExpressLogo },
         { name: 'Alliance Healthcare', logo: allianceHealthcareLogo },
+        { name: 'Allianz', logo: allianzLogo },
+        { name: 'Anadolu Sigorta', logo: anadoluSigortaLogo },
+        { name: 'Türkiye Sigorta', logo: turkiyeSigortaLogo },
        
     ];
 

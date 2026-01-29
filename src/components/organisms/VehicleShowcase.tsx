@@ -94,7 +94,6 @@ export function VehicleShowcase() {
 
                             const scale = 1 - (normalizedDistance * 0.15);
                             const opacity = 1 - (normalizedDistance * 0.4);
-                            const blur = normalizedDistance * 2;
                             const zIndex = Math.floor(10 - normalizedDistance * 8);
 
                             const translateX = (scrollCenter - cardCenter) * 0.1;
@@ -107,7 +106,6 @@ export function VehicleShowcase() {
                                     style={{
                                         transform: `scale(${scale}) translateX(${translateX}px) translateZ(${translateZ}px)`,
                                         opacity: opacity,
-                                        filter: `blur(${blur}px)`,
                                         zIndex: zIndex,
                                         transition: 'transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease-out, filter 0.2s ease-out',
                                         scrollSnapAlign: 'center',

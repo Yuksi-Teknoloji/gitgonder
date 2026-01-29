@@ -240,6 +240,7 @@ export const Header: React.FC<HeaderProps> = ({
                               variant="primary"
                               size="sm"
                               className="w-full h-[32px] !rounded-[999px] !bg-white !text-[#FF5B04] text-[12px] font-semibold"
+                              onClick={() => navigate(getLocalizedPath('carrier', currentLang))}
                             >
                               {t('nav.logisticsCourier')}
                             </Button>
@@ -247,6 +248,7 @@ export const Header: React.FC<HeaderProps> = ({
                               variant="primary"
                               size="sm"
                               className="w-full h-[32px] !rounded-[999px] !bg-white/90 !text-[#FF5B04] text-[12px] font-semibold"
+                              onClick={() => navigate(getLocalizedPath('carrier', currentLang))}
                             >
                               {t('nav.restaurantCourier')}
                             </Button>
