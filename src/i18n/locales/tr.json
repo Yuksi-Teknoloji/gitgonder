@@ -83,6 +83,10 @@
       "courier": {
         "name": "Kurye",
         "description": "Restoranın için en yenilikçi çözümler Yüksi'de!"
+      },
+      "cargoPartners": {
+        "title": "İş Ortaklarımız",
+        "description": "Farklı sektörlerden güçlü markalarla iş birliği yaparak çözümlerimizi daha geniş bir ağa taşıyoruz."
       }
     }
   },

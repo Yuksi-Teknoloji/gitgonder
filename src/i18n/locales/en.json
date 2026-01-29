@@ -83,6 +83,10 @@
       "courier": {
         "name": "Courier",
         "description": "The most innovative solutions for your restaurant are at Yüksi!"
+      },
+      "cargoPartners": {
+        "title": "Our Business Partners",
+        "description": "We collaborate with strong brands from different sectors to extend our solutions across a wider network."
       }
     }
   },
