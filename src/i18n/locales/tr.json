@@ -8,11 +8,11 @@
     "apply": "Başvur",
     "login": "Giriş Yap",
     "joinUs": "Aramıza Katıl",
-    "driverApplication": "Yüksi Sürücü Başvuru",
+    "driverApplication": "Gitgönder Sürücü Başvuru",
     "logisticsCourier": "Lojistik Kurye",
     "restaurantCourier": "Restoran Kurye",
     "franchiseApplication": "Franchising Başvuru",
-    "corporateMembership": "Kurumsal Üyelik - Yüksicik",
+    "corporateMembership": "Kurumsal Üyelik - Gitgöndercik",
     "corporateLogin": "Kurumsal Giriş",
     "corporateLoginDesc": "İşletme hesabınıza erişin",
     "dealerLogin": "Bayi Giriş",
@@ -27,21 +27,21 @@
   },
   "home": {
     "seo": {
-      "title": "Yüksi - Lojistik Kargo Kurye",
-      "description": "Yüksi ile lojistik ihtiyaçlarınıza hızlı ve esnek çözümler. Motokurye, minivan, panelvan, kamyonet ve kamyon hizmetleri. Türkiye genelinde güvenilir taşımacılık."
+      "title": "Gitgönder - Lojistik Kargo Kurye",
+      "description": "Gitgönder ile lojistik ihtiyaçlarınıza hızlı ve esnek çözümler. Motokurye, minivan, panelvan, kamyonet ve kamyon hizmetleri. Türkiye genelinde güvenilir taşımacılık."
     },
     "hero": {
       "title": "LOJİSTİK KARGO KURYE",
       "subtitle": "ile yanınızdayız",
-      "description": "Yüksi, modern lojistik ihtiyaçlarınıza hızlı ve esnek çözümler sunar. İster mobil uygulamamızdan ister web sitemizden kolayca araç çağırabilir, motokuryeden minivan, panelvan, kamyonet ve kamyona kadar geniş araç filomuzla gönderilerinizi güvenle taşıtabilirsiniz.",
+      "description": "Gitgönder, modern lojistik ihtiyaçlarınıza hızlı ve esnek çözümler sunar. İster mobil uygulamamızdan ister web sitemizden kolayca araç çağırabilir, motokuryeden minivan, panelvan, kamyonet ve kamyona kadar geniş araç filomuzla gönderilerinizi güvenle taşıtabilirsiniz.",
       "downloadApp": "Uygulamayı İndir",
       "callVehicle": "Araç Çağır",
-      "yuksiLogistics": "YÜKSİ LOJİSTİK",
-      "yuksiCargo": "YÜKSİ KARGO",
-      "yuksiCourier": "YÜKSİ KURYE"
+      "yuksiLogistics": "GİTGÖNDER LOJİSTİK",
+      "yuksiCargo": "GİTGÖNDER KARGO",
+      "yuksiCourier": "GİTGÖNDER KURYE"
     },
     "vehicleShowcase": {
-      "title": "LOJİSTİĞİN SÜPER APP'İ YÜKSİ",
+      "title": "LOJİSTİĞİN SÜPER APP'İ GİTGÖNDER",
       "subtitle": "Araç Sınıflarımız",
       "explore": "İncele",
       "motorcycle": "Motorsiklet",
@@ -56,17 +56,17 @@
       "truckDesc": "3.500-20.000 kg ağır yük taşımacılığı"
     },
     "mobileJoin": {
-      "title": "Yüksi Mobile Katıl",
-      "description1": "Yüksi ile istediğin yükü, istediğin araçla ve istediğin yere taşıtmak artık parmaklарının ucunda! İster küçük bir paket, ister devasa bir yük olsun; Yüksi'de motosikletten kamyona kadar her tür araç seni bekliyor.",
+      "title": "Gitgönder Mobile Katıl",
+      "description1": "Gitgönder ile istediğin yükü, istediğin araçla ve istediğin yere taşıtmak artık parmaklарının ucunda! İster küçük bir paket, ister devasa bir yük olsun; Gitgönder'de motosikletten kamyona kadar her tür araç seni bekliyor.",
       "description2": "Uygulama, akıllı konum bazlı sistem sayesinde seni en uygun taşıyıcıyla saniyeler içinde eşleştirir. Böylece zamandan tasarruf eder, gereksiz masraflardan kurtulursun.",
-      "description3": "Üstelik her şey kilometre bazlı fiyatlandırma ile şeffaf ve net! Yüksi ile taşıma işi artık zahmet değil, keyifli bir deneyim. Sen yükünü hazırla, biz seni doğru araç ve güvenilir taşıyıcıyla buluşturalım.",
-      "description": "Yüksi mobil uygulaması ile taşımacılık işlemlerinizi kolayca yönetin.",
+      "description3": "Üstelik her şey kilometre bazlı fiyatlandırma ile şeffaf ve net! Gitgönder ile taşıma işi artık zahmet değil, keyifli bir deneyim. Sen yükünü hazırla, biz seni doğru araç ve güvenilir taşıyıcıyla buluşturalım.",
+      "description": "Gitgönder mobil uygulaması ile taşımacılık işlemlerinizi kolayca yönetin.",
       "downloadNow": "Hemen İndir"
     },
     "contactCta": {
       "title": "Taşıyıcı olmak ister misin?",
       "subtitle": "Bizimle İletişime Geçin",
-      "description": "Yüksi'nin genişleyen lojistik ağında yerinizi alın, aracınızı sadece bir ulaşım aracı olmaktan çıkarıp düzenli gelir getiren bir yatırıma dönüştürün. Sektörün en gelişmiş teknolojik altyapısı sayesinde operasyonel süreçlerinizi kolaylaştırıyor, rotanızı optimize ediyor ve verimliliğinizi artırıyoruz. Şeffaf hakediş sistemi, zamanında ödeme garantisi ve Yüksi'nin kurumsal güvencesiyle sürdürülebilir bir kazanç modeli sizi bekliyor. Hemen başvurunuzu yapın, profesyonel ekibimize katılın.",
+      "description": "Gitgönder'nin genişleyen lojistik ağında yerinizi alın, aracınızı sadece bir ulaşım aracı olmaktan çıkarıp düzenli gelir getiren bir yatırıma dönüştürün. Sektörün en gelişmiş teknolojik altyapısı sayesinde operasyonel süreçlerinizi kolaylaştırıyor, rotanızı optimize ediyor ve verimliliğinizi artırıyoruz. Şeffaf hakediş sistemi, zamanında ödeme garantisi ve Gitgönder'nin kurumsal güvencesiyle sürdürülebilir bir kazanç modeli sizi bekliyor. Hemen başvurunuzu yapın, profesyonel ekibimize katılın.",
       "button": "Form Doldur",
       "contactUs": "İletişime Geç"
     },
@@ -82,7 +82,7 @@
       },
       "courier": {
         "name": "Kurye",
-        "description": "Restoranın için en yenilikçi çözümler Yüksi'de!"
+        "description": "Restoranın için en yenilikçi çözümler Gitgönder'de!"
       },
       "cargoPartners": {
         "title": "İş Ortaklarımız",
@@ -93,13 +93,13 @@
   "about": {
     "hero": {
       "title": "TÜRKİYE'NİN LOJİSTİK ALT YAPI SAĞLAYICISI",
-      "description": "Yüksi olarak vizyonumuz, lojistik sektöründe yenilikçi ve güvenilir hizmet anlayışımızla hem bireylerin hem de işletmelerin hayatını kolaylaştıran, dijital çözümlerle hız ve verimliliği en üst düzeye taşıyan öncü bir marka olmaktır. Teknolojiyi odağımıza alarak müşterilerimizin ihtiyaç duyduğu her ölçekte teslimatı güvenle gerçekleştirmek, sürdürülebilirlik ilkeleriyle büyüyerek hem Türkiye'de hem de uluslararası pazarda tercih edilen lojistik çözüm ortağı olmak istiyoruz.",
-      "imageAlt": "Yüksi lojistik hizmet",
-      "kangarooAlt": "Yüksi kanguru"
+      "description": "Gitgönder olarak vizyonumuz, lojistik sektöründe yenilikçi ve güvenilir hizmet anlayışımızla hem bireylerin hem de işletmelerin hayatını kolaylaştıran, dijital çözümlerle hız ve verimliliği en üst düzeye taşıyan öncü bir marka olmaktır. Teknolojiyi odağımıza alarak müşterilerimizin ihtiyaç duyduğu her ölçekte teslimatı güvenle gerçekleştirmek, sürdürülebilirlik ilkeleriyle büyüyerek hem Türkiye'de hem de uluslararası pazarda tercih edilen lojistik çözüm ortağı olmak istiyoruz.",
+      "imageAlt": "Gitgönder lojistik hizmet",
+      "kangarooAlt": "Gitgönder kanguru"
     },
     "aboutUs": {
       "title": "Hakkımızda",
-      "description": "Yüksi, lojistik ve taşımacılık sektörüne yenilikçi çözümler sunmak amacıyla geliştirilmiş dijital bir platformdur. Yüksi mobil uygulaması sayesinde, yük verenlerle taşıyıcıları güvenli, hızlı ve verimli bir şekilde bir araya getiriyoruz."
+      "description": "Gitgönder, lojistik ve taşımacılık sektörüne yenilikçi çözümler sunmak amacıyla geliştirilmiş dijital bir platformdur. Gitgönder mobil uygulaması sayesinde, yük verenlerle taşıyıcıları güvenli, hızlı ve verimli bir şekilde bir araya getiriyoruz."
     },
     "serviceFeatures": {
       "title": "Hizmet Özellikleri",
@@ -151,20 +151,20 @@
       }
     },
     "seo": {
-      "title": "Hakkımızda | Yüksi - Türkiye'nin Lojistik Platformu",
-      "description": "Yüksi hakkında bilgi edinin. Türkiye'nin yenilikçi lojistik platformu olarak vizyonumuz, hizmetlerimiz ve teknolojik altyapımız."
+      "title": "Hakkımızda | Gitgönder - Türkiye'nin Lojistik Platformu",
+      "description": "Gitgönder hakkında bilgi edinin. Türkiye'nin yenilikçi lojistik platformu olarak vizyonumuz, hizmetlerimiz ve teknolojik altyapımız."
     }
   },
   "services": {
     "seo": {
-      "title": "Hizmetlerimiz - Yüksi",
-      "description": "Yüksi hizmetleri: Motorsiklet kurye (40-50 kg), Minivan (500-800 kg), Panelvan (1.000-1.500 kg), Kamyonet (1.500-3.500 kg), Kamyon (3.500-20.000 kg). Şehir içi ve şehirler arası taşımacılık çözümleri."
+      "title": "Hizmetlerimiz - Gitgönder",
+      "description": "Gitgönder hizmetleri: Motorsiklet kurye (40-50 kg), Minivan (500-800 kg), Panelvan (1.000-1.500 kg), Kamyonet (1.500-3.500 kg), Kamyon (3.500-20.000 kg). Şehir içi ve şehirler arası taşımacılık çözümleri."
     },
     "hero": {
-      "title": "SİZE YÜKSE BİZE YÜKSİ",
-      "description": "Yüksi, modern lojistik ihtiyaçlarınıza hızlı ve esnek çözümler sunar. İster mobil uygulamamızdan ister web sitemizden kolayca araç çağırabilir, motokuryeden minivan, panelvan, kamyonet ve kamyona kadar geniş araç filomuzla gönderilerinizi güvenle taşıtabilirsiniz. Hızlı, pratik ve güvenilir hizmet için Yüksi her zaman yanınızda.",
-      "backgroundAlt": "Yüksi lojistik hizmet",
-      "kangarooAlt": "Yüksi kanguru"
+      "title": "SİZE YÜKSE BİZE GİTGÖNDER",
+      "description": "Gitgönder, modern lojistik ihtiyaçlarınıza hızlı ve esnek çözümler sunar. İster mobil uygulamamızdan ister web sitemizden kolayca araç çağırabilir, motokuryeden minivan, panelvan, kamyonet ve kamyona kadar geniş araç filomuzla gönderilerinizi güvenle taşıtabilirsiniz. Hızlı, pratik ve güvenilir hizmet için Gitgönder her zaman yanınızda.",
+      "backgroundAlt": "Gitgönder lojistik hizmet",
+      "kangarooAlt": "Gitgönder kanguru"
     },
     "motorcycle": {
       "title": "Motorsiklet",
@@ -194,11 +194,11 @@
   },
   "help": {
     "seo": {
-      "title": "Yardım ve Destek - Yüksi",
-      "description": "Yüksi yardım merkezi. Sık sorulan sorular, kullanım kılavuzu, teknik destek ve müşteri hizmetleri. Size nasıl yardımcı olabiliriz?",
-      "backgroundAlt": "Yüksi lojistik hizmet",
-      "kangarooPhoneAlt": "Yüksi telefon kanguru",
-      "logoAlt": "Yüksi Logo"
+      "title": "Yardım ve Destek - Gitgönder",
+      "description": "Gitgönder yardım merkezi. Sık sorulan sorular, kullanım kılavuzu, teknik destek ve müşteri hizmetleri. Size nasıl yardımcı olabiliriz?",
+      "backgroundAlt": "Gitgönder lojistik hizmet",
+      "kangarooPhoneAlt": "Gitgönder telefon kanguru",
+      "logoAlt": "Gitgönder Logo"
     },
     "hero": {
       "titleLine1": "SANA NASIL",
@@ -223,7 +223,7 @@
       }
     },
     "content": {
-      "intro": "Her zaman yanınızdayız! Yüksi yardım hattına şu konularda bizimle iletişime geçebilirsiniz",
+      "intro": "Her zaman yanınızdayız! Gitgönder yardım hattına şu konularda bizimle iletişime geçebilirsiniz",
       "topics": {
         "shipping": {
           "title": "Gönderi Takibi: ",
@@ -254,8 +254,8 @@
   },
   "contact": {
     "seo": {
-      "title": "İletişim - Yüksi",
-      "description": "Yüksi ile iletişime geçin. Sorularınız, önerileriniz veya destek talepleriniz için bizimle iletişime geçebilirsiniz. Telefon: 0850 241 93 16 | Email: info@yuksi.tr"
+      "title": "İletişim - Gitgönder",
+      "description": "Gitgönder ile iletişime geçin. Sorularınız, önerileriniz veya destek talepleriniz için bizimle iletişime geçebilirsiniz. Telefon: 0850 241 93 16 | Email: info@yuksi.tr"
     },
     "title": "İletişim",
     "subtitle": "Bizimle İletişime Geçin",
@@ -303,11 +303,11 @@
   },
   "carrier": {
     "seo": {
-      "title": "Kurye ve Taşıyıcı Başvurusu - Yüksi",
-      "description": "Yüksi'ye kurye veya taşıyıcı olarak başvurun. Motorsiklet, minivan, panelvan, kamyonet veya kamyon ile çalışma fırsatı. Esnek çalışma saatleri ve rekabetçi ücretler."
+      "title": "Kurye ve Taşıyıcı Başvurusu - Gitgönder",
+      "description": "Gitgönder'ye kurye veya taşıyıcı olarak başvurun. Motorsiklet, minivan, panelvan, kamyonet veya kamyon ile çalışma fırsatı. Esnek çalışma saatleri ve rekabetçi ücretler."
     },
     "title": "Sürücü Başvurusu",
-    "subtitle": "Yüksi ailesine katılın",
+    "subtitle": "Gitgönder ailesine katılın",
     "form": {
       "title": "TAŞIYICI OL",
       "title2": "SEN DE ARAMIZA KATIL!",
@@ -342,11 +342,11 @@
   },
   "dealer": {
     "seo": {
-      "title": "Bayi Başvurusu - Yüksi",
-      "description": "Yüksi bayi olmak için başvurun. Franchise fırsatları, bayi koşulları ve avantajları hakkında bilgi alın. Bursa merkezli, Türkiye genelinde bayi ağımıza katılın."
+      "title": "Bayi Başvurusu - Gitgönder",
+      "description": "Gitgönder bayi olmak için başvurun. Franchise fırsatları, bayi koşulları ve avantajları hakkında bilgi alın. Bursa merkezli, Türkiye genelinde bayi ağımıza katılın."
     },
     "title": "Bayi Başvurusu",
-    "subtitle": "Yüksi bayi ağına katılın",
+    "subtitle": "Gitgönder bayi ağına katılın",
     "form": {
       "title": "Bayi Olmak İçin Bizimle İletişime Geçin",
       "namePlaceholder": "İsim/Soy İsim",
@@ -394,8 +394,8 @@
   },
   "corporate": {
     "seo": {
-      "title": "Kurumsal Üyelik - Yüksi",
-      "description": "Yüksi kurumsal üyelik başvurusu. Kurumsal müşteriler için özel fiyatlandırma ve avantajlar. Bursa merkezli, Türkiye genelinde kurumsal lojistik çözümleri."
+      "title": "Kurumsal Üyelik - Gitgönder",
+      "description": "Gitgönder kurumsal üyelik başvurusu. Kurumsal müşteriler için özel fiyatlandırma ve avantajlar. Bursa merkezli, Türkiye genelinde kurumsal lojistik çözümleri."
     },
     "title": "Kurumsal Üyelik",
     "subtitle": "İşletmeniz için özel çözümler",
@@ -440,7 +440,7 @@
     }
   },
   "footer": {
-    "description": "Yüksi, modern lojistik ihtiyaçlarınıza hızlı ve esnek çözümler sunar.",
+    "description": "Gitgönder, modern lojistik ihtiyaçlarınıza hızlı ve esnek çözümler sunar.",
     "quickLinks": "Hızlı Bağlantılar",
     "contact": "İletişim",
     "followUs": "Bizi Takip Edin",

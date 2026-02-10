@@ -18,7 +18,7 @@ export default function Corporate() {
             <SEOHead
                 title={t('corporate.seo.title')}
                 description={t('corporate.seo.description')}
-                keywords="yüksi kurumsal üyelik, kurumsal lojistik, kurumsal taşımacılık, işletme lojistik, kurumsal müşteri"
+                keywords="gitgönder kurumsal üyelik, kurumsal lojistik, kurumsal taşımacılık, işletme lojistik, kurumsal müşteri"
                 canonical={currentPath}
                 lang={currentLang}
                 alternateLanguages={alternateUrls}
@@ -27,9 +27,9 @@ export default function Corporate() {
                     '@type': 'ContactPage',
                     mainEntity: {
                         '@type': 'Organization',
-                        name: 'Yüksi',
+                        name: 'Gitgönder',
                         telephone: '+908502419316',
-                        email: 'info@yuksi.tr',
+                        email: 'info@gitgönder.tr',
                     },
                 }}
             />

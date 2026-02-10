@@ -120,7 +120,7 @@ export function ContactFormSection() {
                         <div className="relative w-full max-w-[800px] lg:max-w-none lg:translate-x-[-40px]">
                             <img
                                 src={contactHero}
-                                alt="Yüksi maskotu kutu taşırken"
+                                alt="Gitgönder maskotu kutu taşırken"
                                 className="w-full h-auto object-contain"
                             />
                         </div>
@@ -130,7 +130,7 @@ export function ContactFormSection() {
                     <div className="w-full lg:w-[45%] flex flex-col gap-8">
                         <div className="text-center lg:text-left">
                             <h1
-                                className="text-[32px] sm:text-[40px] lg:text-[48px] font-bold text-[#FF5B04] leading-tight mb-6"
+                                className="text-[32px] sm:text-[40px] lg:text-[48px] font-bold text-[#032c95] leading-tight mb-6"
                                 style={{ fontFamily: 'Roboto, sans-serif', fontVariationSettings: '"wdth" 100' }}
                             >
                                 {t('contact.form.title')}
@@ -241,10 +241,10 @@ export function ContactFormSection() {
                             >
                                 {t('contact.form.contactInfo')}{' '}
                                 <a
-                                    href="mailto:info@yuksi.tr"
-                                    className="text-[#FF5B04] underline"
+                                    href="mailto:info@gitgönder.tr"
+                                    className="text-[#032c95] underline"
                                 >
-                                    info@yuksi.tr
+                                    info@gitgönder.tr
                                 </a>{' '}
                                 {t('contact.form.contactInfo2')}
                             </p>
@@ -257,7 +257,7 @@ export function ContactFormSection() {
                                 href="https://instagram.com/yuksi.tr"
                                 target="_blank"
                                 rel="noreferrer"
-                                className="inline-flex items-center gap-2 text-[#333333] hover:text-[#FF5B04] transition-colors"
+                                className="inline-flex items-center gap-2 text-[#333333] hover:text-[#032c95] transition-colors"
                                 style={{ fontFamily: 'Roboto, sans-serif', fontVariationSettings: '"wdth" 100' }}
                             >
                                 <img

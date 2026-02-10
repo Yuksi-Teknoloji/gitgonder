@@ -94,7 +94,7 @@ export function BusinessPartners() {
                     {sectors.map((sector, index) => (
                         <div
                             key={index}
-                            className="group relative flex flex-col items-center justify-center h-full px-4 sm:px-6 md:px-8 lg:px-10 py-6 sm:py-8 md:py-10 lg:py-12 bg-gradient-to-br from-[#FF5B04] to-[#FF8C42] text-white rounded-xl sm:rounded-2xl md:rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] sm:hover:scale-105 overflow-hidden min-h-[280px] sm:min-h-[320px] md:min-h-[360px] lg:min-h-[400px]"
+                            className="group relative flex flex-col items-center justify-center h-full px-4 sm:px-6 md:px-8 lg:px-10 py-6 sm:py-8 md:py-10 lg:py-12 bg-gradient-to-br from-[#032c95] to-[#FF8C42] text-white rounded-xl sm:rounded-2xl md:rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] sm:hover:scale-105 overflow-hidden min-h-[280px] sm:min-h-[320px] md:min-h-[360px] lg:min-h-[400px]"
                             style={{ fontFamily: 'Roboto, sans-serif' }}
                         >
                             {/* Background Pattern */}
@@ -129,7 +129,7 @@ export function BusinessPartners() {
                 <div className="mt-14 sm:mt-20 relative">
                     <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-[#FFF3E8] via-[#FFE4D0] to-[#FFF7EF] opacity-80 pointer-events-none" />
 
-                    <div className="relative rounded-3xl border border-orange-100/60 shadow-[0_18px_45px_rgba(255,91,4,0.18)] px-4 sm:px-8 md:px-10 lg:px-12 py-8 sm:py-10 md:py-12 lg:py-14 overflow-hidden">
+                    <div className="relative rounded-3xl border border-primary-100/60 shadow-[0_18px_45px_rgba(255,91,4,0.18)] px-4 sm:px-8 md:px-10 lg:px-12 py-8 sm:py-10 md:py-12 lg:py-14 overflow-hidden">
                         
 
                         {/* title & description */}

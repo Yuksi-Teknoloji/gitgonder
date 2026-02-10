@@ -23,7 +23,7 @@ export function VehicleServiceSection({
                 <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-12">
                     <div className="w-full lg:w-1/2 lg:order-1 flex flex-col gap-4 sm:gap-5 lg:gap-8">
                         <h2
-                            className="text-[#FF5B04] text-[24px] sm:text-[24px] md:text-[24px] lg:text-[80px] font-bold leading-tight"
+                            className="text-[#032c95] text-[24px] sm:text-[24px] md:text-[24px] lg:text-[80px] font-bold leading-tight"
                             style={{ fontFamily: 'Roboto, sans-serif', fontVariationSettings: '"wdth" 100' }}
                         >
                             {title}
@@ -39,7 +39,7 @@ export function VehicleServiceSection({
                         <div className="flex flex-row w-full gap-3 lg:gap-4">
                             <button
                                 onClick={onSecondaryClick}
-                                className="w-full bg-[#FF5B04] hover:bg-[#E55103] text-white font-bold text-[14px] lg:text-[16px] h-[42px] lg:h-auto lg:py-3 lg:px-6 rounded-[35px] flex items-center justify-center gap-2 transition-colors"
+                                className="w-full bg-[#032c95] hover:bg-[#E55103] text-white font-bold text-[14px] lg:text-[16px] h-[42px] lg:h-auto lg:py-3 lg:px-6 rounded-[35px] flex items-center justify-center gap-2 transition-colors"
                                 style={{ fontFamily: 'Roboto, sans-serif', fontVariationSettings: '"wdth" 100' }}
                             >
                                 <span>{secondaryButtonText}</span>

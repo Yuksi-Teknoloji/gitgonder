@@ -19,7 +19,7 @@ export default function About() {
             <SEOHead
                 title={t('about.seo.title')}
                 description={t('about.seo.description')}
-                keywords="yüksi hakkında, lojistik firması, taşımacılık şirketi, güvenilir nakliye, müşteri odaklı lojistik"
+                keywords="gitgönder hakkında, lojistik firması, taşımacılık şirketi, güvenilir nakliye, müşteri odaklı lojistik"
                 canonical={currentPath}
                 lang={currentLang}
                 alternateLanguages={alternateUrls}

@@ -39,7 +39,7 @@ export const FileUpload: React.FC<FileUploadProps> = ({
           />
           <label
             htmlFor={id}
-            className="w-full h-16 bg-[#FF5B04] rounded-[5px] px-6 flex items-center text-white font-semibold text-base shadow-[0px_4px_15px_0px_rgba(0,0,0,0.09)] cursor-pointer"
+            className="w-full h-16 bg-[#032c95] rounded-[5px] px-6 flex items-center text-white font-semibold text-base shadow-[0px_4px_15px_0px_rgba(0,0,0,0.09)] cursor-pointer"
           >
             <span className="flex-1 text-left">
               {value?.name || placeholder}

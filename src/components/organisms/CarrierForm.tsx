@@ -120,12 +120,12 @@ export function CarrierForm() {
                     {/* Right Side - Form (%50) */}
                     <div className="w-full lg:w-[50%] order-1 lg:order-2">
                         <div className="text-center lg:text-left mb-8 lg:mb-12">
-                            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[65px] font-bold text-[#FF5B04] leading-tight mb-4 sm:mb-6">
+                            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[65px] font-bold text-[#032c95] leading-tight mb-4 sm:mb-6">
                                 {t('carrier.form.title')}
                                 <br />
                                 {t('carrier.form.title2')}
                             </h1>
-                            <p className="text-lg sm:text-xl lg:text-2xl text-[#FF5B04] font-medium">
+                            <p className="text-lg sm:text-xl lg:text-2xl text-[#032c95] font-medium">
                                 {t('carrier.form.subtitle')}
                             </p>
                         </div>

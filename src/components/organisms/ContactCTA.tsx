@@ -28,7 +28,7 @@ export function ContactCTA() {
                     <div className="h-full w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 md:py-0 flex items-start md:items-center">
                         <div className="max-w-[600px] flex flex-col gap-4 sm:gap-5 lg:gap-6">
                             <p
-                                className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[26px] font-medium text-[#FF5B04]"
+                                className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[26px] font-medium text-[#032c95]"
                                 style={{ fontFamily: 'Roboto, sans-serif', fontVariationSettings: '"wdth" 100' }}
                             >
                                 {t('home.contactCta.subtitle')}
@@ -52,7 +52,7 @@ export function ContactCTA() {
                                 <Button
                                     variant="primary"
                                     size="md"
-                                    className="inline-flex items-center gap-3 !bg-[#FF5B04] hover:!bg-[#E55103] text-white font-medium text-[15px] sm:text-[16px] lg:text-[20px] px-5 sm:px-7 lg:px-[27px] py-2.5 sm:py-3 lg:py-[14px] !rounded-[26px] transition-colors"
+                                    className="inline-flex items-center gap-3 !bg-[#032c95] hover:!bg-[#E55103] text-white font-medium text-[15px] sm:text-[16px] lg:text-[20px] px-5 sm:px-7 lg:px-[27px] py-2.5 sm:py-3 lg:py-[14px] !rounded-[26px] transition-colors"
                                 >
                                     <span>{t('home.contactCta.button')}</span>
                                     <img
@@ -71,7 +71,7 @@ export function ContactCTA() {
                 <div className="pointer-events-none absolute bottom-0 right-[-10px] sm:right-0 h-[60%] sm:h-[72%] md:h-[85%] lg:h-[95%]">
                     <img
                         src={contactPerson}
-                        alt="Yüksi taşıyıcı"
+                        alt="Gitgönder taşıyıcı"
                         className="h-full w-auto object-contain"
                     />
                 </div>

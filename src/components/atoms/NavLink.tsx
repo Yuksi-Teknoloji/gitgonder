@@ -20,8 +20,8 @@ export const NavLink: React.FC<NavLinkProps> = ({
       className={`
         text-base font-medium transition-colors duration-200
         ${active
-          ? 'text-orange'
-          : 'text-gray hover:text-orange'
+          ? 'text-primary'
+          : 'text-gray hover:text-primary'
         }
         ${className}
       `}

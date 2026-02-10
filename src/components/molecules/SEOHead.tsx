@@ -35,7 +35,7 @@ const localeMap: Record<string, string> = {
 export function SEOHead({
     title,
     description,
-    keywords = 'yüksi, lojistik, kurye, nakliye, taşımacılık, motorsiklet kurye, minivan, panelvan, kamyonet, kamyon, Bursa lojistik, Türkiye lojistik',
+    keywords = 'gitgönder, lojistik, kurye, nakliye, taşımacılık, motorsiklet kurye, minivan, panelvan, kamyonet, kamyon, Bursa lojistik, Türkiye lojistik',
     canonical,
     ogImage = 'https://yuksi.com.tr/logo.png',
     ogType = 'website',
@@ -47,21 +47,21 @@ export function SEOHead({
     const baseUrl = 'https://yuksi.com.tr';
     const fullCanonical = canonical ? `${baseUrl}${canonical}` : baseUrl;
     const fullOgImage = ogImage.startsWith('http') ? ogImage : `${baseUrl}${ogImage}`;
-    const fullTitle = title.includes('Yüksi') ? title : `${title} | Yüksi`;
+    const fullTitle = title.includes('Gitgönder') ? title : `${title} | Gitgönder`;
 
     // Default structured data for Organization
     const defaultStructuredData = {
         '@context': 'https://schema.org',
         '@type': 'Organization',
         '@id': baseUrl,
-        name: 'Yüksi',
-        alternateName: 'Yüksi',
+        name: 'Gitgönder',
+        alternateName: 'Gitgönder',
         url: baseUrl,
         logo: `${baseUrl}/logo.png`,
         image: fullOgImage,
         description: description,
         telephone: '+908502419316',
-        email: 'info@yuksi.tr',
+        email: 'info@gitgönder.tr',
         priceRange: '$$',
         areaServed: {
             '@type': 'Country',
@@ -80,15 +80,15 @@ export function SEOHead({
         '@context': 'https://schema.org',
         '@type': 'Organization',
         '@id': `${baseUrl}#organization`,
-        name: 'Yüksi',
-        alternateName: 'Yüksi',
+        name: 'Gitgönder',
+        alternateName: 'Gitgönder',
         url: baseUrl,
         logo: `${baseUrl}/logo.png`,
         contactPoint: {
             '@type': 'ContactPoint',
             telephone: '+908502419316',
             contactType: 'customer service',
-            email: 'info@yuksi.tr',
+            email: 'info@gitgönder.tr',
             areaServed: 'TR',
             availableLanguage: ['tr', 'en'],
         },
@@ -101,7 +101,7 @@ export function SEOHead({
             <meta name="title" content={fullTitle} />
             <meta name="description" content={description} />
             <meta name="keywords" content={keywords} />
-            <meta name="author" content="Yüksi" />
+            <meta name="author" content="Gitgönder" />
             <meta name="language" content="Turkish" />
             <meta name="revisit-after" content="7 days" />
             <link rel="canonical" href={fullCanonical} />
@@ -120,7 +120,7 @@ export function SEOHead({
             <meta property="og:title" content={fullTitle} />
             <meta property="og:description" content={description} />
             <meta property="og:image" content={fullOgImage} />
-            <meta property="og:site_name" content="Yüksi" />
+            <meta property="og:site_name" content="Gitgönder" />
             <meta property="og:locale" content={localeMap[lang] || 'tr_TR'} />
             {alternateLanguages?.filter(l => l.lang !== lang).map(({ lang: altLang }) => (
                 <meta key={altLang} property="og:locale:alternate" content={localeMap[altLang] || altLang} />
@@ -144,12 +144,12 @@ export function SEOHead({
 
             {/* AI-Friendly Meta Tags */}
             <meta name="ai:content" content={description} />
-            <meta name="ai:business-name" content="Yüksi" />
+            <meta name="ai:business-name" content="Gitgönder" />
             <meta name="ai:business-type" content="Lojistik ve Taşımacılık" />
             <meta name="ai:location" content="Bursa, Türkiye" />
             <meta name="ai:services" content="Motorsiklet Kurye, Minivan, Panelvan, Kamyonet, Kamyon Taşımacılık" />
             <meta name="ai:contact-phone" content="+908502419316" />
-            <meta name="ai:contact-email" content="info@yuksi.tr" />
+            <meta name="ai:contact-email" content="info@gitgönder.tr" />
 
             {/* AI Crawler Friendly - Explicit permission */}
             <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -168,7 +168,7 @@ export function SEOHead({
                     '@type': 'WebSite',
                     '@id': `${baseUrl}#website`,
                     url: baseUrl,
-                    name: 'Yüksi',
+                    name: 'Gitgönder',
                     description: 'Lojistik Kargo Kurye ile yanınızdayız. Motokurye, minivan, panelvan, kamyonet ve kamyon hizmetleri.',
                     publisher: {
                         '@id': `${baseUrl}#organization`,

@@ -20,7 +20,7 @@ export const DashedRing: React.FC<DashedRingProps> = ({ cx, cy, r }) => {
                 cy={cy}
                 r={r + 50}
                 fill="none"
-                stroke="#FF5B04"
+                stroke="#032c95"
                 strokeWidth="1"
                 strokeDasharray="20 20"
                 opacity="0.3"

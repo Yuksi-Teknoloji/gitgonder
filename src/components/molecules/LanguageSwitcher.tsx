@@ -61,7 +61,7 @@ export function LanguageSwitcher() {
         <div className="relative" ref={dropdownRef}>
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="flex items-center gap-3 px-3 py-2 rounded-xl bg-gray-50 hover:bg-white hover:shadow-md transition-all duration-300 border border-transparent hover:border-orange-100"
+                className="flex items-center gap-3 px-3 py-2 rounded-xl bg-gray-50 hover:bg-white hover:shadow-md transition-all duration-300 border border-transparent hover:border-primary-100"
                 aria-label="Select language"
             >
                 <div className="w-6 h-4 overflow-hidden rounded-sm shadow-sm flex-shrink-0">
@@ -91,7 +91,7 @@ export function LanguageSwitcher() {
                         <button
                             key={code}
                             onClick={() => handleLanguageChange(code)}
-                            className={`w-full flex items-center gap-3 px-4 py-2.5 text-left transition-colors ${currentLang === code ? 'bg-orange-50 text-[#FF5B04]' : 'text-gray-700 hover:bg-gray-50'
+                            className={`w-full flex items-center gap-3 px-4 py-2.5 text-left transition-colors ${currentLang === code ? 'bg-primary-50 text-[#032c95]' : 'text-gray-700 hover:bg-gray-50'
                                 }`}
                         >
                             <div className="w-6 h-4 overflow-hidden rounded-sm shadow-sm flex-shrink-0">
@@ -99,7 +99,7 @@ export function LanguageSwitcher() {
                             </div>
                             <span className="text-sm font-medium">{name}</span>
                             {currentLang === code && (
-                                <div className="ml-auto w-1.5 h-1.5 rounded-full bg-[#FF5B04]" />
+                                <div className="ml-auto w-1.5 h-1.5 rounded-full bg-[#032c95]" />
                             )}
                         </button>
                     ))}

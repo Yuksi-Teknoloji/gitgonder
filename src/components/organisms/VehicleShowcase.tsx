@@ -51,12 +51,12 @@ export function VehicleShowcase() {
             <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20 lg:py-24 xl:py-28 flex flex-col items-center gap-8 sm:gap-10 md:gap-12 lg:gap-14">
                 <div className="flex flex-col items-center gap-2 sm:gap-3 md:gap-4 w-full">
                     <p
-                        className="md:hidden text-[24px] font-bold text-[#FF5B04] text-center"
+                        className="md:hidden text-[24px] font-bold text-[#032c95] text-center"
                         style={{ fontFamily: 'Roboto, sans-serif', fontVariationSettings: '"wdth" 100' }}
                     >
                         {t('home.vehicleShowcase.title')}
                     </p>
-                    <h2 className="hidden md:block text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight font-extrabold text-center text-orange-500 px-4">
+                    <h2 className="hidden md:block text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight font-extrabold text-center text-primary-500 px-4">
                         {t('home.vehicleShowcase.title')}
                     </h2>
                     <span className="text-[24px] md:text-xs sm:text-sm md:text-base lg:text-lg font-medium text-[#333] md:uppercase md:tracking-wider sm:tracking-[0.1em] md:tracking-[0.15em] lg:tracking-[0.2em] md:text-black mt-2 sm:mt-3 md:mt-4 text-center md:text-center">
@@ -139,7 +139,7 @@ export function VehicleShowcase() {
                 </div>
 
                 <button
-                    className="md:hidden mt-4 inline-flex items-center gap-2 bg-[#FF5B04] hover:bg-[#E55103] text-white font-medium text-[16px] px-6 py-3 rounded-[26px] shadow-md transition-colors self-start"
+                    className="md:hidden mt-4 inline-flex items-center gap-2 bg-[#032c95] hover:bg-[#E55103] text-white font-medium text-[16px] px-6 py-3 rounded-[26px] shadow-md transition-colors self-start"
                     onClick={() => navigate(getLocalizedPath('vehiclese', currentLang))}
                 >
                     {t('home.vehicleShowcase.explore')}
@@ -147,7 +147,7 @@ export function VehicleShowcase() {
                 </button>
 
                 <button
-                    className="hidden md:inline-flex mt-2 sm:mt-4 md:mt-6 items-center gap-2 sm:gap-3 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm sm:text-base md:text-lg lg:text-xl px-6 sm:px-7 md:px-8 lg:px-10 py-2 sm:py-2.5 md:py-3 lg:py-4 rounded-full sm:rounded-2xl md:rounded-3xl shadow-md transition-colors self-start sm:self-center lg:self-start"
+                    className="hidden md:inline-flex mt-2 sm:mt-4 md:mt-6 items-center gap-2 sm:gap-3 bg-primary-500 hover:bg-primary-600 text-white font-semibold text-sm sm:text-base md:text-lg lg:text-xl px-6 sm:px-7 md:px-8 lg:px-10 py-2 sm:py-2.5 md:py-3 lg:py-4 rounded-full sm:rounded-2xl md:rounded-3xl shadow-md transition-colors self-start sm:self-center lg:self-start"
                     onClick={() => navigate(getLocalizedPath('vehiclese', currentLang))}
                 >
                     {t('home.vehicleShowcase.explore')}

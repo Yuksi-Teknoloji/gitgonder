@@ -36,7 +36,7 @@ export const ImageGallery: React.FC<ImageGalleryProps> = ({ images, className = 
             ) : (
               <div 
                 key={index}
-                className="bg-[#FF5B04] rounded-[10px] aspect-square min-w-[150px] w-[150px] flex-shrink-0"
+                className="bg-[#032c95] rounded-[10px] aspect-square min-w-[150px] w-[150px] flex-shrink-0"
               />
             )
           ))}
@@ -56,7 +56,7 @@ export const ImageGallery: React.FC<ImageGalleryProps> = ({ images, className = 
           ) : (
             <div 
               key={index}
-              className="bg-[#FF5B04] rounded-[10px] aspect-square w-full"
+              className="bg-[#032c95] rounded-[10px] aspect-square w-full"
             />
           )
         ))}

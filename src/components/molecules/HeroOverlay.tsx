@@ -83,7 +83,7 @@ const TextLabel: React.FC<TextLabelProps> = ({ label, isActive }) => {
                 text-right transition-all duration-500 ease-out
                 text-[42px] font-semibold leading-normal whitespace-pre-wrap
                 ${isActive
-                    ? 'text-[#FF5B04] opacity-100 scale-105'
+                    ? 'text-[#032c95] opacity-100 scale-105'
                     : 'text-white opacity-100 scale-100'
                 }
                 `}

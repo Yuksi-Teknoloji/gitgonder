@@ -18,7 +18,7 @@ export default function Contact() {
             <SEOHead
                 title={t('contact.seo.title')}
                 description={t('contact.seo.description')}
-                keywords="yüksi iletişim, lojistik firması iletişim, taşımacılık telefon, nakliye email"
+                keywords="gitgönder iletişim, lojistik firması iletişim, taşımacılık telefon, nakliye email"
                 canonical={currentPath}
                 lang={currentLang}
                 alternateLanguages={alternateUrls}
@@ -27,9 +27,9 @@ export default function Contact() {
                     '@type': 'ContactPage',
                     mainEntity: {
                         '@type': 'Organization',
-                        name: 'Yüksi',
+                        name: 'Gitgönder',
                         telephone: '+908502419316',
-                        email: 'info@yuksi.tr',
+                        email: 'info@gitgönder.tr',
                     },
                 }}
             />

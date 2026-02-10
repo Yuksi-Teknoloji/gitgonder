@@ -30,7 +30,7 @@ export const CircleArc: React.FC<CircleArcProps> = ({ cx, cy, r }) => {
                 cy={cy}
                 r={r}
                 fill="none"
-                stroke="#FF5B04"
+                stroke="#032c95"
                 strokeWidth="8"
                 strokeLinecap="round"
                 filter="url(#glow)"

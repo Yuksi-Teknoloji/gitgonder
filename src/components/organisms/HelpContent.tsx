@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import phoneKangaroo from '../../assets/help/phone-kangaroo.png';
-import logoImage from '../../assets/logo.png';
+import logoImage from '../../assets/gıtgonder.png';
 
 export function HelpContent() {
     const { t } = useTranslation();
@@ -30,7 +30,7 @@ export function HelpContent() {
                                 />
                             </div>
                             {/* Small logo on phone */}
-                            <div className="absolute left-1/2 -translate-x-1/2 top-[380px] lg:top-[420px] xl:top-[500px] w-[50px] h-[50px] lg:w-[55px] lg:h-[55px] xl:w-[60px] xl:h-[60px] flex items-center justify-center">
+                            <div className="absolute left-1/2 -translate-x-1/2 top-[380px] lg:top-[420px] xl:top-[500px] w-[60px] h-[60px] lg:w-[70px] lg:h-[70px] xl:w-[80px] xl:h-[80px] flex items-center justify-center">
                                 <img
                                     src={logoImage}
                                     alt={t('help.seo.logoAlt')}

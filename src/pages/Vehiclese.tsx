@@ -46,7 +46,7 @@ export default function Vehiclese() {
             heading: t('home.vehicleShowcase.title'),
             description: t('services.motorcycle.description'),
             image: motorcycleImg,
-            background: 'linear-gradient(90deg, #FF5B04 0%, #FFEDE0 55%, #FFF7F2 100%)',
+            background: 'linear-gradient(90deg, #032c95 0%, #FFEDE0 55%, #FFF7F2 100%)',
         },
         {
             id: 'minivan',
@@ -54,7 +54,7 @@ export default function Vehiclese() {
             heading: t('home.vehicleShowcase.title'),
             description: t('services.minivan.description'),
             image: minivanImg,
-            background: 'linear-gradient(90deg, #FF5B04 0%, #FFE7D5 55%, #FFF6F1 100%)',
+            background: 'linear-gradient(90deg, #032c95 0%, #FFE7D5 55%, #FFF6F1 100%)',
         },
         {
             id: 'panelvan',
@@ -62,7 +62,7 @@ export default function Vehiclese() {
             heading: t('home.vehicleShowcase.title'),
             description: t('services.panelvan.description'),
             image: panelvanImg,
-            background: 'linear-gradient(90deg, #FF5B04 0%, #FFE4D2 55%, #FFF4EF 100%)',
+            background: 'linear-gradient(90deg, #032c95 0%, #FFE4D2 55%, #FFF4EF 100%)',
         },
         {
             id: 'kamyonet',
@@ -70,7 +70,7 @@ export default function Vehiclese() {
             heading: t('home.vehicleShowcase.title'),
             description: t('services.pickup.description'),
             image: kamyonetImg,
-            background: 'linear-gradient(90deg, #FF5B04 0%, #FFE0CC 55%, #FFF2ED 100%)',
+            background: 'linear-gradient(90deg, #032c95 0%, #FFE0CC 55%, #FFF2ED 100%)',
         },
         {
             id: 'kamyon',
@@ -78,7 +78,7 @@ export default function Vehiclese() {
             heading: t('home.vehicleShowcase.title'),
             description: t('services.truck.description'),
             image: kamyonImg,
-            background: 'linear-gradient(90deg, #FF5B04 0%, #FFD9C4 55%, #FFF0E8 100%)',
+            background: 'linear-gradient(90deg, #032c95 0%, #FFD9C4 55%, #FFF0E8 100%)',
         },
     ];
 
@@ -196,9 +196,9 @@ export default function Vehiclese() {
     return (
         <>
             <SEOHead
-                title={`${activeVehicle.title} - Yüksi`}
+                title={`${activeVehicle.title} - Gitgönder`}
                 description={activeVehicle.description}
-                keywords={`${activeVehicle.title.toLowerCase()}, yüksi ${activeVehicle.title.toLowerCase()}, lojistik, taşımacılık, ${activeVehicle.title.toLowerCase()} hizmeti`}
+                keywords={`${activeVehicle.title.toLowerCase()}, gitgönder ${activeVehicle.title.toLowerCase()}, lojistik, taşımacılık, ${activeVehicle.title.toLowerCase()} hizmeti`}
                 canonical={getLocalizedPath('vehiclese', currentLang)}
                 lang={currentLang}
             />

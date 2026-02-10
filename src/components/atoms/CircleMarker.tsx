@@ -21,8 +21,8 @@ export const CircleMarker: React.FC<CircleMarkerProps> = ({ x, y, icon, isActive
                 cx={x}
                 cy={y}
                 r={isActive ? 40 : 0}
-                fill="#FF5B04"
-                stroke="#FF5B04"
+                fill="#032c95"
+                stroke="#032c95"
                 strokeWidth="4"
                 className="transition-all duration-500"
             />

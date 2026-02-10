@@ -8,7 +8,7 @@
     "apply": "Bewerben",
     "login": "Anmelden",
     "joinUs": "Mitmachen",
-    "driverApplication": "Yüksi Fahrerbewerbung",
+    "driverApplication": "Gitgönder Fahrerbewerbung",
     "logisticsCourier": "Logistik-Kurier",
     "restaurantCourier": "Restaurant-Kurier",
     "franchiseApplication": "Franchise-Bewerbung",
@@ -27,21 +27,21 @@
   },
   "home": {
     "seo": {
-      "title": "Yüksi - Logistik Fracht Kurier",
-      "description": "Schnelle und flexible Lösungen für Ihre Logistikbedürfnisse mit Yüksi. Motorradkurier, Minivan, Transporter, Pickup und LKW-Dienste. Zuverlässiger Transport in der gesamten Türkei."
+      "title": "Gitgönder - Logistik Fracht Kurier",
+      "description": "Schnelle und flexible Lösungen für Ihre Logistikbedürfnisse mit Gitgönder. Motorradkurier, Minivan, Transporter, Pickup und LKW-Dienste. Zuverlässiger Transport in der gesamten Türkei."
     },
     "hero": {
       "title": "LOGISTIK FRACHT KURIER",
       "subtitle": "an Ihrer Seite",
-      "description": "Yüksi bietet schnelle und flexible Lösungen für Ihre modernen Logistikbedürfnisse. Ob über unsere mobile App oder Website, Sie können einfach ein Fahrzeug rufen und Ihre Sendungen sicher mit unserer breiten Flotte transportieren - von Motorradkurieren bis zu Minivans, Transportern, Pickups und LKWs.",
+      "description": "Gitgönder bietet schnelle und flexible Lösungen für Ihre modernen Logistikbedürfnisse. Ob über unsere mobile App oder Website, Sie können einfach ein Fahrzeug rufen und Ihre Sendungen sicher mit unserer breiten Flotte transportieren - von Motorradkurieren bis zu Minivans, Transportern, Pickups und LKWs.",
       "downloadApp": "App Herunterladen",
       "callVehicle": "Fahrzeug Rufen",
-      "yuksiLogistics": "YÜKSİ LOGISTIK",
-      "yuksiCargo": "YÜKSİ FRACHT",
-      "yuksiCourier": "YÜKSİ KURIER"
+      "yuksiLogistics": "GİTGÖNDER LOGISTIK",
+      "yuksiCargo": "GİTGÖNDER FRACHT",
+      "yuksiCourier": "GİTGÖNDER KURIER"
     },
     "vehicleShowcase": {
-      "title": "LOGISTIK SUPER APP YÜKSİ",
+      "title": "LOGISTIK SUPER APP GİTGÖNDER",
       "subtitle": "Unsere Fahrzeugklassen",
       "explore": "Erkunden",
       "motorcycle": "Motorrad",
@@ -56,17 +56,17 @@
       "truckDesc": "3.500-20.000 kg Schwerlasttransport"
     },
     "mobileJoin": {
-      "title": "Treten Sie Yüksi Mobile bei",
-      "description1": "Mit Yüksi ist der Transport jeder Ladung, mit jedem Fahrzeug, überall hin jetzt auf Knopfdruck möglich! Ob kleines Paket oder riesige Ladung; von Motorrädern bis LKWs wartet bei Yüksi jede Art von Fahrzeug auf Sie.",
+      "title": "Treten Sie Gitgönder Mobile bei",
+      "description1": "Mit Gitgönder ist der Transport jeder Ladung, mit jedem Fahrzeug, überall hin jetzt auf Knopfdruck möglich! Ob kleines Paket oder riesige Ladung; von Motorrädern bis LKWs wartet bei Gitgönder jede Art von Fahrzeug auf Sie.",
       "description2": "Die App bringt Sie dank ihres intelligenten standortbasierten Systems innerhalb von Sekunden mit dem am besten geeigneten Spediteur zusammen. So sparen Sie Zeit und vermeiden unnötige Kosten.",
-      "description3": "Außerdem ist alles transparent und klar mit kilometerbasierter Preisgestaltung! Mit Yüksi ist Transport keine Mühe mehr, sondern ein angenehmes Erlebnis. Sie bereiten Ihre Ladung vor, wir verbinden Sie mit dem richtigen Fahrzeug und zuverlässigen Spediteur.",
-      "description": "Verwalten Sie Ihre Transportvorgänge einfach mit der Yüksi Mobile App.",
+      "description3": "Außerdem ist alles transparent und klar mit kilometerbasierter Preisgestaltung! Mit Gitgönder ist Transport keine Mühe mehr, sondern ein angenehmes Erlebnis. Sie bereiten Ihre Ladung vor, wir verbinden Sie mit dem richtigen Fahrzeug und zuverlässigen Spediteur.",
+      "description": "Verwalten Sie Ihre Transportvorgänge einfach mit der Gitgönder Mobile App.",
       "downloadNow": "Jetzt Herunterladen"
     },
     "contactCta": {
       "title": "Möchten Sie Spediteur werden?",
       "subtitle": "Kontaktieren Sie Uns",
-      "description": "Nehmen Sie Ihren Platz im expandierenden Logistiknetzwerk von Yüksi ein, verwandeln Sie Ihr Fahrzeug von einem reinen Transportmittel in eine Investition, die regelmäßige Einnahmen generiert. Dank der fortschrittlichsten technologischen Infrastruktur der Branche vereinfachen wir Ihre betrieblichen Prozesse, optimieren Ihre Route und steigern Ihre Effizienz. Ein nachhaltiges Einkommensmodell erwartet Sie mit einem transparenten Zahlungssystem, pünktlicher Zahlungsgarantie und Yüksis Unternehmensgarantie. Bewerben Sie sich jetzt und werden Sie Teil unseres professionellen Teams.",
+      "description": "Nehmen Sie Ihren Platz im expandierenden Logistiknetzwerk von Gitgönder ein, verwandeln Sie Ihr Fahrzeug von einem reinen Transportmittel in eine Investition, die regelmäßige Einnahmen generiert. Dank der fortschrittlichsten technologischen Infrastruktur der Branche vereinfachen wir Ihre betrieblichen Prozesse, optimieren Ihre Route und steigern Ihre Effizienz. Ein nachhaltiges Einkommensmodell erwartet Sie mit einem transparenten Zahlungssystem, pünktlicher Zahlungsgarantie und Gitgönders Unternehmensgarantie. Bewerben Sie sich jetzt und werden Sie Teil unseres professionellen Teams.",
       "button": "Formular Ausfüllen",
       "contactUs": "Kontaktieren Sie Uns"
     },
@@ -82,7 +82,7 @@
       },
       "courier": {
         "name": "Kurier",
-        "description": "Die innovativsten Lösungen für Ihr Restaurant gibt es bei Yüksi!"
+        "description": "Die innovativsten Lösungen für Ihr Restaurant gibt es bei Gitgönder!"
       },
       "cargoPartners": {
         "title": "Unsere Geschäftspartner",
@@ -93,13 +93,13 @@
   "about": {
     "hero": {
       "title": "DER LOGISTIK-INFRASTRUKTURANBIETER DER TÜRKEI",
-      "description": "Als Yüksi ist unsere Vision, eine wegweisende Marke zu sein, die mit unserem innovativen ve güvenilir Serviceansatz in der Logistikbranche das Leben von Einzelpersonen ve Unternehmen vereinfacht ve Geschwindigkeit ve Effizienz mit digitalen Lösungen maximiert. Mit Fokus auf Technologie möchten wir Lieferungen jeder Größenordnung sicher durchführen, mit Nachhaltigkeitsprinzipien wachsen ve der bevorzugte Logistiklösungspartner sowohl in der Türkei als auch auf internationalen Märkten werden.",
-      "imageAlt": "Yüksi Logistikdienstleistung",
-      "kangarooAlt": "Yüksi Känguru"
+      "description": "Als Gitgönder ist unsere Vision, eine wegweisende Marke zu sein, die mit unserem innovativen ve güvenilir Serviceansatz in der Logistikbranche das Leben von Einzelpersonen ve Unternehmen vereinfacht ve Geschwindigkeit ve Effizienz mit digitalen Lösungen maximiert. Mit Fokus auf Technologie möchten wir Lieferungen jeder Größenordnung sicher durchführen, mit Nachhaltigkeitsprinzipien wachsen ve der bevorzugte Logistiklösungspartner sowohl in der Türkei als auch auf internationalen Märkten werden.",
+      "imageAlt": "Gitgönder Logistikdienstleistung",
+      "kangarooAlt": "Gitgönder Känguru"
     },
     "aboutUs": {
       "title": "Über Uns",
-      "description": "Yüksi ist eine digitale Plattform, die entwickelt wurde, um innovative Lösungen für die Logistik- ve Transportbranche anzubieten. Über die Yüksi-Mobilanwendung bringen wir Versender ve Spediteure auf sichere, schnelle ve effiziente Weise zusammen."
+      "description": "Gitgönder ist eine digitale Plattform, die entwickelt wurde, um innovative Lösungen für die Logistik- ve Transportbranche anzubieten. Über die Gitgönder-Mobilanwendung bringen wir Versender ve Spediteure auf sichere, schnelle ve effiziente Weise zusammen."
     },
     "serviceFeatures": {
       "title": "Serviceleistungen",
@@ -151,20 +151,20 @@
       }
     },
     "seo": {
-      "title": "Über Uns | Yüksi - Die Logistikplattform der Türkei",
-      "description": "Erfahren Sie mehr über Yüksi. Unsere Vision als innovative Logistikplattform der Türkei, unsere Dienstleistungen ve technologische Infrastruktur."
+      "title": "Über Uns | Gitgönder - Die Logistikplattform der Türkei",
+      "description": "Erfahren Sie mehr über Gitgönder. Unsere Vision als innovative Logistikplattform der Türkei, unsere Dienstleistungen ve technologische Infrastruktur."
     }
   },
   "services": {
     "seo": {
-      "title": "Unsere Dienstleistungen - Yüksi",
-      "description": "Yüksi Dienstleistungen: Motorradkurier (40-50 kg), Minivan (500-800 kg), Transporter (1.000-1.500 kg), Pickup (1.500-3.500 kg), LKW (3.500-20.000 kg). Stadt- ve Fernverkehrslösungen."
+      "title": "Unsere Dienstleistungen - Gitgönder",
+      "description": "Gitgönder Dienstleistungen: Motorradkurier (40-50 kg), Minivan (500-800 kg), Transporter (1.000-1.500 kg), Pickup (1.500-3.500 kg), LKW (3.500-20.000 kg). Stadt- ve Fernverkehrslösungen."
     },
     "hero": {
       "title": "IHRE LAST IST UNSER GESCHÄFT",
-      "description": "Yüksi bietet schnelle ve flexible Lösungen für Ihre modernen Logistikbedürfnisse. Ob über unsere mobile App oder Website, Sie können einfach ein Fahrzeug rufen ve Ihre Sendungen sicher mit unserer breiten Flotte transportieren - von Motorradkurieren bis zu Minivans, Transportern, Pickups ve LKWs. Yüksi ist immer an Ihrer Seite für schnellen, praktischen ve zuverlässigen Service.",
-      "backgroundAlt": "Yüksi Logistikdienst",
-      "kangarooAlt": "Yüksi Känguru"
+      "description": "Gitgönder bietet schnelle ve flexible Lösungen für Ihre modernen Logistikbedürfnisse. Ob über unsere mobile App oder Website, Sie können einfach ein Fahrzeug rufen ve Ihre Sendungen sicher mit unserer breiten Flotte transportieren - von Motorradkurieren bis zu Minivans, Transportern, Pickups ve LKWs. Gitgönder ist immer an Ihrer Seite für schnellen, praktischen ve zuverlässigen Service.",
+      "backgroundAlt": "Gitgönder Logistikdienst",
+      "kangarooAlt": "Gitgönder Känguru"
     },
     "motorcycle": {
       "title": "Motorrad",
@@ -194,11 +194,11 @@
   },
   "help": {
     "seo": {
-      "title": "Hilfe ve Support - Yüksi",
-      "description": "Yüksi Hilfecenter. Häufig gestellte Fragen, Benutzerhandbuch, technischer Support ve Kundenservice. Wie können wir Ihnen helfen?",
-      "backgroundAlt": "Yüksi Logistikdienst",
-      "kangarooPhoneAlt": "Yüksi Telefon Känguru",
-      "logoAlt": "Yüksi Logo"
+      "title": "Hilfe ve Support - Gitgönder",
+      "description": "Gitgönder Hilfecenter. Häufig gestellte Fragen, Benutzerhandbuch, technischer Support ve Kundenservice. Wie können wir Ihnen helfen?",
+      "backgroundAlt": "Gitgönder Logistikdienst",
+      "kangarooPhoneAlt": "Gitgönder Telefon Känguru",
+      "logoAlt": "Gitgönder Logo"
     },
     "hero": {
       "titleLine1": "WIE KÖNNEN WIR",
@@ -223,7 +223,7 @@
       }
     },
     "content": {
-      "intro": "Wir sind immer an Ihrer Seite! Sie können uns über die Yüksi-Helpline zu folgenden Themen kontaktieren",
+      "intro": "Wir sind immer an Ihrer Seite! Sie können uns über die Gitgönder-Helpline zu folgenden Themen kontaktieren",
       "topics": {
         "shipping": {
           "title": "Sendungsverfolgung: ",
@@ -254,8 +254,8 @@
   },
   "contact": {
     "seo": {
-      "title": "Kontakt - Yüksi",
-      "description": "Kontaktieren Sie Yüksi. Kontaktieren Sie uns für Ihre Fragen, Vorschläge oder Supportanfragen. Telefon: 0850 241 93 16 | E-Mail: info@yuksi.tr"
+      "title": "Kontakt - Gitgönder",
+      "description": "Kontaktieren Sie Gitgönder. Kontaktieren Sie uns für Ihre Fragen, Vorschläge oder Supportanfragen. Telefon: 0850 241 93 16 | E-Mail: info@yuksi.tr"
     },
     "title": "Kontakt",
     "subtitle": "Kontaktieren Sie Uns",
@@ -303,11 +303,11 @@
   },
   "carrier": {
     "seo": {
-      "title": "Kurier- ve Spediteurbewerbung - Yüksi",
-      "description": "Bewerben Sie sich bei Yüksi als Kurier oder Spediteur. Arbeitsmöglichkeit mit Motorrad, Minivan, Transporter, Pickup oder LKW. Flexible Arbeitszeiten ve wettbewerbsfähige Preise."
+      "title": "Kurier- ve Spediteurbewerbung - Gitgönder",
+      "description": "Bewerben Sie sich bei Gitgönder als Kurier oder Spediteur. Arbeitsmöglichkeit mit Motorrad, Minivan, Transporter, Pickup oder LKW. Flexible Arbeitszeiten ve wettbewerbsfähige Preise."
     },
     "title": "Fahrerbewerbung",
-    "subtitle": "Werden Sie Teil der Yüksi-Familie",
+    "subtitle": "Werden Sie Teil der Gitgönder-Familie",
     "form": {
       "title": "SPEDITEUR WERDEN",
       "title2": "MACH JETZT MIT!",
@@ -342,11 +342,11 @@
   },
   "dealer": {
     "seo": {
-      "title": "Händlerbewerbung - Yüksi",
-      "description": "Bewerben Sie sich als Yüksi-Händler. Erfahren Sie mehr über Franchise-Möglichkeiten, Händlerbedingungen ve Vorteile. Treten Sie unserem Händlernetzwerk mit Sitz in Bursa in der gesamten Türkei bei."
+      "title": "Händlerbewerbung - Gitgönder",
+      "description": "Bewerben Sie sich als Gitgönder-Händler. Erfahren Sie mehr über Franchise-Möglichkeiten, Händlerbedingungen ve Vorteile. Treten Sie unserem Händlernetzwerk mit Sitz in Bursa in der gesamten Türkei bei."
     },
     "title": "Händlerbewerbung",
-    "subtitle": "Treten Sie dem Yüksi-Händlernetzwerk bei",
+    "subtitle": "Treten Sie dem Gitgönder-Händlernetzwerk bei",
     "form": {
       "title": "Kontaktieren Sie uns, um Händler zu werden",
       "namePlaceholder": "Vollständiger Name",
@@ -394,8 +394,8 @@
   },
   "corporate": {
     "seo": {
-      "title": "Firmenmitgliedschaft - Yüksi",
-      "description": "Yüksi Firmenmitgliedschaftsantrag. Sonderpreise ve Vorteile für Firmenkunden. Firmenlogistiklösungen mit Sitz in Bursa in der gesamten Türkei."
+      "title": "Firmenmitgliedschaft - Gitgönder",
+      "description": "Gitgönder Firmenmitgliedschaftsantrag. Sonderpreise ve Vorteile für Firmenkunden. Firmenlogistiklösungen mit Sitz in Bursa in der gesamten Türkei."
     },
     "title": "Firmenmitgliedschaft",
     "subtitle": "Maßgeschneiderte Lösungen für Ihr Unternehmen",
@@ -440,7 +440,7 @@
     }
   },
   "footer": {
-    "description": "Yüksi bietet schnelle ve flexible Lösungen für Ihre modernen Logistikbedürfnisse.",
+    "description": "Gitgönder bietet schnelle ve flexible Lösungen für Ihre modernen Logistikbedürfnisse.",
     "quickLinks": "Schnelllinks",
     "contact": "Kontakt",
     "followUs": "Folgen Sie uns",

@@ -160,7 +160,7 @@ export function DealerForm() {
                         <div className="relative w-full max-w-[800px] lg:max-w-none lg:translate-x-[-40px]">
                             <img
                                 src={bayiImage}
-                                alt="Yüksi Bayi"
+                                alt="Gitgönder Bayi"
                                 className="w-full h-auto object-contain"
                             />
                         </div>
@@ -170,7 +170,7 @@ export function DealerForm() {
                     <div className="w-full lg:w-[45%] flex flex-col gap-8">
                         <div className="text-center lg:text-left">
                             <h1
-                                className="text-[32px] sm:text-[40px] lg:text-[48px] font-bold text-[#FF5B04] leading-tight mb-6"
+                                className="text-[32px] sm:text-[40px] lg:text-[48px] font-bold text-[#032c95] leading-tight mb-6"
                                 style={{ fontFamily: 'Roboto, sans-serif', fontVariationSettings: '"wdth" 100' }}
                             >
                                 {t('dealer.form.title')}
@@ -215,7 +215,7 @@ export function DealerForm() {
                                 {/* Şehir */}
                                 <div>
                                     <Select
-                                        variant="orange"
+                                        variant="primary"
                                         name="city"
                                         value={formik.values.city}
                                         onChange={formik.handleChange}
@@ -312,10 +312,10 @@ export function DealerForm() {
                             >
                                 {t('dealer.form.contactInfo')}{' '}
                                 <a
-                                    href="mailto:info@yuksi.tr"
-                                    className="text-[#FF5B04] underline"
+                                    href="mailto:info@gitgönder.tr"
+                                    className="text-[#032c95] underline"
                                 >
-                                    info@yuksi.tr
+                                    info@gitgönder.tr
                                 </a>{' '}
                                 {t('dealer.form.contactInfo2')}
                             </p>

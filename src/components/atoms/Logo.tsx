@@ -1,5 +1,5 @@
 import React from 'react';
-import logoImage from '../../assets/logo.png';
+import logoImage from '../../assets/gıtgonder.png';
 
 interface LogoProps {
   src?: string;
@@ -10,7 +10,7 @@ interface LogoProps {
 
 export const Logo: React.FC<LogoProps> = ({
   src,
-  alt = 'Yuksi Logo',
+alt = 'Gitgönder Logo',
   className = '',
 }) => {
   const logoSrc = src || logoImage;

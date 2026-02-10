@@ -11,7 +11,7 @@ interface PartnerCardProps {
 export function PartnerCard({ partner, onClick, className = '' }: PartnerCardProps) {
     return (
         <div className={`flex flex-col gap-3 sm:gap-4 md:gap-5 lg:gap-6 ${className}`}>
-            <div className="w-full aspect-[4/5] lg:aspect-square bg-[#FF5B04] rounded-[12px] lg:rounded-lg sm:rounded-xl flex items-center justify-center overflow-hidden">
+            <div className="w-full aspect-[4/5] lg:aspect-square bg-[#032c95] rounded-[12px] lg:rounded-lg sm:rounded-xl flex items-center justify-center overflow-hidden">
                 {partner.image ? (
                     <img
                         src={partner.image}
@@ -28,7 +28,7 @@ export function PartnerCard({ partner, onClick, className = '' }: PartnerCardPro
             </p>
             <button
                 onClick={onClick}
-                className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-[#FF5B04] rounded-full flex items-center justify-center hover:bg-orange-600 transition-colors self-start mt-1 sm:mt-2 md:mt-4"
+                className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-[#032c95] rounded-full flex items-center justify-center hover:bg-primary-600 transition-colors self-start mt-1 sm:mt-2 md:mt-4"
             >
                 <Icon
                     src={arrowRightIcon}

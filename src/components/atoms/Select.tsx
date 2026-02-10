@@ -3,12 +3,12 @@ import { Icon } from './Icon';
 import chevronDown from '../../assets/icons/chevron-down.svg';
 
 interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
-  variant?: 'orange' | 'default';
+  variant?: 'primary' | 'default';
   error?: boolean;
 }
 
 export const Select: React.FC<SelectProps> = ({
-  variant = 'orange',
+  variant = 'primary',
   error = false,
   className = '',
   children,
@@ -18,12 +18,12 @@ export const Select: React.FC<SelectProps> = ({
     'w-full h-16 rounded-[5px] px-6 pr-12 font-semibold text-base shadow-[0px_4px_15px_0px_rgba(0,0,0,0.09)] focus:outline-none focus:ring-2 transition-all appearance-none cursor-pointer';
 
   const variantStyles = {
-    orange: 'bg-[#FF5B04] text-white focus:ring-[#FF5B04]/50',
+    primary: 'bg-[#032c95] text-white focus:ring-[#032c95]/50',
     default: 'bg-gray-100 text-gray-900 focus:ring-gray-400',
   };
 
   const errorStyles = error ? 'ring-2 ring-red-500' : '';
-  const arrowColor = variant === 'orange' ? 'text-white' : 'text-gray-700';
+  const arrowColor = variant === 'primary' ? 'text-white' : 'text-gray-700';
 
   return (
     <div className="relative">

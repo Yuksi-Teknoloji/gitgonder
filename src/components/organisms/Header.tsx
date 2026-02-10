@@ -88,15 +88,15 @@ export const Header: React.FC<HeaderProps> = ({
 
   const headerBg = isScrolled
     ? 'bg-white text-gray-900 lg:bg-white lg:text-gray-900'
-    : 'bg-[#FF5B04] text-white lg:bg-white lg:text-gray-900';
+    : 'bg-[#032c95] text-white lg:bg-white lg:text-gray-900';
 
   const iconColor = isScrolled
-    ? 'text-[#FF5B04] hover:text-[#FF5B04] hover:bg-orange-50 focus:ring-orange-500'
+    ? 'text-[#032c95] hover:text-[#032c95] hover:bg-primary-50 focus:ring-primary-500'
     : 'text-white hover:text-white hover:bg-white/10 focus:ring-white/50';
 
-  // SVG icon filter for orange color (#FF5B04)
+  // SVG icon filter for blue color (#032c95)
   const iconFilter = isScrolled
-    ? { filter: 'brightness(0) saturate(100%) invert(48%) sepia(100%) saturate(10000%) hue-rotate(0deg) brightness(1.2)' }
+    ? { filter: 'brightness(0) saturate(100%) invert(11%) sepia(100%) saturate(10000%) hue-rotate(196deg) brightness(1.2)' }
     : { filter: 'brightness(0) invert(1)' };
 
   const barVisible = !isScrolled;
@@ -118,7 +118,7 @@ export const Header: React.FC<HeaderProps> = ({
                 src={logo?.src}
                 text={logo?.text}
                 alt={logo?.alt}
-                className={`transition-all duration-300 ${logoFilter}`}
+                className={`transition-all duration-300`}
               />
             </Link>
 
@@ -160,9 +160,9 @@ export const Header: React.FC<HeaderProps> = ({
                         <Link
                           to={getLocalizedPath('carrier', currentLang)}
                           onMouseEnter={() => setHoveredApplyItem('driver')}
-                          className="flex items-center gap-3 px-4 py-3 hover:bg-orange-50 transition-colors duration-200"
+                          className="flex items-center gap-3 px-4 py-3 hover:bg-primary-50 transition-colors duration-200"
                         >
-                          <div className="w-8 h-8 rounded-full bg-orange-100 text-[#FF5B04] flex items-center justify-center flex-shrink-0">
+                          <div className="w-8 h-8 rounded-full bg-primary-100 text-[#032c95] flex items-center justify-center flex-shrink-0">
                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path
                                 strokeLinecap="round"
@@ -184,7 +184,7 @@ export const Header: React.FC<HeaderProps> = ({
                           onMouseEnter={() => setHoveredApplyItem(null)}
                           className="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 transition-colors duration-200"
                         >
-                          <div className="w-8 h-8 rounded-full bg-gray-100 text-[#FF5B04] flex items-center justify-center flex-shrink-0">
+                          <div className="w-8 h-8 rounded-full bg-gray-100 text-[#032c95] flex items-center justify-center flex-shrink-0">
                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path
                                 strokeLinecap="round"
@@ -206,7 +206,7 @@ export const Header: React.FC<HeaderProps> = ({
                           onMouseEnter={() => setHoveredApplyItem(null)}
                           className="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 transition-colors duration-200"
                         >
-                          <div className="w-8 h-8 rounded-full bg-gray-100 text-[#FF5B04] flex items-center justify-center flex-shrink-0">
+                          <div className="w-8 h-8 rounded-full bg-gray-100 text-[#032c95] flex items-center justify-center flex-shrink-0">
                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path
                                 strokeLinecap="round"
@@ -226,7 +226,7 @@ export const Header: React.FC<HeaderProps> = ({
 
                       {/* Sağ kolon: sadece sürücü başvuru hover'ında göster */}
                       {hoveredApplyItem === 'driver' && (
-                        <div className="w-[48%] bg-gradient-to-br from-[#FF5B04] to-[#FF8A50] text-white p-3 flex flex-col justify-center">
+                        <div className="w-[48%] bg-gradient-to-br from-[#032c95] to-[#004899] text-white p-3 flex flex-col justify-center">
                           <div>
                             <p className="text-[13px] font-semibold mb-2">
                               {t('nav.driverApplication')}
@@ -239,7 +239,7 @@ export const Header: React.FC<HeaderProps> = ({
                             <Button
                               variant="primary"
                               size="sm"
-                              className="w-full h-[32px] !rounded-[999px] !bg-white !text-[#FF5B04] text-[12px] font-semibold"
+                              className="w-full h-[32px] !rounded-[999px] !bg-white !text-[#032c95] text-[12px] font-semibold"
                               onClick={() => navigate(getLocalizedPath('carrier', currentLang))}
                             >
                               {t('nav.logisticsCourier')}
@@ -247,7 +247,7 @@ export const Header: React.FC<HeaderProps> = ({
                             <Button
                               variant="primary"
                               size="sm"
-                              className="w-full h-[32px] !rounded-[999px] !bg-white/90 !text-[#FF5B04] text-[12px] font-semibold"
+                              className="w-full h-[32px] !rounded-[999px] !bg-white/90 !text-[#032c95] text-[12px] font-semibold"
                               onClick={() => navigate(getLocalizedPath('carrier', currentLang))}
                             >
                               {t('nav.restaurantCourier')}
@@ -285,9 +285,9 @@ export const Header: React.FC<HeaderProps> = ({
                       href="https://kurumsal.yuksi.dev/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-3 px-4 py-3 hover:bg-orange-50 transition-colors duration-200"
+                      className="flex items-center gap-3 px-4 py-3 hover:bg-primary-50 transition-colors duration-200"
                     >
-                      <div className="w-10 h-10 bg-gradient-to-br from-[#FF5B04] to-[#FF8A50] rounded-full flex items-center justify-center flex-shrink-0">
+                      <div className="w-10 h-10 bg-gradient-to-br from-[#032c95] to-[#004899] rounded-full flex items-center justify-center flex-shrink-0">
                         <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                         </svg>
@@ -301,9 +301,9 @@ export const Header: React.FC<HeaderProps> = ({
                       href="https://bayi.yuksi.dev/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-3 px-4 py-3 hover:bg-orange-50 transition-colors duration-200"
+                      className="flex items-center gap-3 px-4 py-3 hover:bg-primary-50 transition-colors duration-200"
                     >
-                      <div className="w-10 h-10 bg-gradient-to-br from-[#FF5B04] to-[#FF8A50] rounded-full flex items-center justify-center flex-shrink-0">
+                      <div className="w-10 h-10 bg-gradient-to-br from-[#032c95] to-[#004899] rounded-full flex items-center justify-center flex-shrink-0">
                         <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -318,9 +318,9 @@ export const Header: React.FC<HeaderProps> = ({
                       href="https://restoran.yuksi.dev/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-3 px-4 py-3 hover:bg-orange-50 transition-colors duration-200"
+                      className="flex items-center gap-3 px-4 py-3 hover:bg-primary-50 transition-colors duration-200"
                     >
-                      <div className="w-10 h-10 bg-gradient-to-br from-[#FF5B04] to-[#FF8A50] rounded-full flex items-center justify-center flex-shrink-0">
+                      <div className="w-10 h-10 bg-gradient-to-br from-[#032c95] to-[#004899] rounded-full flex items-center justify-center flex-shrink-0">
                         <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                         </svg>
@@ -352,7 +352,7 @@ export const Header: React.FC<HeaderProps> = ({
           </div>
         </div>
         {barVisible && (
-          <div className="lg:hidden absolute bottom-0 left-0 right-0 bg-[#FF5B04] rounded-bl-[20px] rounded-br-[20px] h-[85px] -z-0" />
+          <div className="lg:hidden absolute bottom-0 left-0 right-0 bg-[#032c95] rounded-bl-[20px] rounded-br-[20px] h-[85px] -z-0" />
         )}
       </header>
 
@@ -364,7 +364,7 @@ export const Header: React.FC<HeaderProps> = ({
           />
           <div className="fixed left-0 top-0 h-full w-[320px] bg-white shadow-[20px_0_50px_rgba(0,0,0,0.1)] z-50 lg:hidden overflow-y-auto transition-transform duration-300 transform">
             {/* Background Gradient Flow */}
-            <div className="absolute top-0 left-0 right-0 h-80 bg-gradient-to-b from-[#FF5B04]/15 via-[#FF5B04]/05 to-transparent pointer-events-none" />
+            <div className="absolute top-0 left-0 right-0 h-80 bg-gradient-to-b from-[#032c95]/15 via-[#032c95]/05 to-transparent pointer-events-none" />
 
             <div className="flex flex-col h-full relative z-10">
               {/* Close Button Area */}
@@ -381,10 +381,10 @@ export const Header: React.FC<HeaderProps> = ({
                 {/* Kanguru ve Mesaj Balonu */}
                 <div className="relative flex items-center gap-5">
                   <div className="relative flex-shrink-0">
-                    <div className="w-20 h-20 rounded-full bg-white border-2 border-orange-100 shadow-md flex items-center justify-center overflow-hidden">
+                    <div className="w-20 h-20 rounded-full bg-white border-2 border-primary-100 shadow-md flex items-center justify-center overflow-hidden">
                       <img
                         src={kanguruGif}
-                        alt="Yüksi kanguru"
+                        alt="Gitgönder kanguru"
                         className="w-[120%] h-[120%] object-contain mt-2"
                       />
                     </div>
@@ -413,7 +413,7 @@ export const Header: React.FC<HeaderProps> = ({
                         className={`
                           flex items-center px-4 py-3.5 rounded-xl text-[18px] font-bold transition-all duration-200
                           ${isActive
-                            ? 'bg-orange-500 text-white shadow-lg shadow-orange-200'
+                            ? 'bg-primary-500 text-white shadow-lg shadow-primary-200'
                             : 'text-[#3A3A3A] hover:bg-gray-50 hover:pl-6'
                           }
                         `}
@@ -452,9 +452,9 @@ export const Header: React.FC<HeaderProps> = ({
                         onClick={() => setIsMobileMenuOpen(false)}
                         className="group"
                       >
-                        <div className="p-4 bg-gradient-to-br from-white to-orange-50/30 border-2 border-orange-100 rounded-xl shadow-sm hover:border-orange-300 hover:shadow-md transition-all duration-200">
+                        <div className="p-4 bg-gradient-to-br from-white to-primary-50/30 border-2 border-primary-100 rounded-xl shadow-sm hover:border-primary-300 hover:shadow-md transition-all duration-200">
                           <div className="flex items-center gap-3 mb-3">
-                            <div className="w-10 h-10 rounded-full bg-orange-100 text-[#FF5B04] flex items-center justify-center flex-shrink-0 group-hover:bg-orange-200 transition-colors">
+                            <div className="w-10 h-10 rounded-full bg-primary-100 text-[#032c95] flex items-center justify-center flex-shrink-0 group-hover:text-primary-200 transition-colors">
                               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path
                                   strokeLinecap="round"
@@ -467,10 +467,10 @@ export const Header: React.FC<HeaderProps> = ({
                             <p className="text-[15px] font-bold text-gray-900 flex-1">{t('nav.driverApplication')}</p>
                           </div>
                           <div className="flex flex-wrap gap-2">
-                            <span className="text-[11px] bg-[#FF5B04] text-white px-3 py-1.5 rounded-full font-semibold">
+                            <span className="text-[11px] bg-[#032c95] text-white px-3 py-1.5 rounded-full font-semibold">
                               {t('nav.logisticsCourier')}
                             </span>
-                            <span className="text-[11px] bg-[#FF5B04] text-white px-3 py-1.5 rounded-full font-semibold">
+                            <span className="text-[11px] bg-[#032c95] text-white px-3 py-1.5 rounded-full font-semibold">
                               {t('nav.restaurantCourier')}
                             </span>
                           </div>
@@ -481,9 +481,9 @@ export const Header: React.FC<HeaderProps> = ({
                         onClick={() => setIsMobileMenuOpen(false)}
                         className="group"
                       >
-                        <div className="p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:border-orange-200 hover:shadow-md hover:bg-orange-50/30 transition-all duration-200 flex items-center justify-between">
+                        <div className="p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:border-primary-200 hover:shadow-md hover:bg-primary-50/30 transition-all duration-200 flex items-center justify-between">
                           <div className="flex items-center gap-3">
-                            <div className="w-10 h-10 rounded-full bg-gray-100 text-[#FF5B04] flex items-center justify-center flex-shrink-0 group-hover:bg-orange-100 transition-colors">
+                            <div className="w-10 h-10 rounded-full bg-gray-100 text-[#032c95] flex items-center justify-center flex-shrink-0 group-hover:bg-primary-100 transition-colors">
                               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path
                                   strokeLinecap="round"
@@ -495,7 +495,7 @@ export const Header: React.FC<HeaderProps> = ({
                             </div>
                             <span className="text-[15px] font-bold text-gray-900">{t('nav.franchiseApplication')}</span>
                           </div>
-                          <svg className="w-5 h-5 text-orange-500 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <svg className="w-5 h-5 text-primary-500 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                           </svg>
                         </div>
@@ -505,9 +505,9 @@ export const Header: React.FC<HeaderProps> = ({
                         onClick={() => setIsMobileMenuOpen(false)}
                         className="group"
                       >
-                        <div className="p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:border-orange-200 hover:shadow-md hover:bg-orange-50/30 transition-all duration-200 flex items-center justify-between">
+                        <div className="p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:border-primary-200 hover:shadow-md hover:bg-primary-50/30 transition-all duration-200 flex items-center justify-between">
                           <div className="flex items-center gap-3">
-                            <div className="w-10 h-10 rounded-full bg-gray-100 text-[#FF5B04] flex items-center justify-center flex-shrink-0 group-hover:bg-orange-100 transition-colors">
+                            <div className="w-10 h-10 rounded-full bg-gray-100 text-[#032c95] flex items-center justify-center flex-shrink-0 group-hover:bg-primary-100 transition-colors">
                               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path
                                   strokeLinecap="round"
@@ -519,7 +519,7 @@ export const Header: React.FC<HeaderProps> = ({
                             </div>
                             <span className="text-[15px] font-bold text-gray-900">{t('nav.corporateMembership')}</span>
                           </div>
-                          <svg className="w-5 h-5 text-orange-500 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <svg className="w-5 h-5 text-primary-500 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                           </svg>
                         </div>
@@ -535,7 +535,7 @@ export const Header: React.FC<HeaderProps> = ({
                 <button
                   type="button"
                   onClick={() => setIsLoginMenuOpen(!isLoginMenuOpen)}
-                  className="w-full h-14 bg-gradient-to-r from-[#FF5B04] to-[#FF8A50] text-white rounded-2xl flex items-center justify-center gap-3 shadow-lg shadow-orange-200/50 hover:shadow-xl hover:shadow-orange-300/50 active:scale-[0.97] transition-all duration-200"
+                  className="w-full h-14 bg-gradient-to-r from-[#032c95] to-[#004899] text-white rounded-2xl flex items-center justify-center gap-3 shadow-lg shadow-primary-200/50 hover:shadow-xl hover:shadow-primary-300/50 active:scale-[0.97] transition-all duration-200"
                 >
                   <span className="text-[18px] font-bold" style={{ fontFamily: 'Roboto, sans-serif' }}>
                     {t('nav.login')}
@@ -556,9 +556,9 @@ export const Header: React.FC<HeaderProps> = ({
                       href="https://kurumsal.yuksi.dev/" 
                       target="_blank" 
                       rel="noopener noreferrer" 
-                      className="group flex items-center gap-4 p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:border-orange-200 hover:shadow-md hover:bg-orange-50/30 transition-all duration-200"
+                      className="group flex items-center gap-4 p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:border-primary-200 hover:shadow-md hover:bg-primary-50/30 transition-all duration-200"
                     >
-                      <div className="w-11 h-11 bg-gradient-to-br from-[#FF5B04] to-[#FF8A50] rounded-full flex items-center justify-center text-white flex-shrink-0 group-hover:scale-110 transition-transform">
+                      <div className="w-11 h-11 bg-gradient-to-br from-[#032c95] to-[#004899] rounded-full flex items-center justify-center text-white flex-shrink-0 group-hover:scale-110 transition-transform">
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                         </svg>
@@ -567,7 +567,7 @@ export const Header: React.FC<HeaderProps> = ({
                         <p className="text-[15px] font-bold text-gray-900">{t('nav.corporateLogin')}</p>
                         <p className="text-[12px] text-gray-500 mt-0.5">{t('nav.corporateLoginDesc')}</p>
                       </div>
-                      <svg className="w-5 h-5 text-orange-500 group-hover:translate-x-1 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-primary-500 group-hover:translate-x-1 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
                     </a>
@@ -575,9 +575,9 @@ export const Header: React.FC<HeaderProps> = ({
                       href="https://bayi.yuksi.dev/" 
                       target="_blank" 
                       rel="noopener noreferrer" 
-                      className="group flex items-center gap-4 p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:border-orange-200 hover:shadow-md hover:bg-orange-50/30 transition-all duration-200"
+                      className="group flex items-center gap-4 p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:border-primary-200 hover:shadow-md hover:bg-primary-50/30 transition-all duration-200"
                     >
-                      <div className="w-11 h-11 bg-gradient-to-br from-[#FF5B04] to-[#FF8A50] rounded-full flex items-center justify-center text-white flex-shrink-0 group-hover:scale-110 transition-transform">
+                      <div className="w-11 h-11 bg-gradient-to-br from-[#032c95] to-[#004899] rounded-full flex items-center justify-center text-white flex-shrink-0 group-hover:scale-110 transition-transform">
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -587,7 +587,7 @@ export const Header: React.FC<HeaderProps> = ({
                         <p className="text-[15px] font-bold text-gray-900">{t('nav.dealerLogin')}</p>
                         <p className="text-[12px] text-gray-500 mt-0.5">{t('nav.dealerLoginDesc')}</p>
                       </div>
-                      <svg className="w-5 h-5 text-orange-500 group-hover:translate-x-1 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-primary-500 group-hover:translate-x-1 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
                     </a>
@@ -595,9 +595,9 @@ export const Header: React.FC<HeaderProps> = ({
                       href="https://restoran.yuksi.dev/" 
                       target="_blank" 
                       rel="noopener noreferrer" 
-                      className="group flex items-center gap-4 p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:border-orange-200 hover:shadow-md hover:bg-orange-50/30 transition-all duration-200"
+                      className="group flex items-center gap-4 p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:border-primary-200 hover:shadow-md hover:bg-primary-50/30 transition-all duration-200"
                     >
-                      <div className="w-11 h-11 bg-gradient-to-br from-[#FF5B04] to-[#FF8A50] rounded-full flex items-center justify-center text-white flex-shrink-0 group-hover:scale-110 transition-transform">
+                      <div className="w-11 h-11 bg-gradient-to-br from-[#032c95] to-[#004899] rounded-full flex items-center justify-center text-white flex-shrink-0 group-hover:scale-110 transition-transform">
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                         </svg>
@@ -606,7 +606,7 @@ export const Header: React.FC<HeaderProps> = ({
                         <p className="text-[15px] font-bold text-gray-900">{t('nav.restaurantLogin')}</p>
                         <p className="text-[12px] text-gray-500 mt-0.5">{t('nav.restaurantLoginDesc')}</p>
                       </div>
-                      <svg className="w-5 h-5 text-orange-500 group-hover:translate-x-1 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-primary-500 group-hover:translate-x-1 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
                     </a>
@@ -661,7 +661,7 @@ export const Header: React.FC<HeaderProps> = ({
                             }}
                             className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl text-left transition-all duration-200 ${
                               isCurrentLang
-                                ? 'bg-orange-500 text-white shadow-lg shadow-orange-200'
+                                ? 'bg-primary-500 text-white shadow-lg shadow-primary-200'
                                 : 'bg-gray-50 text-[#3A3A3A] hover:bg-gray-100 active:scale-[0.98]'
                             }`}
                             style={{ fontFamily: 'Roboto, sans-serif' }}

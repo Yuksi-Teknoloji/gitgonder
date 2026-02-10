@@ -75,7 +75,7 @@ export function MobileJoin() {
                             }`}
                     >
                         <h2
-                            className="text-[32px] sm:text-[40px] md:text-[44px] lg:text-[50px] font-bold text-[#FF5B04] leading-tight"
+                            className="text-[32px] sm:text-[40px] md:text-[44px] lg:text-[50px] font-bold text-[#032c95] leading-tight"
                             style={{ fontFamily: 'Roboto, sans-serif', fontVariationSettings: '"wdth" 100' }}
                         >
                             {t('home.mobileJoin.title')}
@@ -109,7 +109,7 @@ export function MobileJoin() {
                         <div className="relative z-20">
                             <img
                                 src={phoneScreen}
-                                alt="Yüksi Mobile App"
+                                alt="Gitgönder Mobile App"
                                 className="w-[260px] sm:w-[300px] md:w-[320px] lg:w-[360px] xl:w-[400px] h-auto object-contain drop-shadow-2xl"
                             />
                         </div>

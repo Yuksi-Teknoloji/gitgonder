@@ -27,35 +27,35 @@ export default function Services() {
             title: t('services.motorcycle.title'),
             description: t('services.motorcycle.description'),
             image: motorcycleImg,
-            imageAlt: `Yüksi ${t('services.motorcycle.title')}`,
+            imageAlt: `Gitgönder ${t('services.motorcycle.title')}`,
             secondaryButtonText: t('services.motorcycle.buttonText'),
         },
         {
             title: t('services.minivan.title'),
             description: t('services.minivan.description'),
             image: minivanImg,
-            imageAlt: `Yüksi ${t('services.minivan.title')}`,
+            imageAlt: `Gitgönder ${t('services.minivan.title')}`,
             secondaryButtonText: t('services.minivan.buttonText'),
         },
         {
             title: t('services.panelvan.title'),
             description: t('services.panelvan.description'),
             image: panelvanImg,
-            imageAlt: `Yüksi ${t('services.panelvan.title')}`,
+            imageAlt: `Gitgönder ${t('services.panelvan.title')}`,
             secondaryButtonText: t('services.panelvan.buttonText'),
         },
         {
             title: t('services.pickup.title'),
             description: t('services.pickup.description'),
             image: kamyonetImg,
-            imageAlt: `Yüksi ${t('services.pickup.title')}`,
+            imageAlt: `Gitgönder ${t('services.pickup.title')}`,
             secondaryButtonText: t('services.pickup.buttonText'),
         },
         {
             title: t('services.truck.title'),
             description: t('services.truck.description'),
             image: kamyonImg,
-            imageAlt: `Yüksi ${t('services.truck.title')}`,
+            imageAlt: `Gitgönder ${t('services.truck.title')}`,
             secondaryButtonText: t('services.truck.buttonText'),
         },
     ]
@@ -78,7 +78,7 @@ export default function Services() {
                 <section className="md:hidden w-full bg-white py-8 px-4 sm:px-6">
                     <div className="w-full max-w-7xl mx-auto flex flex-col gap-4">
                         <h1
-                            className="text-[#FF5B04] text-[24px] font-bold leading-tight"
+                            className="text-[#032c95] text-[24px] font-bold leading-tight"
                             style={{ fontFamily: 'Roboto, sans-serif', fontVariationSettings: '"wdth" 100' }}
                         >
                             {t('services.hero.title')}

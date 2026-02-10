@@ -20,7 +20,7 @@ export default function Home() {
             <SEOHead
                 title={t('home.seo.title')}
                 description={t('home.seo.description')}
-                keywords="yüksi, lojistik, kurye, nakliye, taşımacılık, motorsiklet kurye, minivan, panelvan, kamyonet, kamyon, Türkiye lojistik, hızlı teslimat, güvenilir lojistik"
+                keywords="gitgönder, lojistik, kurye, nakliye, taşımacılık, motorsiklet kurye, minivan, panelvan, kamyonet, kamyon, Türkiye lojistik, hızlı teslimat, güvenilir lojistik"
                 canonical="/"
                 lang={currentLang}
                 alternateLanguages={alternateUrls}
@@ -28,13 +28,13 @@ export default function Home() {
                     '@context': 'https://schema.org',
                     '@type': 'Organization',
                     '@id': 'https://yuksi.com.tr',
-                    name: 'Yüksi',
-                    alternateName: 'Yüksi',
+                    name: 'Gitgönder',
+                    alternateName: 'Gitgönder',
                     url: 'https://yuksi.com.tr',
                     logo: 'https://yuksi.com.tr/logo.png',
                     description: t('home.seo.description'),
                     telephone: '+908502419316',
-                    email: 'info@yuksi.tr',
+                    email: 'info@gitgönder.tr',
                     priceRange: '$$',
                     areaServed: {
                         '@type': 'Country',

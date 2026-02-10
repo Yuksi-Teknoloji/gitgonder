@@ -9,7 +9,7 @@ export function AboutContent() {
         <div className="w-full bg-white">
             <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16 lg:py-24 xl:hidden">
                 <div
-                    className="text-[#FF5B04] text-[28px] sm:text-[36px] md:text-[45px] xl:text-[65px] font-bold leading-tight sm:leading-normal whitespace-pre-wrap mb-4 sm:mb-6 lg:mb-8"
+                    className="text-[#032c95] text-[28px] sm:text-[36px] md:text-[45px] xl:text-[65px] font-bold leading-tight sm:leading-normal whitespace-pre-wrap mb-4 sm:mb-6 lg:mb-8"
                     style={{ fontFamily: 'Roboto, sans-serif', fontVariationSettings: '"wdth" 100' }}
                 >
                     <p className="mb-0">{t('about.hero.title')}</p>
@@ -26,7 +26,7 @@ export function AboutContent() {
                 </p>
 
                 <h2
-                    className="text-[32px] sm:text-[40px] lg:text-[65px] font-bold text-[#FF5B04] mb-4 sm:mb-6 lg:mb-8"
+                    className="text-[32px] sm:text-[40px] lg:text-[65px] font-bold text-[#032c95] mb-4 sm:mb-6 lg:mb-8"
                     style={{ fontFamily: 'Roboto, sans-serif', fontVariationSettings: '"wdth" 100' }}
                 >
                     {t('about.aboutUs.title')}
@@ -43,7 +43,7 @@ export function AboutContent() {
 
             <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16 lg:py-24">
                 <h2
-                    className="text-[32px] sm:text-[40px] lg:text-[50px] font-bold text-[#FF5B04] mb-6 sm:mb-8 lg:mb-12"
+                    className="text-[32px] sm:text-[40px] lg:text-[50px] font-bold text-[#032c95] mb-6 sm:mb-8 lg:mb-12"
                     style={{ fontFamily: 'Roboto, sans-serif', fontVariationSettings: '"wdth" 100' }}
                 >
                     {t('about.serviceFeatures.title')}
@@ -84,7 +84,7 @@ export function AboutContent() {
 
             <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16 lg:py-24">
                 <h2
-                    className="text-[32px] sm:text-[40px] lg:text-[50px] font-bold text-[#FF5B04] mb-6 sm:mb-8 lg:mb-12"
+                    className="text-[32px] sm:text-[40px] lg:text-[50px] font-bold text-[#032c95] mb-6 sm:mb-8 lg:mb-12"
                     style={{ fontFamily: 'Roboto, sans-serif', fontVariationSettings: '"wdth" 100' }}
                 >
                     {t('about.customerAdvantages.title')}
@@ -118,7 +118,7 @@ export function AboutContent() {
 
             <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16 lg:py-24">
                 <h2
-                    className="text-[32px] sm:text-[40px] lg:text-[50px] font-bold text-[#FF5B04] mb-6 sm:mb-8 lg:mb-12"
+                    className="text-[32px] sm:text-[40px] lg:text-[50px] font-bold text-[#032c95] mb-6 sm:mb-8 lg:mb-12"
                     style={{ fontFamily: 'Roboto, sans-serif', fontVariationSettings: '"wdth" 100' }}
                 >
                     {t('about.technology.title')}

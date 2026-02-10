@@ -38,18 +38,18 @@ export default function Hero() {
     }, []);
 
     return (
-        <section className="relative w-full bg-[#FFF6ED] lg:bg-white overflow-visible lg:overflow-hidden font-roboto selection:bg-orange-200">
+        <section className="relative w-full bg-[#FFF6ED] lg:bg-white overflow-visible lg:overflow-hidden font-roboto selection:text-primary-200">
             {/* Mobile Hero - background image */}
             <div className="relative w-full lg:hidden">
                 <img
                     src={heroBg}
                     className="w-full h-[420px] object-cover"
-                    alt="Yüksi lojistik arka plan"
+                    alt="Gitgönder lojistik arka plan"
                 />
                 <div className="absolute bottom-14 left-5 flex flex-col items-start gap-0 z-30">
                     <img
                         src={kanguruGif}
-                        alt="Yüksi kanguru"
+                        alt="Gitgönder kanguru"
                         className="w-[130px] h-auto object-contain"
                     />
                     <div className="relative -mt-2" ref={dropdownRef}>
@@ -74,10 +74,10 @@ export default function Hero() {
                             <div className="absolute top-full left-0 mt-2 w-[280px] bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden py-2 z-[100]">
                                 <Link
                                     to={getLocalizedPath('carrier', currentLang)}
-                                    className="flex items-center gap-3 px-4 py-3 hover:bg-orange-50 transition-colors"
+                                    className="flex items-center gap-3 px-4 py-3 hover:bg-primary-50 transition-colors"
                                     onClick={() => setIsDropdownOpen(false)}
                                 >
-                                    <div className="w-9 h-9 rounded-full bg-orange-100 text-[#FF5B04] flex items-center justify-center flex-shrink-0">
+                                    <div className="w-9 h-9 rounded-full bg-primary-100 text-[#032c95] flex items-center justify-center flex-shrink-0">
                                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 13l2-5h4l2 5m-2-5l1-3h4l2 6m-5 4a2 2 0 11-4 0 2 2 0 014 0zm7 0a2 2 0 11-4 0 2 2 0 014 0z" />
                                         </svg>
@@ -86,10 +86,10 @@ export default function Hero() {
                                 </Link>
                                 <Link
                                     to={getLocalizedPath('dealer', currentLang)}
-                                    className="flex items-center gap-3 px-4 py-3 hover:bg-orange-50 transition-colors"
+                                    className="flex items-center gap-3 px-4 py-3 hover:bg-primary-50 transition-colors"
                                     onClick={() => setIsDropdownOpen(false)}
                                 >
-                                    <div className="w-9 h-9 rounded-full bg-gray-100 text-[#FF5B04] flex items-center justify-center flex-shrink-0">
+                                    <div className="w-9 h-9 rounded-full bg-gray-100 text-[#032c95] flex items-center justify-center flex-shrink-0">
                                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 7h18M5 7v13h14V7M9 7V5a3 3 0 016 0v2" />
                                         </svg>
@@ -98,10 +98,10 @@ export default function Hero() {
                                 </Link>
                                 <Link
                                     to={getLocalizedPath('corporate', currentLang)}
-                                    className="flex items-center gap-3 px-4 py-3 hover:bg-orange-50 transition-colors"
+                                    className="flex items-center gap-3 px-4 py-3 hover:bg-primary-50 transition-colors"
                                     onClick={() => setIsDropdownOpen(false)}
                                 >
-                                    <div className="w-9 h-9 rounded-full bg-gray-100 text-[#FF5B04] flex items-center justify-center flex-shrink-0">
+                                    <div className="w-9 h-9 rounded-full bg-gray-100 text-[#032c95] flex items-center justify-center flex-shrink-0">
                                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 21V7a2 2 0 012-2h3m5 0h3a2 2 0 012 2v14M9 5v16M15 5v16" />
                                         </svg>

@@ -18,7 +18,7 @@ export default function Dealer() {
             <SEOHead
                 title={t('dealer.seo.title')}
                 description={t('dealer.seo.description')}
-                keywords="yüksi bayi, franchise, bayi başvurusu, lojistik bayi, taşımacılık bayi, Türkiye bayi"
+                keywords="gitgönder bayi, franchise, bayi başvurusu, lojistik bayi, taşımacılık bayi, Türkiye bayi"
                 canonical={currentPath}
                 lang={currentLang}
                 alternateLanguages={alternateUrls}
@@ -27,9 +27,9 @@ export default function Dealer() {
                     '@type': 'ContactPage',
                     mainEntity: {
                         '@type': 'Organization',
-                        name: 'Yüksi',
+                        name: 'Gitgönder',
                         telephone: '+908502419316',
-                        email: 'info@yuksi.tr',
+                        email: 'info@gitgönder.tr',
                     },
                 }}
             />

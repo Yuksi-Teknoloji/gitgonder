@@ -19,14 +19,14 @@ export const Checkbox: React.FC<CheckboxProps> = ({
       <input
         type="checkbox"
         id={checkboxId}
-        className={`w-5 h-5 rounded-[5px] border-2 border-[#FF5B04] bg-[#ffc3a3] text-[#FF5B04] focus:ring-[#FF5B04] cursor-pointer ${className}`}
-        style={{ accentColor: '#FF5B04' }}
+        className={`w-5 h-5 rounded-[5px] border-2 border-[#032c95] bg-[#ffc3a3] text-[#032c95] focus:ring-[#032c95] cursor-pointer ${className}`}
+        style={{ accentColor: '#032c95' }}
         {...props}
       />
       {label && (
         <label
           htmlFor={checkboxId}
-          className={`text-[#FF5B04] font-semibold text-base cursor-pointer ${labelClassName}`}
+          className={`text-[#032c95] font-semibold text-base cursor-pointer ${labelClassName}`}
         >
           {label}
         </label>

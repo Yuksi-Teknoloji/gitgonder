@@ -191,7 +191,7 @@ export function HelpHero() {
                             <button
                                 type="submit"
                                 disabled={formik.isSubmitting}
-                                className="bg-[#FF5B04] hover:bg-[#E55103] disabled:opacity-60 disabled:cursor-not-allowed text-white font-medium text-[18px] sm:text-[20px] lg:text-[24px] py-3 sm:py-4 px-6 sm:px-8 rounded-[35px] flex items-center justify-center gap-2 transition-colors self-center mt-4 sm:mt-5"
+                                className="bg-[#032c95] hover:bg-[#E55103] disabled:opacity-60 disabled:cursor-not-allowed text-white font-medium text-[18px] sm:text-[20px] lg:text-[24px] py-3 sm:py-4 px-6 sm:px-8 rounded-[35px] flex items-center justify-center gap-2 transition-colors self-center mt-4 sm:mt-5"
                                 style={{ fontFamily: 'Roboto, sans-serif', fontVariationSettings: '"wdth" 100' }}
                             >
                                 <span>{formik.isSubmitting ? t('help.hero.submitting') : t('help.hero.submit')}</span>
