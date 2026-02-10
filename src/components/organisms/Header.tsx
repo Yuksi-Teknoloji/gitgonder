@@ -101,9 +101,7 @@ export const Header: React.FC<HeaderProps> = ({
 
   const barVisible = !isScrolled;
   const logoWrapper = isScrolled ? 'w-[140px] lg:w-auto' : 'w-[150px] lg:w-auto';
-  const logoFilter = !isScrolled
-    ? 'brightness-0 invert lg:filter-none lg:brightness-100 lg:invert-0'
-    : 'filter-none';
+
 
   return (
     <>
