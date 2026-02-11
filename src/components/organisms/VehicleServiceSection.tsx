@@ -39,7 +39,7 @@ export function VehicleServiceSection({
                         <div className="flex flex-row w-full gap-3 lg:gap-4">
                             <button
                                 onClick={onSecondaryClick}
-                                className="w-full bg-[#032c95] hover:bg-[#E55103] text-white font-bold text-[14px] lg:text-[16px] h-[42px] lg:h-auto lg:py-3 lg:px-6 rounded-[35px] flex items-center justify-center gap-2 transition-colors"
+                                className="w-full bg-[#032c95] hover:bg-[#004899] text-white font-bold text-[14px] lg:text-[16px] h-[42px] lg:h-auto lg:py-3 lg:px-6 rounded-[35px] flex items-center justify-center gap-2 transition-colors"
                                 style={{ fontFamily: 'Roboto, sans-serif', fontVariationSettings: '"wdth" 100' }}
                             >
                                 <span>{secondaryButtonText}</span>

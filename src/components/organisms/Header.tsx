@@ -10,7 +10,6 @@ import { getLocalizedPath, languages, routeTranslations } from '../../i18n';
 import { useNavigate, useLocation } from 'react-router-dom';
 import menuIcon from '../../assets/icons/menu.svg';
 import closeIcon from '../../assets/icons/close.svg';
-import kanguruGif from '../../assets/hero/kanguru.gif';
 
 interface NavigationItem {
   label: string;
@@ -37,10 +36,8 @@ export const Header: React.FC<HeaderProps> = ({
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isApplicationMenuOpen, setIsApplicationMenuOpen] = useState(false);
   const [isLoginMenuOpen, setIsLoginMenuOpen] = useState(false);
   const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
-  const [hoveredApplyItem, setHoveredApplyItem] = useState<'driver' | null>(null);
 
   // Dinamik navigation items oluştur
   const currentLang = i18n.language as 'tr' | 'en' | 'de';
@@ -62,11 +59,12 @@ export const Header: React.FC<HeaderProps> = ({
     }
     return null;
   };
+
+  // Simplified nav items - only Home, About, Services, Contact
   const BASE_NAV_ITEMS: NavigationItem[] = [
     { label: t('nav.home'), href: getLocalizedPath('home', currentLang) },
     { label: t('nav.about'), href: getLocalizedPath('about', currentLang) },
     { label: t('nav.services'), href: getLocalizedPath('services', currentLang) },
-    { label: t('nav.help'), href: getLocalizedPath('help', currentLang) },
     { label: t('nav.contact'), href: getLocalizedPath('contact', currentLang) },
   ];
 
@@ -126,138 +124,6 @@ export const Header: React.FC<HeaderProps> = ({
                 activeItem={resolvedActiveItem}
               />
 
-              {/* Başvuru alanı - yeni tasarım */}
-              <div
-                className="relative"
-                onMouseEnter={() => setIsMobileMenuOpen(false)}
-              >
-                <div className="group relative inline-flex items-center">
-                  <button
-                    type="button"
-                    className="inline-flex items-center gap-1 text-[16px] font-medium text-[#3A3A3A] px-4 py-2 rounded-[5px] hover:bg-gray-100 transition-colors duration-200"
-                    style={{ fontFamily: 'Roboto, sans-serif', fontVariationSettings: '"wdth" 100' }}
-                  >
-                    {t('nav.apply')}
-                    <svg
-                      className="w-4 h-4 text-gray-500 transition-transform duration-200 group-hover:rotate-180"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </button>
-
-                  <div
-                    className={`invisible opacity-0 translate-y-1 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 absolute left-0 top-full mt-3 ${hoveredApplyItem === 'driver' ? 'w-[420px]' : 'w-[200px]'} bg-white rounded-[16px] shadow-[0_10px_40px_rgba(0,0,0,0.15)] border border-gray-100 overflow-hidden z-50`}
-                    onMouseLeave={() => setHoveredApplyItem(null)}
-                  >
-                    <div className="flex">
-                      {/* Sol kolon: başvuru tipleri */}
-                      <div className={`${hoveredApplyItem === 'driver' ? 'w-[52%] border-r border-gray-100' : 'w-full'} py-2 transition-all duration-200`}>
-                        <Link
-                          to={getLocalizedPath('carrier', currentLang)}
-                          onMouseEnter={() => setHoveredApplyItem('driver')}
-                          className="flex items-center gap-3 px-4 py-3 hover:bg-primary-50 transition-colors duration-200"
-                        >
-                          <div className="w-8 h-8 rounded-full bg-primary-100 text-[#032c95] flex items-center justify-center flex-shrink-0">
-                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M3 13l2-5h4l2 5m-2-5l1-3h4l2 6m-5 4a2 2 0 11-4 0 2 2 0 014 0zm7 0a2 2 0 11-4 0 2 2 0 014 0z"
-                              />
-                            </svg>
-                          </div>
-                          <div className="min-w-0">
-                            <p className="text-[14px] font-semibold text-[#3A3A3A]">
-                              {t('nav.driverApplication')}
-                            </p>
-                          </div>
-                        </Link>
-
-                        <Link
-                          to={getLocalizedPath('dealer', currentLang)}
-                          onMouseEnter={() => setHoveredApplyItem(null)}
-                          className="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 transition-colors duration-200"
-                        >
-                          <div className="w-8 h-8 rounded-full bg-gray-100 text-[#032c95] flex items-center justify-center flex-shrink-0">
-                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M3 7h18M5 7v13h14V7M9 7V5a3 3 0 016 0v2"
-                              />
-                            </svg>
-                          </div>
-                          <div className="min-w-0">
-                            <p className="text-[14px] font-semibold text-[#3A3A3A]">
-                              {t('nav.franchiseApplication')}
-                            </p>
-                          </div>
-                        </Link>
-
-                        <Link
-                          to={getLocalizedPath('corporate', currentLang)}
-                          onMouseEnter={() => setHoveredApplyItem(null)}
-                          className="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 transition-colors duration-200"
-                        >
-                          <div className="w-8 h-8 rounded-full bg-gray-100 text-[#032c95] flex items-center justify-center flex-shrink-0">
-                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M4 21V7a2 2 0 012-2h3m5 0h3a2 2 0 012 2v14M9 5v16M15 5v16"
-                              />
-                            </svg>
-                          </div>
-                          <div className="min-w-0">
-                            <p className="text-[14px] font-semibold text-[#3A3A3A]">
-                              {t('nav.corporateMembership')}
-                            </p>
-                          </div>
-                        </Link>
-                      </div>
-
-                      {/* Sağ kolon: sadece sürücü başvuru hover'ında göster */}
-                      {hoveredApplyItem === 'driver' && (
-                        <div className="w-[48%] bg-gradient-to-br from-[#032c95] to-[#004899] text-white p-3 flex flex-col justify-center">
-                          <div>
-                            <p className="text-[13px] font-semibold mb-2">
-                              {t('nav.driverApplication')}
-                            </p>
-                            <p className="text-[11px] text-white/90 mb-3">
-                              {t('nav.logisticsCourier')} &amp; {t('nav.restaurantCourier')}
-                            </p>
-                          </div>
-                          <div className="flex flex-col gap-2">
-                            <Button
-                              variant="primary"
-                              size="sm"
-                              className="w-full h-[32px] !rounded-[999px] !bg-white !text-[#032c95] text-[12px] font-semibold"
-                              onClick={() => navigate(getLocalizedPath('carrier', currentLang))}
-                            >
-                              {t('nav.logisticsCourier')}
-                            </Button>
-                            <Button
-                              variant="primary"
-                              size="sm"
-                              className="w-full h-[32px] !rounded-[999px] !bg-white/90 !text-[#032c95] text-[12px] font-semibold"
-                              onClick={() => navigate(getLocalizedPath('carrier', currentLang))}
-                            >
-                              {t('nav.restaurantCourier')}
-                            </Button>
-                          </div>
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              </div>
-
               <LanguageSwitcher />
 
               <div className="relative group">
@@ -312,22 +178,6 @@ export const Header: React.FC<HeaderProps> = ({
                         <p className="text-[12px] text-gray-500">{t('nav.dealerLoginDesc')}</p>
                       </div>
                     </a>
-                    <a
-                      href="https://restoran.yuksi.dev/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-3 px-4 py-3 hover:bg-primary-50 transition-colors duration-200"
-                    >
-                      <div className="w-10 h-10 bg-gradient-to-br from-[#032c95] to-[#004899] rounded-full flex items-center justify-center flex-shrink-0">
-                        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                        </svg>
-                      </div>
-                      <div>
-                        <p className="text-[14px] font-semibold text-[#3A3A3A]" style={{ fontFamily: 'Roboto, sans-serif' }}>{t('nav.restaurantLogin')}</p>
-                        <p className="text-[12px] text-gray-500">{t('nav.restaurantLoginDesc')}</p>
-                      </div>
-                    </a>
                   </div>
                 </div>
               </div>
@@ -376,30 +226,6 @@ export const Header: React.FC<HeaderProps> = ({
               </div>
 
               <div className="flex-1 px-6 pt-2 pb-8 space-y-8">
-                {/* Kanguru ve Mesaj Balonu */}
-                <div className="relative flex items-center gap-5">
-                  <div className="relative flex-shrink-0">
-                    <div className="w-20 h-20 rounded-full bg-white border-2 border-primary-100 shadow-md flex items-center justify-center overflow-hidden">
-                      <img
-                        src={kanguruGif}
-                        alt="Gitgönder kanguru"
-                        className="w-[120%] h-[120%] object-contain mt-2"
-                      />
-                    </div>
-                    <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-green-500 border-2 border-white rounded-full"></div>
-                  </div>
-
-                  <div className="relative flex-1">
-                    <div className="bg-white border border-gray-100 text-[#3A3A3A] px-4 py-3 rounded-2xl rounded-tl-none shadow-sm relative italic">
-                      <p className="text-[13px] font-bold leading-tight" style={{ fontFamily: 'Roboto, sans-serif' }}>
-                        {t('nav.helpMessage')}
-                      </p>
-                      {/* Bubble Tail */}
-                      <div className="absolute top-0 -left-2 w-2 h-2 bg-white border-l border-t border-gray-100 -rotate-45"></div>
-                    </div>
-                  </div>
-                </div>
-
                 {/* Menü Öğeleri */}
                 <nav className="flex flex-col gap-2">
                   {defaultNavItems.map((item) => {
@@ -423,108 +249,6 @@ export const Header: React.FC<HeaderProps> = ({
                     );
                   })}
                 </nav>
-
-                {/* Başvur Dropdown */}
-                <div className="space-y-3">
-                  <button
-                    type="button"
-                    onClick={() => setIsApplicationMenuOpen(!isApplicationMenuOpen)}
-                    className="w-full flex items-center justify-between px-4 py-3.5 rounded-xl text-[18px] font-bold text-[#3A3A3A] bg-gray-50 hover:bg-gray-100 active:scale-[0.98] transition-all duration-200"
-                    style={{ fontFamily: 'Roboto, sans-serif' }}
-                  >
-                    <span>{t('nav.apply')}</span>
-                    <svg
-                      className={`w-5 h-5 text-gray-500 transition-transform duration-300 ${isApplicationMenuOpen ? 'rotate-180' : ''}`}
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </button>
-
-                  <div className={`overflow-hidden transition-all duration-300 ${isApplicationMenuOpen ? 'max-h-[500px] opacity-100 mt-3' : 'max-h-0 opacity-0'}`}>
-                    <div className="grid gap-3">
-                      <Link 
-                        to={getLocalizedPath('carrier', currentLang)} 
-                        onClick={() => setIsMobileMenuOpen(false)}
-                        className="group"
-                      >
-                        <div className="p-4 bg-gradient-to-br from-white to-primary-50/30 border-2 border-primary-100 rounded-xl shadow-sm hover:border-primary-300 hover:shadow-md transition-all duration-200">
-                          <div className="flex items-center gap-3 mb-3">
-                            <div className="w-10 h-10 rounded-full bg-primary-100 text-[#032c95] flex items-center justify-center flex-shrink-0 group-hover:text-primary-200 transition-colors">
-                              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth={2}
-                                  d="M3 13l2-5h4l2 5m-2-5l1-3h4l2 6m-5 4a2 2 0 11-4 0 2 2 0 014 0zm7 0a2 2 0 11-4 0 2 2 0 014 0z"
-                                />
-                              </svg>
-                            </div>
-                            <p className="text-[15px] font-bold text-gray-900 flex-1">{t('nav.driverApplication')}</p>
-                          </div>
-                          <div className="flex flex-wrap gap-2">
-                            <span className="text-[11px] bg-[#032c95] text-white px-3 py-1.5 rounded-full font-semibold">
-                              {t('nav.logisticsCourier')}
-                            </span>
-                            <span className="text-[11px] bg-[#032c95] text-white px-3 py-1.5 rounded-full font-semibold">
-                              {t('nav.restaurantCourier')}
-                            </span>
-                          </div>
-                        </div>
-                      </Link>
-                      <Link 
-                        to={getLocalizedPath('dealer', currentLang)} 
-                        onClick={() => setIsMobileMenuOpen(false)}
-                        className="group"
-                      >
-                        <div className="p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:border-primary-200 hover:shadow-md hover:bg-primary-50/30 transition-all duration-200 flex items-center justify-between">
-                          <div className="flex items-center gap-3">
-                            <div className="w-10 h-10 rounded-full bg-gray-100 text-[#032c95] flex items-center justify-center flex-shrink-0 group-hover:bg-primary-100 transition-colors">
-                              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth={2}
-                                  d="M3 7h18M5 7v13h14V7M9 7V5a3 3 0 016 0v2"
-                                />
-                              </svg>
-                            </div>
-                            <span className="text-[15px] font-bold text-gray-900">{t('nav.franchiseApplication')}</span>
-                          </div>
-                          <svg className="w-5 h-5 text-primary-500 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                          </svg>
-                        </div>
-                      </Link>
-                      <Link 
-                        to={getLocalizedPath('corporate', currentLang)} 
-                        onClick={() => setIsMobileMenuOpen(false)}
-                        className="group"
-                      >
-                        <div className="p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:border-primary-200 hover:shadow-md hover:bg-primary-50/30 transition-all duration-200 flex items-center justify-between">
-                          <div className="flex items-center gap-3">
-                            <div className="w-10 h-10 rounded-full bg-gray-100 text-[#032c95] flex items-center justify-center flex-shrink-0 group-hover:bg-primary-100 transition-colors">
-                              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth={2}
-                                  d="M4 21V7a2 2 0 012-2h3m5 0h3a2 2 0 012 2v14M9 5v16M15 5v16"
-                                />
-                              </svg>
-                            </div>
-                            <span className="text-[15px] font-bold text-gray-900">{t('nav.corporateMembership')}</span>
-                          </div>
-                          <svg className="w-5 h-5 text-primary-500 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                          </svg>
-                        </div>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
               </div>
 
               <div className="p-6 border-t border-gray-50 space-y-4 bg-gray-50/50">
@@ -584,25 +308,6 @@ export const Header: React.FC<HeaderProps> = ({
                       <div className="min-w-0 flex-1">
                         <p className="text-[15px] font-bold text-gray-900">{t('nav.dealerLogin')}</p>
                         <p className="text-[12px] text-gray-500 mt-0.5">{t('nav.dealerLoginDesc')}</p>
-                      </div>
-                      <svg className="w-5 h-5 text-primary-500 group-hover:translate-x-1 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                      </svg>
-                    </a>
-                    <a 
-                      href="https://restoran.yuksi.dev/" 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="group flex items-center gap-4 p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:border-primary-200 hover:shadow-md hover:bg-primary-50/30 transition-all duration-200"
-                    >
-                      <div className="w-11 h-11 bg-gradient-to-br from-[#032c95] to-[#004899] rounded-full flex items-center justify-center text-white flex-shrink-0 group-hover:scale-110 transition-transform">
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                        </svg>
-                      </div>
-                      <div className="min-w-0 flex-1">
-                        <p className="text-[15px] font-bold text-gray-900">{t('nav.restaurantLogin')}</p>
-                        <p className="text-[12px] text-gray-500 mt-0.5">{t('nav.restaurantLoginDesc')}</p>
                       </div>
                       <svg className="w-5 h-5 text-primary-500 group-hover:translate-x-1 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -685,3 +390,4 @@ export const Header: React.FC<HeaderProps> = ({
     </>
   );
 };
+

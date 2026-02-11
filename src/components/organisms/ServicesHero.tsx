@@ -1,6 +1,5 @@
 import { useTranslation } from 'react-i18next';
 import servicesHeroBg from '../../assets/services/hero-bg.png';
-import kangarooServices from '../../assets/services/kangaroo-services.png';
 
 export function ServicesHero() {
     const { t } = useTranslation();
@@ -22,8 +21,8 @@ export function ServicesHero() {
             {/* Content Container */}
             <div className="relative z-10 w-full px-4 sm:px-6 xl:px-8 py-6 sm:py-8 md:py-10 lg:py-12 xl:py-20">
                 <div className="relative w-full">
-                    {/* Left Side - Text Content - Hidden on mobile */}
-                    <div className="hidden md:flex w-full lg:max-w-[60%] pl-4 sm:pl-6 md:pl-8 xl:pl-12 flex-col gap-3 sm:gap-4 md:gap-5 lg:gap-6 xl:gap-8">
+                    {/* Left Side - Text Content */}
+                    <div className="w-full lg:max-w-[60%] pl-4 sm:pl-6 md:pl-8 xl:pl-12 flex-col gap-3 sm:gap-4 md:gap-5 lg:gap-6 xl:gap-8">
                         {/* Main Title */}
                         <h1 className="text-white text-[20px] sm:text-[28px] md:text-[36px] lg:text-[44px] xl:text-[60px] font-bold leading-tight sm:leading-tight md:leading-normal whitespace-pre-wrap" style={{ fontFamily: 'Roboto, sans-serif', fontVariationSettings: '"wdth" 100' }}>
                             {t('services.hero.title')}
@@ -40,19 +39,9 @@ export function ServicesHero() {
                             {t('services.hero.description')}
                         </p>
                     </div>
-
-                    {/* Right Side - Kangaroo Image */}
-                    <div className="hidden xl:block absolute right-0 bottom-0" style={{ right: '80px', top: '50%', transform: 'translateY(0%)' }}>
-                        <div className="relative w-[563px] h-[747px]" style={{ transform: 'rotate(180deg) scaleY(-1)' }}>
-                            <img
-                                src={kangarooServices}
-                                alt={t('services.hero.kangarooAlt')}
-                                className="w-full h-full object-contain"
-                            />
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
     );
 }
+

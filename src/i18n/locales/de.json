@@ -1,475 +1,275 @@
 {
-  "nav": {
-    "home": "Startseite",
-    "about": "Über Uns",
-    "services": "Dienstleistungen",
-    "help": "Hilfe",
-    "contact": "Kontakt",
-    "apply": "Bewerben",
-    "login": "Anmelden",
-    "joinUs": "Mitmachen",
-    "driverApplication": "Gitgönder Fahrerbewerbung",
-    "logisticsCourier": "Logistik-Kurier",
-    "restaurantCourier": "Restaurant-Kurier",
-    "franchiseApplication": "Franchise-Bewerbung",
-    "corporateMembership": "Firmenmitgliedschaft",
-    "corporateLogin": "Firmenlogin",
-    "corporateLoginDesc": "Zugriff auf Ihr Geschäftskonto",
-    "dealerLogin": "Händlerlogin",
-    "dealerLoginDesc": "Zugriff auf Ihr Händlerpanel",
-    "restaurantLogin": "Restaurantlogin",
-    "restaurantLoginDesc": "Zugriff auf Ihr Restaurantpanel",
-    "helpMessage": "Wie kann ich Ihnen helfen?",
-    "openMenu": "Menü öffnen",
-    "closeMenu": "Menü schließen",
-    "menuIcon": "Menü",
-    "closeIcon": "Schließen"
-  },
-  "home": {
-    "seo": {
-      "title": "Gitgönder - Logistik Fracht Kurier",
-      "description": "Schnelle und flexible Lösungen für Ihre Logistikbedürfnisse mit Gitgönder. Motorradkurier, Minivan, Transporter, Pickup und LKW-Dienste. Zuverlässiger Transport in der gesamten Türkei."
+    "nav": {
+        "home": "Startseite",
+        "about": "Über Uns",
+        "services": "Dienstleistungen",
+        "contact": "Kontakt",
+        "login": "Anmelden",
+        "corporateLogin": "Firmenlogin",
+        "corporateLoginDesc": "Zugriff auf Ihr Geschäftskonto",
+        "dealerLogin": "Händlerlogin",
+        "dealerLoginDesc": "Zugriff auf Ihr Händlerpanel",
+        "openMenu": "Menü öffnen",
+        "closeMenu": "Menü schließen",
+        "menuIcon": "Menü",
+        "closeIcon": "Schließen"
     },
-    "hero": {
-      "title": "LOGISTIK FRACHT KURIER",
-      "subtitle": "an Ihrer Seite",
-      "description": "Gitgönder bietet schnelle und flexible Lösungen für Ihre modernen Logistikbedürfnisse. Ob über unsere mobile App oder Website, Sie können einfach ein Fahrzeug rufen und Ihre Sendungen sicher mit unserer breiten Flotte transportieren - von Motorradkurieren bis zu Minivans, Transportern, Pickups und LKWs.",
-      "downloadApp": "App Herunterladen",
-      "callVehicle": "Fahrzeug Rufen",
-      "yuksiLogistics": "GİTGÖNDER LOGISTIK",
-      "yuksiCargo": "GİTGÖNDER FRACHT",
-      "yuksiCourier": "GİTGÖNDER KURIER"
-    },
-    "vehicleShowcase": {
-      "title": "LOGISTIK SUPER APP GİTGÖNDER",
-      "subtitle": "Unsere Fahrzeugklassen",
-      "explore": "Erkunden",
-      "motorcycle": "Motorrad",
-      "motorcycleDesc": "Schnelle Lieferung bis 40-50 kg",
-      "minivan": "Minivan",
-      "minivanDesc": "500-800 kg Stadttransport",
-      "panelvan": "Transporter",
-      "panelvanDesc": "1.000-1.500 kg professioneller Umzug",
-      "pickup": "Pickup",
-      "pickupDesc": "1.500-3.500 kg gewerblicher Versand",
-      "truck": "LKW",
-      "truckDesc": "3.500-20.000 kg Schwerlasttransport"
-    },
-    "mobileJoin": {
-      "title": "Treten Sie Gitgönder Mobile bei",
-      "description1": "Mit Gitgönder ist der Transport jeder Ladung, mit jedem Fahrzeug, überall hin jetzt auf Knopfdruck möglich! Ob kleines Paket oder riesige Ladung; von Motorrädern bis LKWs wartet bei Gitgönder jede Art von Fahrzeug auf Sie.",
-      "description2": "Die App bringt Sie dank ihres intelligenten standortbasierten Systems innerhalb von Sekunden mit dem am besten geeigneten Spediteur zusammen. So sparen Sie Zeit und vermeiden unnötige Kosten.",
-      "description3": "Außerdem ist alles transparent und klar mit kilometerbasierter Preisgestaltung! Mit Gitgönder ist Transport keine Mühe mehr, sondern ein angenehmes Erlebnis. Sie bereiten Ihre Ladung vor, wir verbinden Sie mit dem richtigen Fahrzeug und zuverlässigen Spediteur.",
-      "description": "Verwalten Sie Ihre Transportvorgänge einfach mit der Gitgönder Mobile App.",
-      "downloadNow": "Jetzt Herunterladen"
-    },
-    "contactCta": {
-      "title": "Möchten Sie Spediteur werden?",
-      "subtitle": "Kontaktieren Sie Uns",
-      "description": "Nehmen Sie Ihren Platz im expandierenden Logistiknetzwerk von Gitgönder ein, verwandeln Sie Ihr Fahrzeug von einem reinen Transportmittel in eine Investition, die regelmäßige Einnahmen generiert. Dank der fortschrittlichsten technologischen Infrastruktur der Branche vereinfachen wir Ihre betrieblichen Prozesse, optimieren Ihre Route und steigern Ihre Effizienz. Ein nachhaltiges Einkommensmodell erwartet Sie mit einem transparenten Zahlungssystem, pünktlicher Zahlungsgarantie und Gitgönders Unternehmensgarantie. Bewerben Sie sich jetzt und werden Sie Teil unseres professionellen Teams.",
-      "button": "Formular Ausfüllen",
-      "contactUs": "Kontaktieren Sie Uns"
-    },
-    "businessPartners": {
-      "title": "Sektoren, die wir bedienen",
-      "logistics": {
-        "name": "Logistik",
-        "description": "Alle Fahrzeugklassen von Motorrädern bis LKWs sind mit kilometerbasierter Preisgestaltung auf Knopfdruck verfügbar!"
-      },
-      "cargo": {
-        "name": "Fracht",
-        "description": "Senden Sie Ihre Fracht zu den günstigsten Preisen in alle 81 Provinzen der Türkei!"
-      },
-      "courier": {
-        "name": "Kurier",
-        "description": "Die innovativsten Lösungen für Ihr Restaurant gibt es bei Gitgönder!"
-      },
-      "cargoPartners": {
-        "title": "Unsere Geschäftspartner",
-        "description": "Wir arbeiten mit starken Marken aus verschiedenen Branchen zusammen, um unsere Lösungen in ein breiteres Netzwerk zu tragen."
-      }
-    }
-  },
-  "about": {
-    "hero": {
-      "title": "DER LOGISTIK-INFRASTRUKTURANBIETER DER TÜRKEI",
-      "description": "Als Gitgönder ist unsere Vision, eine wegweisende Marke zu sein, die mit unserem innovativen ve güvenilir Serviceansatz in der Logistikbranche das Leben von Einzelpersonen ve Unternehmen vereinfacht ve Geschwindigkeit ve Effizienz mit digitalen Lösungen maximiert. Mit Fokus auf Technologie möchten wir Lieferungen jeder Größenordnung sicher durchführen, mit Nachhaltigkeitsprinzipien wachsen ve der bevorzugte Logistiklösungspartner sowohl in der Türkei als auch auf internationalen Märkten werden.",
-      "imageAlt": "Gitgönder Logistikdienstleistung",
-      "kangarooAlt": "Gitgönder Känguru"
-    },
-    "aboutUs": {
-      "title": "Über Uns",
-      "description": "Gitgönder ist eine digitale Plattform, die entwickelt wurde, um innovative Lösungen für die Logistik- ve Transportbranche anzubieten. Über die Gitgönder-Mobilanwendung bringen wir Versender ve Spediteure auf sichere, schnelle ve effiziente Weise zusammen."
-    },
-    "serviceFeatures": {
-      "title": "Serviceleistungen",
-      "smartMatching": {
-        "title": "Intelligente Zuordnung:",
-        "description": "Dank unserer fortschrittlichen Algorithmen werden Ladungen innerhalb von Sekunden mit den am besten geeigneten Spediteuren abgeglichen."
-      },
-      "realTimeTracking": {
-        "title": "Echtzeit-Verfolgung:",
-        "description": "Sie können Fahrzeugstandorte während des gesamten Versandprozesses in Echtzeit verfolgen."
-      },
-      "certifiedNetwork": {
-        "title": "Zertifiziertes Spediteurnetzwerk:",
-        "description": "Alle unsere Spediteure sind Teil eines zugelassenen Netzwerks, das die erforderlichen Dokumente ve Qualifikationen erfüllt."
-      },
-      "flexiblePayment": {
-        "title": "Flexible Zahlungslösungen:",
-        "description": "Zahlungen werden mit unserer sicheren Zahlungsinfrastruktur schnell ve reibungslos abgewickelt."
-      }
-    },
-    "customerAdvantages": {
-      "title": "Kundenvorteile",
-      "timeCost": {
-        "title": "Zeit- ve Kostenersparnis:",
-        "description": "Genaue Zuordnung eliminiert unnötige Wartezeiten ve Leerfahrten."
-      },
-      "transparency": {
-        "title": "Transparenz ve Vertrauen:",
-        "description": "Jede Transaktion wird digital aufgezeichnet, was das Vertrauen zwischen den Parteien erhöht."
-      },
-      "support": {
-        "title": "24/7 Support:",
-        "description": "Unser Support-Team steht Ihnen bei betrieblichen Problemen jederzeit zur Verfügung."
-      }
-    },
-    "technology": {
-      "title": "Technologische Infrastruktur",
-      "locationBased": {
-        "title": "Standortbasiertes Smartsystem:",
-        "description": "Identifiziert sofort die nächsten ve am besten geeigneten Spediteure."
-      },
-      "aiPlanning": {
-        "title": "KI-gestützte Planung:",
-        "description": "Optimale Transportpläne werden basierend auf Verkehrs-, Wetter- ve Routendaten erstellt."
-      },
-      "cloudBased": {
-        "title": "Cloud-basierte Architektur:",
-        "description": "Alle Vorgänge laufen reibungslos mit unserer sicheren, schnellen ve skalierbaren Infrastruktur."
-      }
-    },
-    "seo": {
-      "title": "Über Uns | Gitgönder - Die Logistikplattform der Türkei",
-      "description": "Erfahren Sie mehr über Gitgönder. Unsere Vision als innovative Logistikplattform der Türkei, unsere Dienstleistungen ve technologische Infrastruktur."
-    }
-  },
-  "services": {
-    "seo": {
-      "title": "Unsere Dienstleistungen - Gitgönder",
-      "description": "Gitgönder Dienstleistungen: Motorradkurier (40-50 kg), Minivan (500-800 kg), Transporter (1.000-1.500 kg), Pickup (1.500-3.500 kg), LKW (3.500-20.000 kg). Stadt- ve Fernverkehrslösungen."
-    },
-    "hero": {
-      "title": "IHRE LAST IST UNSER GESCHÄFT",
-      "description": "Gitgönder bietet schnelle ve flexible Lösungen für Ihre modernen Logistikbedürfnisse. Ob über unsere mobile App oder Website, Sie können einfach ein Fahrzeug rufen ve Ihre Sendungen sicher mit unserer breiten Flotte transportieren - von Motorradkurieren bis zu Minivans, Transportern, Pickups ve LKWs. Gitgönder ist immer an Ihrer Seite für schnellen, praktischen ve zuverlässigen Service.",
-      "backgroundAlt": "Gitgönder Logistikdienst",
-      "kangarooAlt": "Gitgönder Känguru"
-    },
-    "motorcycle": {
-      "title": "Motorrad",
-      "description": "Motorradkuriere können in der Regel Lasten bis zu 40-50 kg transportieren. Ob nur ein Umschlag, eine Einkaufstüte oder verpacktes Essen - alles wird sicher geliefert.\n\nVon Essensbestellungen bis zu Einkaufsartikeln, von Medikamenten bis zu Dokumenten - Motorradkuriere sind die praktischste Lösung für schnelle Lieferungen in der Stadt.",
-      "buttonText": "Als Kurier Bewerben"
-    },
-    "minivan": {
-      "title": "Minivan",
-      "description": "Minivans können in der Regel Lasten bis zu 500-800 kg transportieren. Ob ein paar Kartons, kleine Haushaltsgegenstände oder Großeinkäufe - alles passt bequem hinein.\n\nVom Umzug bis zu Bürobedarf, von Marktlieferung bis zu kleinen Transporten - Minivans bieten praktische ve sichere Lösungen für den Stadtverkehr.",
-      "buttonText": "Für Express Bewerben"
-    },
-    "panelvan": {
-      "title": "Transporter",
-      "description": "Transporter können in der Regel Lasten bis zu 1.000-1.500 kg transportieren. Ob große Kartons, Möbel oder Großbestellungen - alles wird mit ihrem großen Volumen leicht transportiert.\n\nVom Hausumzug bis zum Ladenversand, von E-Commerce-Lieferung bis zum professionellen Transport - Transporter sind eine sichere ve leistungsstarke Lösung.",
-      "buttonText": "Für Express Bewerben"
-    },
-    "pickup": {
-      "title": "Pickup",
-      "description": "Pickups können in der Regel Lasten bis zu 1.500-3.500 kg transportieren. Ob Baumaterialien, große Möbel oder gewerbliche Massenprodukte - sie werden dank ihrer robusten Struktur leicht transportiert.\n\nVom Transport bis zum gewerblichen Versand, von Markt- ve Ladenlieferung bis zu landwirtschaftlichen Produkten - Pickups bieten zuverlässige Lösungen für Stadt- ve Fernverkehr.",
-      "buttonText": "Für Transport Bewerben"
-    },
-    "truck": {
-      "title": "LKW",
-      "description": "LKWs können in der Regel Lasten von 3.500 kg bis zu 20.000 kg transportieren. Ob schwere Maschinen, großvolumige Gegenstände oder gewerbliche Massenprodukte - sie werden dank ihrer großen Ladefläche ve starken Motoren leicht transportiert.\n\nVom Fernverkehr bis zum Logistikversand, von Baumaterialien bis zu Industrieprodukten - LKWs bieten sichere ve hochkapazitative Lösungen.",
-      "buttonText": "Für Transport Bewerben"
-    }
-  },
-  "help": {
-    "seo": {
-      "title": "Hilfe ve Support - Gitgönder",
-      "description": "Gitgönder Hilfecenter. Häufig gestellte Fragen, Benutzerhandbuch, technischer Support ve Kundenservice. Wie können wir Ihnen helfen?",
-      "backgroundAlt": "Gitgönder Logistikdienst",
-      "kangarooPhoneAlt": "Gitgönder Telefon Känguru",
-      "logoAlt": "Gitgönder Logo"
-    },
-    "hero": {
-      "titleLine1": "WIE KÖNNEN WIR",
-      "titleLine2": "IHNEN HELFEN?",
-      "formTitle": "Kontaktieren Sie uns",
-      "messagePlaceholder": "Schreiben Sie Ihre Nachricht hier...",
-      "nameLabel": "Vorname / Nachname",
-      "emailLabel": "E-Mail-Adresse",
-      "submit": "SENDEN",
-      "submitting": "WIRD GESENDET...",
-      "success": "Ihre Nachricht wurde erfolgreich gesendet! Wir werden uns so schnell wie möglich bei Ihnen melden. 🎉",
-      "error": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt.",
-      "validation": {
-        "nameRequired": "Bitte geben Sie Ihren Namen ein",
-        "nameMin": "Ihr Name muss mindestens 2 Zeichen lang sein",
-        "nameMax": "Ihr Name darf höchstens 200 Zeichen lang sein",
-        "emailRequired": "Bitte geben Sie Ihre E-Mail-Adresse ein",
-        "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
-        "messageRequired": "Bitte schreiben Sie Ihre Nachricht",
-        "messageMin": "Ihre Nachricht muss mindestens 2 Zeichen lang sein",
-        "messageMax": "Ihre Nachricht darf höchstens 5000 Zeichen lang sein"
-      }
-    },
-    "content": {
-      "intro": "Wir sind immer an Ihrer Seite! Sie können uns über die Gitgönder-Helpline zu folgenden Themen kontaktieren",
-      "topics": {
-        "shipping": {
-          "title": "Sendungsverfolgung: ",
-          "description": "Erfahren Sie den aktuellen Status Ihres Pakets und Informationen zum Lieferprozess."
+    "home": {
+        "seo": {
+            "title": "Gitgönder - Frachtversandstelle",
+            "description": "Schnelle und zuverlässige Lösungen für Ihre Frachtversandbedürfnisse mit Gitgönder. Professioneller Frachttransport in der gesamten Türkei mit Pickups und LKWs."
         },
-        "request": {
-          "title": "Fahrzeuganfrage und Reservierung: ",
-          "description": "Rufen Sie das für Ihre Bedürfnisse passende Fahrzeug vom Motorradkurier bis zum LKW oder planen Sie die Reservierungsunterstützung."
+        "contactCta": {
+            "title": "Versenden Sie mit Gitgönder",
+            "subtitle": "Kontaktieren Sie Uns",
+            "description": "Nehmen Sie Ihren Platz im expandierenden Frachtnetzwerk von Gitgönder ein. Wir bieten zuverlässige Frachttransportdienstleistungen in alle 81 Provinzen der Türkei. Mit unserer modernen technologischen Infrastruktur, wettbewerbsfähigen Preisen und zuverlässigem Serviceansatz sind wir immer an Ihrer Seite. Kontaktieren Sie uns jetzt, um Ihre Frachtversandprozesse zu vereinfachen.",
+            "button": "Kontaktieren Sie Uns",
+            "contactUs": "Erreichen Sie Uns"
         },
-        "deliveryIssues": {
-          "title": "Lieferprobleme: ",
-          "description": "Lösungen bei Verzögerungen, Adressänderungen oder anderen Problemen im Zusammenhang mit der Lieferung."
-        },
-        "techSupport": {
-          "title": "App- und Web-Support: ",
-          "description": "Hilfe bei technischen Problemen mit der mobilen Anwendung oder unserer Website."
-        },
-        "pricing": {
-          "title": "Preise und Bezahlung: ",
-          "description": "Informationen über Preise, Rechnungen oder Zahlungsmethoden anfordern."
-        },
-        "general": {
-          "title": "Allgemeine Fragen und Vorschläge: ",
-          "description": "Fragen zu unseren Dienstleistungen oder Vorschläge, die Sie uns mitteilen möchten."
+        "businessPartners": {
+            "title": "Sektoren, die wir bedienen",
+            "logistics": {
+                "name": "Logistik",
+                "description": "Professionelle Frachttransportdienstleistungen zur Erfüllung Ihrer Geschäftslogistikbedürfnisse."
+            },
+            "cargo": {
+                "name": "Fracht",
+                "description": "Senden Sie Ihre Fracht zu den günstigsten Preisen in alle 81 Provinzen der Türkei!"
+            },
+            "cargoPartners": {
+                "title": "Unsere Geschäftspartner",
+                "description": "Wir arbeiten mit starken Marken aus verschiedenen Branchen zusammen, um unsere Lösungen in ein breiteres Netzwerk zu tragen."
+            }
         }
-      }
-    }
-  },
-  "contact": {
-    "seo": {
-      "title": "Kontakt - Gitgönder",
-      "description": "Kontaktieren Sie Gitgönder. Kontaktieren Sie uns für Ihre Fragen, Vorschläge oder Supportanfragen. Telefon: 0850 241 93 16 | E-Mail: info@yuksi.tr"
     },
-    "title": "Kontakt",
-    "subtitle": "Kontaktieren Sie Uns",
-    "form": {
-      "title": "Kontaktieren Sie uns!",
-      "namePlaceholder": "Vollständiger Name",
-      "emailPlaceholder": "E-Mail",
-      "phonePlaceholder": "Telefonnummer",
-      "cityPlaceholder": "Stadt wählen",
-      "subjectPlaceholder": "Betreff",
-      "messagePlaceholder": "Nachricht",
-      "send": "Senden",
-      "sending": "Wird gesendet...",
-      "success": "Ihre Nachricht wurde erfolgreich gesendet! Wir werden uns so schnell wie möglich bei Ihnen melden. 🎉",
-      "error": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt.",
-      "validation": {
-        "nameRequired": "Bitte geben Sie Ihren Namen ein",
-        "nameMin": "Ihr Name muss mindestens 2 Zeichen lang sein",
-        "nameMax": "Ihr Name darf höchstens 200 Zeichen lang sein",
-        "emailRequired": "Bitte geben Sie Ihre E-Mail-Adresse ein",
-        "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
-        "phoneRequired": "Bitte geben Sie Ihre Telefonnummer ein",
-        "phoneMin": "Ihre Telefonnummer muss mindestens 5 Zeichen lang sein",
-        "phoneMax": "Ihre Telefonnummer darf höchstens 50 Zeichen lang sein",
-        "cityRequired": "Bitte wählen Sie Ihre Stadt",
-        "cityMin": "Ihre Stadt muss mindestens 2 Zeichen lang sein",
-        "cityMax": "Ihre Stadt darf höchstens 100 Zeichen lang sein",
-        "subjectRequired": "Bitte geben Sie einen Betreff ein",
-        "subjectMin": "Der Betreff muss mindestens 2 Zeichen lang sein",
-        "subjectMax": "Der Betreff darf höchstens 200 Zeichen lang sein",
-        "messageRequired": "Bitte geben Sie Ihre Nachricht ein",
-        "messageMin": "Ihre Nachricht muss mindestens 2 Zeichen lang sein",
-        "messageMax": "Ihre Nachricht darf höchstens 5000 Zeichen lang sein"
-      },
-      "contactInfo": "Sie können uns Ihr Feedback über",
-      "contactInfo2": "oder das Kontaktformular mitteilen.",
-      "phoneLabel": "Kontaktnummer"
+    "about": {
+        "hero": {
+            "title": "DIE ZUVERLÄSSIGE FRACHTLÖSUNG DER TÜRKEI",
+            "description": "Als Gitgönder ist unsere Vision, eine wegweisende Marke zu sein, die mit unserem innovativen und zuverlässigen Serviceansatz in der Frachttransportbranche das Leben von Einzelpersonen und Unternehmen vereinfacht und Geschwindigkeit und Effizienz mit digitalen Lösungen maximiert. Mit Fokus auf Technologie möchten wir Fracht jeder Größenordnung sicher liefern, mit Nachhaltigkeitsprinzipien wachsen und der bevorzugte Frachtlösungspartner sowohl in der Türkei als auch auf internationalen Märkten werden.",
+            "imageAlt": "Gitgönder Frachtdienst",
+            "kangarooAlt": "Gitgönder Känguru"
+        },
+        "aboutUs": {
+            "title": "Über Uns",
+            "description": "Gitgönder ist eine digitale Plattform, die entwickelt wurde, um innovative Lösungen für die Frachttransportbranche anzubieten. Über die Gitgönder-Plattform bringen wir Frachtversender und Spediteure auf sichere, schnelle und effiziente Weise zusammen."
+        },
+        "serviceFeatures": {
+            "title": "Serviceleistungen",
+            "smartMatching": {
+                "title": "Intelligente Zuordnung:",
+                "description": "Dank unserer fortschrittlichen Algorithmen wird Fracht innerhalb von Sekunden mit den am besten geeigneten Spediteuren abgeglichen."
+            },
+            "realTimeTracking": {
+                "title": "Echtzeit-Verfolgung:",
+                "description": "Sie können Fahrzeugstandorte während des gesamten Versandprozesses in Echtzeit verfolgen."
+            },
+            "certifiedNetwork": {
+                "title": "Zertifiziertes Spediteurnetzwerk:",
+                "description": "Alle unsere Spediteure sind Teil eines zugelassenen Netzwerks, das die erforderlichen Dokumente und Qualifikationen erfüllt."
+            },
+            "flexiblePayment": {
+                "title": "Flexible Zahlungslösungen:",
+                "description": "Zahlungen werden mit unserer sicheren Zahlungsinfrastruktur schnell und reibungslos abgewickelt."
+            }
+        },
+        "customerAdvantages": {
+            "title": "Kundenvorteile",
+            "timeCost": {
+                "title": "Zeit- und Kostenersparnis:",
+                "description": "Genaue Zuordnung eliminiert unnötige Wartezeiten und Leerfahrten."
+            },
+            "transparency": {
+                "title": "Transparenz und Vertrauen:",
+                "description": "Jede Transaktion wird digital aufgezeichnet, was das Vertrauen zwischen den Parteien erhöht."
+            },
+            "support": {
+                "title": "24/7 Support:",
+                "description": "Unser Support-Team steht Ihnen bei betrieblichen Problemen jederzeit zur Verfügung."
+            }
+        },
+        "technology": {
+            "title": "Technologische Infrastruktur",
+            "locationBased": {
+                "title": "Standortbasiertes Smart-System:",
+                "description": "Identifiziert sofort die nächsten und am besten geeigneten Spediteure."
+            },
+            "aiPlanning": {
+                "title": "KI-gestützte Planung:",
+                "description": "Optimale Transportpläne werden basierend auf Verkehrs-, Wetter- und Routendaten erstellt."
+            },
+            "cloudBased": {
+                "title": "Cloud-basierte Architektur:",
+                "description": "Alle Vorgänge laufen reibungslos mit unserer sicheren, schnellen und skalierbaren Infrastruktur."
+            }
+        },
+        "seo": {
+            "title": "Über Uns | Gitgönder - Die Frachtplattform der Türkei",
+            "description": "Erfahren Sie mehr über Gitgönder. Unsere Vision als innovative Frachtplattform der Türkei, unsere Dienstleistungen und technologische Infrastruktur."
+        }
     },
-    "info": {
-      "phone": "Telefon",
-      "phoneValue": "0850 241 93 16",
-      "email": "E-Mail",
-      "emailValue": "info@yuksi.tr"
-    }
-  },
-  "carrier": {
-    "seo": {
-      "title": "Kurier- ve Spediteurbewerbung - Gitgönder",
-      "description": "Bewerben Sie sich bei Gitgönder als Kurier oder Spediteur. Arbeitsmöglichkeit mit Motorrad, Minivan, Transporter, Pickup oder LKW. Flexible Arbeitszeiten ve wettbewerbsfähige Preise."
+    "services": {
+        "seo": {
+            "title": "Unsere Dienstleistungen - Gitgönder",
+            "description": "Gitgönder Frachtdienstleistungen: Pickup (1.500-3.500 kg), LKW (3.500-20.000 kg). Professionelle Lösungen für urbanen und intercity Frachttransport."
+        },
+        "hero": {
+            "title": "IHRE LAST IST UNSER GESCHÄFT",
+            "description": "Gitgönder bietet schnelle und flexible Lösungen für Ihre modernen Frachttransportbedürfnisse. Mit unserer Pickup- und LKW-Flotte können Sie Ihre Sendungen sicher transportieren. Gitgönder ist immer an Ihrer Seite für schnellen, praktischen und zuverlässigen Frachtservice.",
+            "backgroundAlt": "Gitgönder Frachtdienst",
+            "kangarooAlt": "Gitgönder Känguru"
+        },
+        "pickup": {
+            "title": "Pickup",
+            "description": "Pickups können in der Regel Lasten bis zu 1.500-3.500 kg transportieren. Ob Baumaterialien, große Möbel oder gewerbliche Massenprodukte - sie werden dank ihrer robusten Struktur leicht transportiert.\n\nVom Transport bis zum gewerblichen Versand, von Markt- und Ladenlieferung bis zu landwirtschaftlichen Produkten - Pickups bieten zuverlässige Lösungen für Stadt- und Fernverkehr.",
+            "buttonText": "Kontaktieren Sie Uns"
+        },
+        "truck": {
+            "title": "LKW",
+            "description": "LKWs können in der Regel Lasten von 3.500 kg bis zu 20.000 kg transportieren. Ob schwere Maschinen, großvolumige Gegenstände oder gewerbliche Massenprodukte - sie werden dank ihrer großen Ladefläche und starken Motoren leicht transportiert.\n\nVom Fernverkehr bis zum Logistikversand, von Baumaterialien bis zu Industrieprodukten - LKWs bieten sichere und hochkapazitative Lösungen.",
+            "buttonText": "Kontaktieren Sie Uns"
+        }
     },
-    "title": "Fahrerbewerbung",
-    "subtitle": "Werden Sie Teil der Gitgönder-Familie",
-    "form": {
-      "title": "SPEDITEUR WERDEN",
-      "title2": "MACH JETZT MIT!",
-      "subtitle": "Füllen Sie das Formular aus, um Spediteur zu werden",
-      "firstName": "Vorname",
-      "lastName": "Nachname",
-      "email": "E-Mail",
-      "phone": "Telefonnummer",
-      "city": "Stadt",
-      "vehicleType": "Fahrzeugtyp",
-      "vehicleYear": "Fahrzeugjahr",
-      "vehicleDocument": "Fahrzeugdokumente Hochladen",
-      "vehicleDocumentHelper": "Zulassung/Gewerbeschein",
-      "carrierDocument": "Spediteurdokumente Hochladen",
-      "carrierDocumentHelper": "Führungszeugnis/Führerschein",
-      "submit": "Senden",
-      "submitting": "Wird gesendet...",
-      "success": "Ihre Bewerbung wurde erfolgreich eingereicht.",
-      "error": "Beim Einreichen des Formulars ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
-      "validation": {
-        "required": "Erforderlich",
-        "yearNumber": "Jahr muss eine Zahl sein"
-      },
-      "vehicles": {
-        "motorcycle": "Motorrad",
-        "minivan": "Minivan",
-        "panelvan": "Transporter",
-        "pickup": "Pickup",
-        "truck": "LKW"
-      }
-    }
-  },
-  "dealer": {
-    "seo": {
-      "title": "Händlerbewerbung - Gitgönder",
-      "description": "Bewerben Sie sich als Gitgönder-Händler. Erfahren Sie mehr über Franchise-Möglichkeiten, Händlerbedingungen ve Vorteile. Treten Sie unserem Händlernetzwerk mit Sitz in Bursa in der gesamten Türkei bei."
+    "help": {
+        "seo": {
+            "title": "Hilfe und Support - Gitgönder",
+            "description": "Gitgönder Hilfecenter. Häufig gestellte Fragen, Benutzerhandbuch, technischer Support und Kundenservice. Wie können wir Ihnen helfen?",
+            "backgroundAlt": "Gitgönder Frachtdienst",
+            "kangarooPhoneAlt": "Gitgönder Telefon Känguru",
+            "logoAlt": "Gitgönder Logo"
+        },
+        "hero": {
+            "titleLine1": "WIE KÖNNEN WIR",
+            "titleLine2": "IHNEN HELFEN?",
+            "formTitle": "Kontaktieren Sie uns",
+            "messagePlaceholder": "Schreiben Sie Ihre Nachricht hier...",
+            "nameLabel": "Vorname / Nachname",
+            "emailLabel": "E-Mail-Adresse",
+            "submit": "SENDEN",
+            "submitting": "WIRD GESENDET...",
+            "success": "Ihre Nachricht wurde erfolgreich gesendet! Wir werden uns so schnell wie möglich bei Ihnen melden. 🎉",
+            "error": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt.",
+            "validation": {
+                "nameRequired": "Bitte geben Sie Ihren Namen ein",
+                "nameMin": "Ihr Name muss mindestens 2 Zeichen lang sein",
+                "nameMax": "Ihr Name darf höchstens 200 Zeichen lang sein",
+                "emailRequired": "Bitte geben Sie Ihre E-Mail-Adresse ein",
+                "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+                "messageRequired": "Bitte schreiben Sie Ihre Nachricht",
+                "messageMin": "Ihre Nachricht muss mindestens 2 Zeichen lang sein",
+                "messageMax": "Ihre Nachricht darf höchstens 5000 Zeichen lang sein"
+            }
+        },
+        "content": {
+            "intro": "Wir sind immer an Ihrer Seite! Sie können uns über die Gitgönder-Helpline zu folgenden Themen kontaktieren",
+            "topics": {
+                "shipping": {
+                    "title": "Sendungsverfolgung: ",
+                    "description": "Erfahren Sie den aktuellen Status Ihrer Fracht und Informationen zum Lieferprozess."
+                },
+                "request": {
+                    "title": "Frachtanfrage und Reservierung: ",
+                    "description": "Frachttransportdienstleistungs-Reservierung mit Pickup oder LKW, passend für Ihre Bedürfnisse."
+                },
+                "deliveryIssues": {
+                    "title": "Lieferprobleme: ",
+                    "description": "Lösungen bei Verzögerungen, Adressänderungen oder anderen Problemen im Zusammenhang mit der Lieferung."
+                },
+                "techSupport": {
+                    "title": "Web-Support: ",
+                    "description": "Hilfe bei technischen Problemen, die Sie auf unserer Website erleben."
+                },
+                "pricing": {
+                    "title": "Preise und Bezahlung: ",
+                    "description": "Informationen über Preise, Rechnungen oder Zahlungsmethoden anfordern."
+                },
+                "general": {
+                    "title": "Allgemeine Fragen und Vorschläge: ",
+                    "description": "Fragen zu unseren Dienstleistungen oder Vorschläge, die Sie uns mitteilen möchten."
+                }
+            }
+        }
     },
-    "title": "Händlerbewerbung",
-    "subtitle": "Treten Sie dem Gitgönder-Händlernetzwerk bei",
-    "form": {
-      "title": "Kontaktieren Sie uns, um Händler zu werden",
-      "namePlaceholder": "Vollständiger Name",
-      "investmentBudgetPlaceholder": "Ihr Investitionsbudget",
-      "emailPlaceholder": "E-Mail",
-      "phonePlaceholder": "Telefonnummer",
-      "cityPlaceholder": "Stadt wählen",
-      "subjectPlaceholder": "Betreff",
-      "messagePlaceholder": "Nachricht",
-      "submit": "Senden",
-      "submitting": "Wird gesendet...",
-      "success": "Ihre Bewerbung wurde erfolgreich eingereicht! Wir werden uns so schnell wie möglich bei Ihnen melden. 🎉",
-      "error": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt.",
-      "contactInfo": "Sie können uns kontaktieren, um Händler zu werden über",
-      "contactInfo2": "oder das Kontaktformular.",
-      "phoneLabel": "Kontaktnummer",
-      "validation": {
-        "nameRequired": "Bitte geben Sie Ihren Namen ein",
-        "nameMin": "Ihr Name muss mindestens 2 Zeichen lang sein",
-        "nameMax": "Ihr Name darf höchstens 200 Zeichen lang sein",
-        "budgetRequired": "Bitte wählen Sie Ihr Investitionsbudget",
-        "emailRequired": "Bitte geben Sie Ihre E-Mail-Adresse ein",
-        "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
-        "phoneRequired": "Bitte geben Sie Ihre Telefonnummer ein",
-        "phoneMin": "Ihre Telefonnummer muss mindestens 5 Zeichen lang sein",
-        "phoneMax": "Ihre Telefonnummer darf höchstens 50 Zeichen lang sein",
-        "cityRequired": "Bitte wählen Sie Ihre Stadt",
-        "cityMin": "Ihre Stadt muss mindestens 2 Zeichen lang sein",
-        "cityMax": "Ihre Stadt darf höchstens 100 Zeichen lang sein",
-        "subjectRequired": "Bitte geben Sie einen Betreff ein",
-        "subjectMin": "Der Betreff muss mindestens 2 Zeichen lang sein",
-        "subjectMax": "Der Betreff darf höchstens 200 Zeichen lang sein",
-        "messageRequired": "Bitte geben Sie Ihre Nachricht ein",
-        "messageMin": "Ihre Nachricht muss mindestens 2 Zeichen lang sein",
-        "messageMax": "Ihre Nachricht darf höchstens 5000 Zeichen lang sein"
-      },
-      "budgets": {
-        "0-100000": "0 - 100.000 ₺",
-        "100000-250000": "100.000 - 250.000 ₺",
-        "250000-500000": "250.000 - 500.000 ₺",
-        "500000-1000000": "500.000 - 1.000.000 ₺",
-        "1000000+": "1.000.000 ₺ und mehr"
-      }
-    }
-  },
-  "corporate": {
-    "seo": {
-      "title": "Firmenmitgliedschaft - Gitgönder",
-      "description": "Gitgönder Firmenmitgliedschaftsantrag. Sonderpreise ve Vorteile für Firmenkunden. Firmenlogistiklösungen mit Sitz in Bursa in der gesamten Türkei."
+    "contact": {
+        "seo": {
+            "title": "Kontakt - Gitgönder",
+            "description": "Kontaktieren Sie Gitgönder. Kontaktieren Sie uns für Ihre Fragen, Vorschläge oder Supportanfragen. Telefon: 0850 241 93 16 | E-Mail: info@yuksi.tr"
+        },
+        "title": "Kontakt",
+        "subtitle": "Kontaktieren Sie Uns",
+        "form": {
+            "title": "Kontaktieren Sie uns!",
+            "namePlaceholder": "Vollständiger Name",
+            "emailPlaceholder": "E-Mail",
+            "phonePlaceholder": "Telefonnummer",
+            "cityPlaceholder": "Stadt wählen",
+            "subjectPlaceholder": "Betreff",
+            "messagePlaceholder": "Nachricht",
+            "send": "Senden",
+            "sending": "Wird gesendet...",
+            "success": "Ihre Nachricht wurde erfolgreich gesendet! Wir werden uns so schnell wie möglich bei Ihnen melden. 🎉",
+            "error": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt.",
+            "validation": {
+                "nameRequired": "Bitte geben Sie Ihren Namen ein",
+                "nameMin": "Ihr Name muss mindestens 2 Zeichen lang sein",
+                "nameMax": "Ihr Name darf höchstens 200 Zeichen lang sein",
+                "emailRequired": "Bitte geben Sie Ihre E-Mail-Adresse ein",
+                "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+                "phoneRequired": "Bitte geben Sie Ihre Telefonnummer ein",
+                "phoneMin": "Ihre Telefonnummer muss mindestens 5 Zeichen lang sein",
+                "phoneMax": "Ihre Telefonnummer darf höchstens 50 Zeichen lang sein",
+                "cityRequired": "Bitte wählen Sie Ihre Stadt",
+                "cityMin": "Ihre Stadt muss mindestens 2 Zeichen lang sein",
+                "cityMax": "Ihre Stadt darf höchstens 100 Zeichen lang sein",
+                "subjectRequired": "Bitte geben Sie einen Betreff ein",
+                "subjectMin": "Der Betreff muss mindestens 2 Zeichen lang sein",
+                "subjectMax": "Der Betreff darf höchstens 200 Zeichen lang sein",
+                "messageRequired": "Bitte geben Sie Ihre Nachricht ein",
+                "messageMin": "Ihre Nachricht muss mindestens 2 Zeichen lang sein",
+                "messageMax": "Ihre Nachricht darf höchstens 5000 Zeichen lang sein"
+            },
+            "contactInfo": "Sie können uns Ihr Feedback über",
+            "contactInfo2": "oder das Kontaktformular mitteilen.",
+            "phoneLabel": "Kontaktnummer"
+        },
+        "info": {
+            "phone": "Telefon",
+            "phoneValue": "0850 241 93 16",
+            "email": "E-Mail",
+            "emailValue": "info@yuksi.tr"
+        }
     },
-    "title": "Firmenmitgliedschaft",
-    "subtitle": "Maßgeschneiderte Lösungen für Ihr Unternehmen",
-    "form": {
-      "title": "Kontaktieren Sie uns, um Firmenmitglied zu werden",
-      "namePlaceholder": "Vollständiger Name",
-      "companyNamePlaceholder": "Firmenname",
-      "emailPlaceholder": "E-Mail",
-      "phonePlaceholder": "Telefonnummer",
-      "cityPlaceholder": "Stadt",
-      "subjectPlaceholder": "Betreff",
-      "messagePlaceholder": "Nachricht",
-      "submit": "Senden",
-      "submitting": "Wird gesendet...",
-      "success": "Ihre Bewerbung wurde erfolgreich eingereicht! Wir werden uns so schnell wie möglich bei Ihnen melden. 🎉",
-      "error": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt.",
-      "contactInfo": "Sie können uns kontaktieren, um Firmenmitglied zu werden über",
-      "contactInfo2": "oder das Kontaktformular.",
-      "phoneLabel": "Kontaktnummer",
-      "validation": {
-        "nameRequired": "Bitte geben Sie Ihren Namen ein",
-        "nameMin": "Ihr Name muss mindestens 2 Zeichen lang sein",
-        "nameMax": "Ihr Name darf höchstens 200 Zeichen lang sein",
-        "companyRequired": "Bitte geben Sie Ihren Firmennamen ein",
-        "companyMin": "Firmenname muss mindestens 2 Zeichen lang sein",
-        "companyMax": "Firmenname darf höchstens 200 Zeichen lang sein",
-        "emailRequired": "Bitte geben Sie Ihre E-Mail-Adresse ein",
-        "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
-        "phoneRequired": "Bitte geben Sie Ihre Telefonnummer ein",
-        "phoneMin": "Ihre Telefonnummer muss mindestens 5 Zeichen lang sein",
-        "phoneMax": "Ihre Telefonnummer darf höchstens 50 Zeichen lang sein",
-        "cityRequired": "Bitte geben Sie Ihre Stadt ein",
-        "cityMin": "Ihre Stadt muss mindestens 2 Zeichen lang sein",
-        "cityMax": "Ihre Stadt darf höchstens 100 Zeichen lang sein",
-        "subjectRequired": "Bitte geben Sie einen Betreff ein",
-        "subjectMin": "Der Betreff muss mindestens 2 Zeichen lang sein",
-        "subjectMax": "Der Betreff darf höchstens 200 Zeichen lang sein",
-        "messageRequired": "Bitte geben Sie Ihre Nachricht ein",
-        "messageMin": "Ihre Nachricht muss mindestens 2 Zeichen lang sein",
-        "messageMax": "Ihre Nachricht darf höchstens 5000 Zeichen lang sein"
-      }
+    "footer": {
+        "description": "Gitgönder bietet schnelle und zuverlässige Lösungen für Ihre modernen Frachttransportbedürfnisse.",
+        "quickLinks": "Schnelllinks",
+        "contact": "Kontakt",
+        "followUs": "Folgen Sie uns",
+        "rights": "Alle Rechte vorbehalten."
+    },
+    "common": {
+        "loading": "Laden...",
+        "error": "Ein Fehler ist aufgetreten",
+        "success": "Erfolg",
+        "submit": "Absenden",
+        "cancel": "Abbrechen",
+        "save": "Speichern",
+        "delete": "Löschen",
+        "edit": "Bearbeiten",
+        "close": "Schließen",
+        "back": "Zurück",
+        "next": "Weiter",
+        "previous": "Vorherige",
+        "search": "Suchen",
+        "filter": "Filtern",
+        "sort": "Sortieren",
+        "all": "Alle",
+        "none": "Keine",
+        "yes": "Ja",
+        "no": "Nein",
+        "ok": "OK",
+        "confirm": "Bestätigen",
+        "learnMore": "Mehr erfahren",
+        "seeAll": "Alle anzeigen",
+        "downloadApp": "App herunterladen"
     }
-  },
-  "footer": {
-    "description": "Gitgönder bietet schnelle ve flexible Lösungen für Ihre modernen Logistikbedürfnisse.",
-    "quickLinks": "Schnelllinks",
-    "contact": "Kontakt",
-    "followUs": "Folgen Sie uns",
-    "rights": "Alle Rechte vorbehalten."
-  },
-  "common": {
-    "loading": "Laden...",
-    "error": "Ein Fehler ist aufgetreten",
-    "success": "Erfolg",
-    "submit": "Absenden",
-    "cancel": "Abbrechen",
-    "save": "Speichern",
-    "delete": "Löschen",
-    "edit": "Bearbeiten",
-    "close": "Schließen",
-    "back": "Zurück",
-    "next": "Weiter",
-    "previous": "Vorherige",
-    "search": "Suchen",
-    "filter": "Filtern",
-    "sort": "Sortieren",
-    "all": "Alle",
-    "none": "Keine",
-    "yes": "Ja",
-    "no": "Nein",
-    "ok": "OK",
-    "confirm": "Bestätigen",
-    "learnMore": "Mehr erfahren",
-    "seeAll": "Alle anzeigen",
-    "downloadApp": "App herunterladen"
-  }
 }
+

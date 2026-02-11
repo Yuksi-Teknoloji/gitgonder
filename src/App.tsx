@@ -7,11 +7,7 @@ const Home = lazy(() => import('./pages/Home'))
 const About = lazy(() => import('./pages/About'))
 const Services = lazy(() => import('./pages/Services'))
 const Help = lazy(() => import('./pages/Help'))
-const Carrier = lazy(() => import('./pages/Carrier'))
 const Contact = lazy(() => import('./pages/Contact'))
-const Vehiclese = lazy(() => import('./pages/Vehiclese'))
-const Dealer = lazy(() => import('./pages/Dealer'))
-const Corporate = lazy(() => import('./pages/Corporate'))
 
 // Loading fallback component
 const PageLoader = () => (
@@ -47,30 +43,6 @@ function App() {
                     <Route path="/iletisim" element={<Contact />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/kontakt" element={<Contact />} />
-
-                    {/* Carrier/Driver Application page - multi-language URLs */}
-                    <Route path="/surucu-basvuru" element={<Carrier />} />
-                    <Route path="/driver-application" element={<Carrier />} />
-                    <Route path="/fahrer-bewerbung" element={<Carrier />} />
-                    <Route path="/carrier" element={<Carrier />} /> {/* Legacy URL */}
-
-                    {/* Dealer Application page - multi-language URLs */}
-                    <Route path="/bayi-basvuru" element={<Dealer />} />
-                    <Route path="/dealer-application" element={<Dealer />} />
-                    <Route path="/handler-bewerbung" element={<Dealer />} />
-                    <Route path="/dealer" element={<Dealer />} /> {/* Legacy URL */}
-
-                    {/* Corporate Membership page - multi-language URLs */}
-                    <Route path="/kurumsal-uyelik" element={<Corporate />} />
-                    <Route path="/corporate-membership" element={<Corporate />} />
-                    <Route path="/firmenmitgliedschaft" element={<Corporate />} />
-                    <Route path="/corporate" element={<Corporate />} /> {/* Legacy URL */}
-
-                    {/* Vehiclese - multi-language URLs */}
-                    <Route path="/arac-siniflarimiz" element={<Vehiclese />} />
-                    <Route path="/vehicle-classes" element={<Vehiclese />} />
-                    <Route path="/fahrzeugklassen" element={<Vehiclese />} />
-                    <Route path="/vehiclese" element={<Vehiclese />} /> {/* Legacy URL */}
                 </Routes>
             </Suspense>
             <Toaster

@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import contactBg from '../../assets/contact/contact-mask.png'
-import contactPerson from '../../assets/contact/contact-person.png'
 import arrowRightIcon from '../../assets/icons/arrow-right.svg'
 import { Button } from '../atoms/Button'
 import { getLocalizedPath } from '../../i18n'
@@ -66,16 +65,8 @@ export function ContactCTA() {
                         </div>
                     </div>
                 </div>
-
-                {/* Person image on the right */}
-                <div className="pointer-events-none absolute bottom-0 right-[-10px] sm:right-0 h-[60%] sm:h-[72%] md:h-[85%] lg:h-[95%]">
-                    <img
-                        src={contactPerson}
-                        alt="Gitgönder taşıyıcı"
-                        className="h-full w-auto object-contain"
-                    />
-                </div>
             </div>
         </section>
     )
 }
+

@@ -1,6 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import phoneKangaroo from '../../assets/help/phone-kangaroo.png';
-import logoImage from '../../assets/gıtgonder.png';
 
 export function HelpContent() {
     const { t } = useTranslation();
@@ -16,28 +14,11 @@ export function HelpContent() {
 
     return (
         <section className="w-full bg-white py-8 sm:py-10 md:py-12 lg:py-16 xl:py-20">
-            <div className="w-full mx-auto px-4 sm:px-6 md:px-8 lg:px-[100px] relative">
-                {/* Two Column Layout */}
+            <div className="w-full mx-auto px-4 sm:px-6 md:px-8 lg:px-[100px]">
+                {/* Content */}
                 <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-16 items-center">
-                    {/* Left Side - Phone/Kangaroo Image - Hidden on mobile, visible on larger screens */}
-                    <div className="hidden lg:block lg:w-[35%] lg:flex-shrink-0 relative flex items-center justify-center">
-                        <div className="relative w-full">
-                            <div className="relative w-[240px] h-[320px] lg:w-[300px] lg:h-[400px] xl:w-[400px] xl:h-[580px] mx-auto">
-                                <img
-                                    src={phoneKangaroo}
-                                    alt={t('help.seo.kangarooPhoneAlt')}
-                                    className="w-full h-full object-contain"
-                                />
-                            </div>
-                            {/* Small logo on phone */}
-                            <div className="absolute left-1/2 -translate-x-1/2 top-[380px] lg:top-[420px] xl:top-[500px] w-[60px] h-[60px] lg:w-[70px] lg:h-[70px] xl:w-[80px] xl:h-[80px] flex items-center justify-center">
-                                <img
-                                    src={logoImage}
-                                    alt={t('help.seo.logoAlt')}
-                                    className="w-full h-full object-contain"
-                                />
-                            </div>
-                        </div>
+                    {/* Left Side - Empty (was kangaroo) */}
+                    <div className="hidden lg:block lg:w-[35%] lg:flex-shrink-0 relative">
                     </div>
 
                     {/* Right Side - Help Topics Section */}
@@ -69,3 +50,4 @@ export function HelpContent() {
         </section>
     );
 }
+

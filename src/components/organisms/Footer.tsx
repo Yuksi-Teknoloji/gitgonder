@@ -8,11 +8,11 @@ export function Footer() {
     const { t, i18n } = useTranslation()
     const currentLang = i18n.language as 'tr' | 'en' | 'de'
 
+    // Simplified nav items - only Home, About, Services, Contact
     const navItems = [
         { href: getLocalizedPath('home', currentLang), label: t('nav.home') },
         { href: getLocalizedPath('about', currentLang), label: t('nav.about') },
         { href: getLocalizedPath('services', currentLang), label: t('nav.services') },
-        { href: getLocalizedPath('help', currentLang), label: t('nav.help') },
         { href: getLocalizedPath('contact', currentLang), label: t('nav.contact') },
     ]
 
@@ -34,7 +34,7 @@ export function Footer() {
                         </p>
                     </div>
 
-                    {/* Middle Column - Sayfalar */}
+                    {/* Middle Column - Quick Links */}
                     <div className="flex flex-col gap-4 sm:gap-5 lg:gap-5">
                         <h3
                             className="text-xl sm:text-2xl lg:text-2xl font-bold mb-2 sm:mb-3 text-center lg:text-left border-b border-white/20 pb-3 sm:pb-4"
@@ -53,7 +53,7 @@ export function Footer() {
                         </ul>
                     </div>
 
-                    {/* Right Column - İletişim */}
+                    {/* Right Column - Contact */}
                     <div className="flex flex-col gap-4 sm:gap-5 lg:gap-5">
                         <h3
                             className="text-xl sm:text-2xl lg:text-2xl font-bold mb-2 sm:mb-3 text-center lg:text-left border-b border-white/20 pb-3 sm:pb-4"
@@ -111,3 +111,4 @@ export function Footer() {
         </footer>
     )
 }
+
