@@ -4,11 +4,7 @@ import { CircleArc } from '../atoms/CircleArc';
 import { DashedRing } from '../atoms/DashedRing';
 import { CircleMarker } from '../atoms/CircleMarker';
 
-interface HeroOverlayProps {
-    activeIndex: number;
-}
-
-export const HeroOverlay: React.FC<HeroOverlayProps> = ({ activeIndex }) => {
+export const HeroOverlay: React.FC = () => {
     const cx = 50;
     const cy = 540;
     const r = 1250;
