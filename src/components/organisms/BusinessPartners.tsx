@@ -1,7 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import kamyonImg from '../../assets/services/kamyon.png';
-import minivanImg from '../../assets/services/minivan.png';
-import motorcycleImg from '../../assets/services/motorcycle.png';
+import kamyonetImg from '../../assets/about/gitgonder-kamyon.png';
 import arasLogo from '../../assets/partners/aras.png';
 import hepsijetLogo from '../../assets/partners/hepsijet.png';
 import kargoistLogo from '../../assets/partners/kargoist.png';
@@ -33,21 +31,12 @@ import dhlLogo from '../../assets/partners/DHL.png';
 export function BusinessPartners() {
     const { t } = useTranslation();
 
+    // Only cargo-focused sectors
     const sectors = [
         {
-            name: t('home.businessPartners.logistics.name'),
-            image: kamyonImg,
-            description: t('home.businessPartners.logistics.description')
-        },
-        {
             name: t('home.businessPartners.cargo.name'),
-            image: minivanImg,
+            image: kamyonetImg,
             description: t('home.businessPartners.cargo.description')
-        },
-        {
-            name: t('home.businessPartners.courier.name'),
-            image: motorcycleImg,
-            description: t('home.businessPartners.courier.description')
         },
     ];
 
@@ -59,7 +48,7 @@ export function BusinessPartners() {
         { name: 'PTT Kargo', logo: pttLogo },
         { name: 'Sürat Kargo', logo: suratLogo },
         { name: 'Yurtiçi Kargo', logo: yurticiLogo },
-        {name : "DHL", logo: dhlLogo},
+        { name: 'DHL', logo: dhlLogo },
         { name: 'Fedex Cargo', logo: fedexCargoLogo },
         { name: 'UPS Kargo', logo: upsKargoLogo },
         { name: 'A101', logo: a101Logo },
@@ -79,19 +68,19 @@ export function BusinessPartners() {
         { name: 'Allianz', logo: allianzLogo },
         { name: 'Anadolu Sigorta', logo: anadoluSigortaLogo },
         { name: 'Türkiye Sigorta', logo: turkiyeSigortaLogo },
-       
     ];
 
     return (
         <section className="w-full bg-white text-gray-900">
             <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-medium text-[#333333] mb-6 sm:mb-8 md:mb-10 lg:mb-12 xl:mb-14 text-center sm:text-left">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-medium text-[#333333] mb-6 sm:mb-8 md:mb-10 lg:mb-12 xl:mb-14 text-center">
                     {t('home.businessPartners.title')}
                 </h2>
 
-                {/* Sectors cards (existing section) */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 items-stretch">
-                    {sectors.map((sector, index) => (
+                {/* Sectors cards (cargo-focused) */}
+                <div className="flex justify-center">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 justify-items-center">
+                        {sectors.map((sector, index) => (
                         <div
                             key={index}
                             className="group relative flex flex-col items-center justify-center h-full px-4 sm:px-6 md:px-8 lg:px-10 py-6 sm:py-8 md:py-10 lg:py-12 bg-gradient-to-br from-[#032c95] to-[#FF8C42] text-white rounded-xl sm:rounded-2xl md:rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] sm:hover:scale-105 overflow-hidden min-h-[280px] sm:min-h-[320px] md:min-h-[360px] lg:min-h-[400px]"
@@ -123,15 +112,14 @@ export function BusinessPartners() {
                             </div>
                         </div>
                     ))}
+                    </div>
                 </div>
 
-                {/* Cargo partners logos (new highlight section) */}
+                {/* Cargo partners logos */}
                 <div className="mt-14 sm:mt-20 relative">
                     <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-[#FFF3E8] via-[#FFE4D0] to-[#FFF7EF] opacity-80 pointer-events-none" />
 
                     <div className="relative rounded-3xl border border-primary-100/60 shadow-[0_18px_45px_rgba(255,91,4,0.18)] px-4 sm:px-8 md:px-10 lg:px-12 py-8 sm:py-10 md:py-12 lg:py-14 overflow-hidden">
-                        
-
                         {/* title & description */}
                         <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-8 md:mb-10">
                             <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#2B1B12] tracking-tight">
@@ -142,7 +130,7 @@ export function BusinessPartners() {
                             </p>
                         </div>
 
-                        {/* logos slider (all viewports, auto-scrolling) */}
+                        {/* logos slider */}
                         <div className="relative -mx-4 px-4 pb-2">
                             <div className="pointer-events-none absolute left-0 top-0 h-full w-6 bg-gradient-to-r from-[#FFF3E8] to-transparent z-10" />
                             <div className="pointer-events-none absolute right-0 top-0 h-full w-6 bg-gradient-to-l from-[#FFF3E8] to-transparent z-10" />
@@ -170,10 +158,10 @@ export function BusinessPartners() {
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </section>
     );
 }
+

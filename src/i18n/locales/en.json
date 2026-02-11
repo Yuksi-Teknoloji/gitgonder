@@ -1,475 +1,275 @@
 {
-  "nav": {
-    "home": "Home",
-    "about": "About Us",
-    "services": "Services",
-    "help": "Help",
-    "contact": "Contact",
-    "apply": "Apply",
-    "login": "Login",
-    "joinUs": "Join Us",
-    "driverApplication": "Gitgönder Driver Application",
-    "logisticsCourier": "Logistics Courier",
-    "restaurantCourier": "Restaurant Courier",
-    "franchiseApplication": "Franchise Application",
-    "corporateMembership": "Corporate Membership",
-    "corporateLogin": "Corporate Login",
-    "corporateLoginDesc": "Access your business account",
-    "dealerLogin": "Dealer Login",
-    "dealerLoginDesc": "Access your dealer panel",
-    "restaurantLogin": "Restaurant Login",
-    "restaurantLoginDesc": "Access your restaurant panel",
-    "helpMessage": "How can I help you?",
-    "openMenu": "Open menu",
-    "closeMenu": "Close menu",
-    "menuIcon": "Menu",
-    "closeIcon": "Close"
-  },
-  "home": {
-    "seo": {
-      "title": "Gitgönder - Logistics Cargo Courier",
-      "description": "Fast and flexible solutions for your logistics needs with Gitgönder. Motorcycle courier, minivan, panel van, pickup truck and truck services. Reliable transportation throughout Turkey."
+    "nav": {
+        "home": "Home",
+        "about": "About Us",
+        "services": "Services",
+        "contact": "Contact",
+        "login": "Login",
+        "corporateLogin": "Corporate Login",
+        "corporateLoginDesc": "Access your business account",
+        "dealerLogin": "Dealer Login",
+        "dealerLoginDesc": "Access your dealer panel",
+        "openMenu": "Open menu",
+        "closeMenu": "Close menu",
+        "menuIcon": "Menu",
+        "closeIcon": "Close"
     },
-    "hero": {
-      "title": "LOGISTICS CARGO COURIER",
-      "subtitle": "by your side",
-      "description": "Gitgönder offers fast and flexible solutions for your modern logistics needs. Whether from our mobile app or website, you can easily call a vehicle and safely transport your shipments with our wide fleet ranging from motorcycle couriers to minivans, panel vans, pickup trucks and trucks.",
-      "downloadApp": "Download App",
-      "callVehicle": "Call Vehicle",
-      "yuksiLogistics": "GİTGÖNDER LOGISTICS",
-      "yuksiCargo": "GİTGÖNDER CARGO",
-      "yuksiCourier": "GİTGÖNDER COURIER"
-    },
-    "vehicleShowcase": {
-      "title": "LOGISTICS SUPER APP GİTGÖNDER",
-      "subtitle": "Our Vehicle Classes",
-      "explore": "Explore",
-      "motorcycle": "Motorcycle",
-      "motorcycleDesc": "Fast delivery up to 40-50 kg",
-      "minivan": "Minivan",
-      "minivanDesc": "500-800 kg urban transport",
-      "panelvan": "Panel Van",
-      "panelvanDesc": "1,000-1,500 kg professional moving",
-      "pickup": "Pickup Truck",
-      "pickupDesc": "1,500-3,500 kg commercial shipping",
-      "truck": "Truck",
-      "truckDesc": "3,500-20,000 kg heavy cargo transport"
-    },
-    "mobileJoin": {
-      "title": "Join Gitgönder Mobile",
-      "description1": "With Gitgönder, transporting any load, with any vehicle, to anywhere is now at your fingertips! Whether it's a small package or a massive load; from motorcycles to trucks, every type of vehicle is waiting for you at Gitgönder.",
-      "description2": "The app matches you with the most suitable carrier within seconds thanks to its smart location-based system. This way, you save time and avoid unnecessary expenses.",
-      "description3": "Moreover, everything is transparent and clear with kilometer-based pricing! With Gitgönder, transportation is no longer a hassle, but an enjoyable experience. You prepare your load, we'll connect you with the right vehicle and reliable carrier.",
-      "description": "Easily manage your transportation operations with the Gitgönder mobile app.",
-      "downloadNow": "Download Now"
-    },
-    "contactCta": {
-      "title": "Want to become a carrier?",
-      "subtitle": "Get in Touch With Us",
-      "description": "Take your place in Gitgönder's expanding logistics network, transform your vehicle from just a means of transportation into an investment that generates regular income. Thanks to the industry's most advanced technological infrastructure, we simplify your operational processes, optimize your route and increase your efficiency. A sustainable income model awaits you with a transparent payment system, timely payment guarantee and Gitgönder's corporate assurance. Apply now and join our professional team.",
-      "button": "Fill Form",
-      "contactUs": "Contact Us"
-    },
-    "businessPartners": {
-      "title": "Sectors We Serve",
-      "logistics": {
-        "name": "Logistics",
-        "description": "All vehicle classes from motorcycles to trucks are at your fingertips with kilometer-based pricing!"
-      },
-      "cargo": {
-        "name": "Cargo",
-        "description": "Send your cargo to all 81 provinces of Turkey at the most affordable prices!"
-      },
-      "courier": {
-        "name": "Courier",
-        "description": "The most innovative solutions for your restaurant are at Gitgönder!"
-      },
-      "cargoPartners": {
-        "title": "Our Business Partners",
-        "description": "We collaborate with strong brands from different sectors to extend our solutions across a wider network."
-      }
-    }
-  },
-  "about": {
-    "hero": {
-      "title": "TURKEY'S LOGISTICS INFRASTRUCTURE PROVIDER",
-      "description": "As Gitgönder, our vision is to be a pioneering brand that simplifies the lives of both individuals and businesses with our innovative and reliable service approach in the logistics sector, maximizing speed and efficiency with digital solutions. By focusing on technology, we want to safely deliver shipments of any scale our customers need, grow with sustainability principles, and become the preferred logistics solution partner in both Turkey and international markets.",
-      "imageAlt": "Gitgönder logistics service",
-      "kangarooAlt": "Gitgönder kangaroo"
-    },
-    "aboutUs": {
-      "title": "About Us",
-      "description": "Gitgönder is a digital platform developed to offer innovative solutions to the logistics and transportation industry. Through the Gitgönder mobile application, we bring shippers and carriers together in a secure, fast, and efficient way."
-    },
-    "serviceFeatures": {
-      "title": "Service Features",
-      "smartMatching": {
-        "title": "Smart Matching:",
-        "description": "Thanks to our advanced algorithms, loads are matched with the most suitable carriers within seconds."
-      },
-      "realTimeTracking": {
-        "title": "Real-Time Tracking:",
-        "description": "You can track vehicle locations in real-time throughout the shipment process."
-      },
-      "certifiedNetwork": {
-        "title": "Certified Carrier Network:",
-        "description": "All our carriers are part of an approved network that meets the required documents and qualifications."
-      },
-      "flexiblePayment": {
-        "title": "Flexible Payment Solutions:",
-        "description": "Payments are processed quickly and smoothly with our secure payment infrastructure."
-      }
-    },
-    "customerAdvantages": {
-      "title": "Customer Advantages",
-      "timeCost": {
-        "title": "Time and Cost Savings:",
-        "description": "Accurate matching eliminates unnecessary waiting and empty hauls."
-      },
-      "transparency": {
-        "title": "Transparency and Trust:",
-        "description": "Every transaction is digitally recorded, increasing trust between parties."
-      },
-      "support": {
-        "title": "24/7 Support:",
-        "description": "Our support team is always available to assist you with operational issues."
-      }
-    },
-    "technology": {
-      "title": "Technological Infrastructure",
-      "locationBased": {
-        "title": "Location-Based Smart System:",
-        "description": "Instantly identifies the nearest and most suitable carriers."
-      },
-      "aiPlanning": {
-        "title": "AI-Powered Planning:",
-        "description": "Optimal transportation plans are created based on traffic, weather, and route data."
-      },
-      "cloudBased": {
-        "title": "Cloud-Based Architecture:",
-        "description": "All operations run smoothly with our secure, fast, and scalable infrastructure."
-      }
-    },
-    "seo": {
-      "title": "About Us | Gitgönder - Turkey's Logistics Platform",
-      "description": "Learn about Gitgönder. Our vision as Turkey's innovative logistics platform, our services, and technological infrastructure."
-    }
-  },
-  "services": {
-    "seo": {
-      "title": "Our Services - Gitgönder",
-      "description": "Gitgönder services: Motorcycle courier (40-50 kg), Minivan (500-800 kg), Panel Van (1,000-1,500 kg), Pickup (1,500-3,500 kg), Truck (3,500-20,000 kg). Urban and intercity transportation solutions."
-    },
-    "hero": {
-      "title": "YOUR LOAD IS OUR BUSINESS",
-      "description": "Gitgönder offers fast and flexible solutions for your modern logistics needs. Whether from our mobile app or website, you can easily call a vehicle and safely transport your shipments with our wide fleet ranging from motorcycle couriers to minivans, panel vans, pickup trucks and trucks. Gitgönder is always by your side for fast, practical and reliable service.",
-      "backgroundAlt": "Gitgönder logistics service",
-      "kangarooAlt": "Gitgönder kangaroo"
-    },
-    "motorcycle": {
-      "title": "Motorcycle",
-      "description": "Motorcycle couriers can generally carry loads up to 40-50 kg. Whether it's just an envelope, a grocery bag or packaged food, everything is delivered safely.\n\nFrom food orders to shopping items, from medicine to documents, motorcycle couriers are the most practical solution for quick delivery in the city.",
-      "buttonText": "Apply for Courier"
-    },
-    "minivan": {
-      "title": "Minivan",
-      "description": "Minivans can generally carry loads up to 500-800 kg. Whether it's a few boxes, small household items or bulk shopping items, everything fits comfortably.\n\nFrom moving to office needs, from market delivery to small transportation, minivans offer practical and safe solutions for urban transport.",
-      "buttonText": "Apply for Express"
-    },
-    "panelvan": {
-      "title": "Panel Van",
-      "description": "Panel vans can generally carry loads up to 1,000-1,500 kg. Whether it's large boxes, furniture or bulk order products, everything is easily transported with their large volumes.\n\nFrom home moving to store shipping, from e-commerce delivery to professional transportation, panel vans are a safe and powerful solution.",
-      "buttonText": "Apply for Express"
-    },
-    "pickup": {
-      "title": "Pickup Truck",
-      "description": "Pickup trucks can generally carry loads up to 1,500-3,500 kg. Whether it's construction materials, large furniture or bulk commercial products, they are easily transported thanks to their strong structures.\n\nFrom transportation to commercial shipping, from market and store delivery to agricultural products, pickup trucks offer reliable solutions for both urban and intercity transport.",
-      "buttonText": "Apply for Transport"
-    },
-    "truck": {
-      "title": "Truck",
-      "description": "Trucks can generally carry loads starting from 3,500 kg up to 20,000 kg. Whether it's heavy machinery, large volume items or bulk commercial products, they are easily transported thanks to their large cargo area and powerful engines.\n\nFrom intercity transportation to logistics shipping, from construction materials to industrial products, trucks offer safe and high-capacity solutions.",
-      "buttonText": "Apply for Transport"
-    }
-  },
-  "help": {
-    "seo": {
-      "title": "Help and Support - Gitgönder",
-      "description": "Gitgönder help center. Frequently asked questions, user guide, technical support and customer service. How can we help you?",
-      "backgroundAlt": "Gitgönder logistics service",
-      "kangarooPhoneAlt": "Gitgönder phone kangaroo",
-      "logoAlt": "Gitgönder Logo"
-    },
-    "hero": {
-      "titleLine1": "HOW CAN WE",
-      "titleLine2": "HELP YOU?",
-      "formTitle": "Contact Us",
-      "messagePlaceholder": "Write your message here...",
-      "nameLabel": "Name / Last Name",
-      "emailLabel": "Email Address",
-      "submit": "SEND",
-      "submitting": "SENDING...",
-      "success": "Your message has been sent successfully! We will get back to you as soon as possible. 🎉",
-      "error": "Something went wrong. Please try again or contact us directly.",
-      "validation": {
-        "nameRequired": "Please enter your name",
-        "nameMin": "Your name must be at least 2 characters",
-        "nameMax": "Your name can be at most 200 characters",
-        "emailRequired": "Please enter your email",
-        "emailInvalid": "Please enter a valid email address",
-        "messageRequired": "Please write your message",
-        "messageMin": "Your message must be at least 2 characters",
-        "messageMax": "Your message can be at most 5000 characters"
-      }
-    },
-    "content": {
-      "intro": "We are always with you! You can contact us at Gitgönder help line on the following topics",
-      "topics": {
-        "shipping": {
-          "title": "Shipment Tracking: ",
-          "description": "Learn the current status of your package and get information about the delivery process."
+    "home": {
+        "seo": {
+            "title": "Gitgönder - Cargo Shipping Point",
+            "description": "Fast and reliable solutions for your cargo shipping needs with Gitgönder. Professional cargo transportation across Turkey with pickup trucks and trucks."
         },
-        "request": {
-          "title": "Vehicle Request and Reservation: ",
-          "description": "Call the vehicle suitable for your needs from motorcycle courier to truck or planned reservation support."
+        "contactCta": {
+            "title": "Ship with Gitgönder",
+            "subtitle": "Get in Touch With Us",
+            "description": "Take your place in Gitgönder's expanding cargo network. We offer reliable cargo transportation services to all 81 provinces of Turkey. With our modern technological infrastructure, competitive prices, and reliable service approach, we are always by your side. Contact us now to simplify your cargo shipping processes.",
+            "button": "Contact Us",
+            "contactUs": "Reach Out"
         },
-        "deliveryIssues": {
-          "title": "Delivery Issues: ",
-          "description": "Solution for delay, address change or any problems related to delivery."
-        },
-        "techSupport": {
-          "title": "App and Web Support: ",
-          "description": "Help with technical problems you experience through the mobile application or our website."
-        },
-        "pricing": {
-          "title": "Pricing and Payment: ",
-          "description": "Request information about pricing, invoice or payment methods."
-        },
-        "general": {
-          "title": "General Questions and Suggestions: ",
-          "description": "What you wonder about our services or suggestions you want to convey to us."
+        "businessPartners": {
+            "title": "Sectors We Serve",
+            "logistics": {
+                "name": "Logistics",
+                "description": "Professional cargo transportation services to meet your business logistics needs."
+            },
+            "cargo": {
+                "name": "Cargo",
+                "description": "Send your cargo to all 81 provinces of Turkey at the most affordable prices!"
+            },
+            "cargoPartners": {
+                "title": "Our Business Partners",
+                "description": "We collaborate with strong brands from different sectors to extend our solutions across a wider network."
+            }
         }
-      }
-    }
-  },
-  "contact": {
-    "seo": {
-      "title": "Contact - Gitgönder",
-      "description": "Get in touch with Gitgönder. Contact us for your questions, suggestions or support requests. Phone: 0850 241 93 16 | Email: info@yuksi.tr"
     },
-    "title": "Contact",
-    "subtitle": "Get in Touch With Us",
-    "form": {
-      "title": "Get in touch with us!",
-      "namePlaceholder": "Full Name",
-      "emailPlaceholder": "Email",
-      "phonePlaceholder": "Phone Number",
-      "cityPlaceholder": "Select city",
-      "subjectPlaceholder": "Subject",
-      "messagePlaceholder": "Message",
-      "send": "Send",
-      "sending": "Sending...",
-      "success": "Your message has been sent successfully! We will get back to you as soon as possible. 🎉",
-      "error": "Something went wrong. Please try again or contact us directly.",
-      "validation": {
-        "nameRequired": "Please enter your name",
-        "nameMin": "Your name must be at least 2 characters",
-        "nameMax": "Your name can be at most 200 characters",
-        "emailRequired": "Please enter your email",
-        "emailInvalid": "Please enter a valid email address",
-        "phoneRequired": "Please enter your phone number",
-        "phoneMin": "Your phone number must be at least 5 characters",
-        "phoneMax": "Your phone number can be at most 50 characters",
-        "cityRequired": "Please select your city",
-        "cityMin": "Your city must be at least 2 characters",
-        "cityMax": "Your city can be at most 100 characters",
-        "subjectRequired": "Please enter a subject",
-        "subjectMin": "Subject must be at least 2 characters",
-        "subjectMax": "Subject can be at most 200 characters",
-        "messageRequired": "Please enter your message",
-        "messageMin": "Your message must be at least 2 characters",
-        "messageMax": "Your message can be at most 5000 characters"
-      },
-      "contactInfo": "You can share your feedback with us via",
-      "contactInfo2": "or the contact form.",
-      "phoneLabel": "Contact Number"
+    "about": {
+        "hero": {
+            "title": "TURKEY'S RELIABLE CARGO SOLUTION",
+            "description": "As Gitgönder, our vision is to be a pioneering brand that simplifies the lives of both individuals and businesses with our innovative and reliable service approach in the cargo transportation sector, maximizing speed and efficiency with digital solutions. By focusing on technology, we want to safely deliver cargo of any scale our customers need, grow with sustainability principles, and become the preferred cargo solution partner in both Turkey and international markets.",
+            "imageAlt": "Gitgönder cargo service",
+            "kangarooAlt": "Gitgönder kangaroo"
+        },
+        "aboutUs": {
+            "title": "About Us",
+            "description": "Gitgönder is a digital platform developed to offer innovative solutions to the cargo transportation industry. Through the Gitgönder platform, we bring cargo shippers and carriers together in a secure, fast, and efficient way."
+        },
+        "serviceFeatures": {
+            "title": "Service Features",
+            "smartMatching": {
+                "title": "Smart Matching:",
+                "description": "Thanks to our advanced algorithms, cargo are matched with the most suitable carriers within seconds."
+            },
+            "realTimeTracking": {
+                "title": "Real-Time Tracking:",
+                "description": "You can track vehicle locations in real-time throughout the shipment process."
+            },
+            "certifiedNetwork": {
+                "title": "Certified Carrier Network:",
+                "description": "All our carriers are part of an approved network that meets the required documents and qualifications."
+            },
+            "flexiblePayment": {
+                "title": "Flexible Payment Solutions:",
+                "description": "Payments are processed quickly and smoothly with our secure payment infrastructure."
+            }
+        },
+        "customerAdvantages": {
+            "title": "Customer Advantages",
+            "timeCost": {
+                "title": "Time and Cost Savings:",
+                "description": "Accurate matching eliminates unnecessary waiting and empty hauls."
+            },
+            "transparency": {
+                "title": "Transparency and Trust:",
+                "description": "Every transaction is digitally recorded, increasing trust between parties."
+            },
+            "support": {
+                "title": "24/7 Support:",
+                "description": "Our support team is always available to assist you with operational issues."
+            }
+        },
+        "technology": {
+            "title": "Technological Infrastructure",
+            "locationBased": {
+                "title": "Location-Based Smart System:",
+                "description": "Instantly identifies the nearest and most suitable carriers."
+            },
+            "aiPlanning": {
+                "title": "AI-Powered Planning:",
+                "description": "Optimal transportation plans are created based on traffic, weather, and route data."
+            },
+            "cloudBased": {
+                "title": "Cloud-Based Architecture:",
+                "description": "All operations run smoothly with our secure, fast, and scalable infrastructure."
+            }
+        },
+        "seo": {
+            "title": "About Us | Gitgönder - Turkey's Cargo Platform",
+            "description": "Learn about Gitgönder. Our vision as Turkey's innovative cargo platform, our services, and technological infrastructure."
+        }
     },
-    "info": {
-      "phone": "Phone",
-      "phoneValue": "0850 241 93 16",
-      "email": "Email",
-      "emailValue": "info@yuksi.tr"
-    }
-  },
-  "carrier": {
-    "seo": {
-      "title": "Courier and Carrier Application - Gitgönder",
-      "description": "Apply to Gitgönder as a courier or carrier. Work opportunity with motorcycle, minivan, panel van, pickup truck or truck. Flexible working hours and competitive rates."
+    "services": {
+        "seo": {
+            "title": "Our Services - Gitgönder",
+            "description": "Gitgönder cargo services: Pickup Truck (1,500-3,500 kg), Truck (3,500-20,000 kg). Professional urban and intercity cargo transportation solutions."
+        },
+        "hero": {
+            "title": "YOUR LOAD IS OUR BUSINESS",
+            "description": "Gitgönder offers fast and flexible solutions for your modern cargo transportation needs. With our pickup truck and truck fleet, you can safely transport your shipments. Gitgönder is always by your side for fast, practical and reliable cargo service.",
+            "backgroundAlt": "Gitgönder cargo service",
+            "kangarooAlt": "Gitgönder kangaroo"
+        },
+        "pickup": {
+            "title": "Pickup Truck",
+            "description": "Pickup trucks can generally carry loads up to 1,500-3,500 kg. Whether it's construction materials, large furniture or bulk commercial products, they are easily transported thanks to their strong structures.\n\nFrom transportation to commercial shipping, from market and store delivery to agricultural products, pickup trucks offer reliable solutions for both urban and intercity transport.",
+            "buttonText": "Contact Us"
+        },
+        "truck": {
+            "title": "Truck",
+            "description": "Trucks can generally carry loads starting from 3,500 kg up to 20,000 kg. Whether it's heavy machinery, large volume items or bulk commercial products, they are easily transported thanks to their large cargo area and powerful engines.\n\nFrom intercity transportation to logistics shipping, from construction materials to industrial products, trucks offer safe and high-capacity solutions.",
+            "buttonText": "Contact Us"
+        }
     },
-    "title": "Driver Application",
-    "subtitle": "Join the Gitgönder family",
-    "form": {
-      "title": "BECOME A CARRIER",
-      "title2": "JOIN US NOW!",
-      "subtitle": "Fill out the form to become a carrier",
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "email": "Email",
-      "phone": "Phone Number",
-      "city": "City",
-      "vehicleType": "Vehicle Type",
-      "vehicleYear": "Vehicle Year",
-      "vehicleDocument": "Upload Vehicle Documents",
-      "vehicleDocumentHelper": "Registration/Commercial license",
-      "carrierDocument": "Upload Carrier Documents",
-      "carrierDocumentHelper": "Criminal Record/Driver's License",
-      "submit": "Send",
-      "submitting": "Sending...",
-      "success": "Your application has been submitted successfully.",
-      "error": "An error occurred while submitting the form. Please try again.",
-      "validation": {
-        "required": "Required",
-        "yearNumber": "Year must be a number"
-      },
-      "vehicles": {
-        "motorcycle": "Motorcycle",
-        "minivan": "Minivan",
-        "panelvan": "Panel Van",
-        "pickup": "Pickup Truck",
-        "truck": "Truck"
-      }
-    }
-  },
-  "dealer": {
-    "seo": {
-      "title": "Dealer Application - Gitgönder",
-      "description": "Apply to become a Gitgönder dealer. Learn about franchise opportunities, dealer conditions and advantages. Join our dealer network based in Bursa, throughout Turkey."
+    "help": {
+        "seo": {
+            "title": "Help and Support - Gitgönder",
+            "description": "Gitgönder help center. Frequently asked questions, user guide, technical support and customer service. How can we help you?",
+            "backgroundAlt": "Gitgönder cargo service",
+            "kangarooPhoneAlt": "Gitgönder phone kangaroo",
+            "logoAlt": "Gitgönder Logo"
+        },
+        "hero": {
+            "titleLine1": "HOW CAN WE",
+            "titleLine2": "HELP YOU?",
+            "formTitle": "Contact Us",
+            "messagePlaceholder": "Write your message here...",
+            "nameLabel": "Name / Last Name",
+            "emailLabel": "Email Address",
+            "submit": "SEND",
+            "submitting": "SENDING...",
+            "success": "Your message has been sent successfully! We will get back to you as soon as possible. 🎉",
+            "error": "Something went wrong. Please try again or contact us directly.",
+            "validation": {
+                "nameRequired": "Please enter your name",
+                "nameMin": "Your name must be at least 2 characters",
+                "nameMax": "Your name can be at most 200 characters",
+                "emailRequired": "Please enter your email",
+                "emailInvalid": "Please enter a valid email address",
+                "messageRequired": "Please write your message",
+                "messageMin": "Your message must be at least 2 characters",
+                "messageMax": "Your message can be at most 5000 characters"
+            }
+        },
+        "content": {
+            "intro": "We are always with you! You can contact us at Gitgönder help line on the following topics",
+            "topics": {
+                "shipping": {
+                    "title": "Shipment Tracking: ",
+                    "description": "Learn the current status of your cargo and get information about the delivery process."
+                },
+                "request": {
+                    "title": "Cargo Request and Reservation: ",
+                    "description": "Cargo transportation service reservation with pickup truck or truck suitable for your needs."
+                },
+                "deliveryIssues": {
+                    "title": "Delivery Issues: ",
+                    "description": "Solution for delay, address change or any problems related to delivery."
+                },
+                "techSupport": {
+                    "title": "App and Web Support: ",
+                    "description": "Help with technical problems you experience through our website."
+                },
+                "pricing": {
+                    "title": "Pricing and Payment: ",
+                    "description": "Request information about pricing, invoice or payment methods."
+                },
+                "general": {
+                    "title": "General Questions and Suggestions: ",
+                    "description": "What you wonder about our services or suggestions you want to convey to us."
+                }
+            }
+        }
     },
-    "title": "Dealer Application",
-    "subtitle": "Join the Gitgönder dealer network",
-    "form": {
-      "title": "Contact Us to Become a Dealer",
-      "namePlaceholder": "Full Name",
-      "investmentBudgetPlaceholder": "Your Investment Budget",
-      "emailPlaceholder": "Email",
-      "phonePlaceholder": "Phone Number",
-      "cityPlaceholder": "Select city",
-      "subjectPlaceholder": "Subject",
-      "messagePlaceholder": "Message",
-      "submit": "Send",
-      "submitting": "Sending...",
-      "success": "Your application has been submitted successfully! We will get back to you as soon as possible. 🎉",
-      "error": "Something went wrong. Please try again or contact us directly.",
-      "contactInfo": "You can contact us to become a dealer via",
-      "contactInfo2": "or the contact form.",
-      "phoneLabel": "Contact Number",
-      "validation": {
-        "nameRequired": "Please enter your name",
-        "nameMin": "Your name must be at least 2 characters",
-        "nameMax": "Your name can be at most 200 characters",
-        "budgetRequired": "Please select your investment budget",
-        "emailRequired": "Please enter your email",
-        "emailInvalid": "Please enter a valid email address",
-        "phoneRequired": "Please enter your phone number",
-        "phoneMin": "Your phone number must be at least 5 characters",
-        "phoneMax": "Your phone number can be at most 50 characters",
-        "cityRequired": "Please select your city",
-        "cityMin": "Your city must be at least 2 characters",
-        "cityMax": "Your city can be at most 100 characters",
-        "subjectRequired": "Please enter a subject",
-        "subjectMin": "Subject must be at least 2 characters",
-        "subjectMax": "Subject can be at most 200 characters",
-        "messageRequired": "Please enter your message",
-        "messageMin": "Your message must be at least 2 characters",
-        "messageMax": "Your message can be at most 5000 characters"
-      },
-      "budgets": {
-        "0-100000": "0 - 100,000 ₺",
-        "100000-250000": "100,000 - 250,000 ₺",
-        "250000-500000": "250,000 - 500,000 ₺",
-        "500000-1000000": "500,000 - 1,000,000 ₺",
-        "1000000+": "1,000,000 ₺ and above"
-      }
-    }
-  },
-  "corporate": {
-    "seo": {
-      "title": "Corporate Membership - Gitgönder",
-      "description": "Gitgönder corporate membership application. Special pricing and advantages for corporate customers. Corporate logistics solutions based in Bursa, throughout Turkey."
+    "contact": {
+        "seo": {
+            "title": "Contact - Gitgönder",
+            "description": "Get in touch with Gitgönder. Contact us for your questions, suggestions or support requests. Phone: 0850 241 93 16 | Email: info@yuksi.tr"
+        },
+        "title": "Contact",
+        "subtitle": "Get in Touch With Us",
+        "form": {
+            "title": "Get in touch with us!",
+            "namePlaceholder": "Full Name",
+            "emailPlaceholder": "Email",
+            "phonePlaceholder": "Phone Number",
+            "cityPlaceholder": "Select city",
+            "subjectPlaceholder": "Subject",
+            "messagePlaceholder": "Message",
+            "send": "Send",
+            "sending": "Sending...",
+            "success": "Your message has been sent successfully! We will get back to you as soon as possible. 🎉",
+            "error": "Something went wrong. Please try again or contact us directly.",
+            "validation": {
+                "nameRequired": "Please enter your name",
+                "nameMin": "Your name must be at least 2 characters",
+                "nameMax": "Your name can be at most 200 characters",
+                "emailRequired": "Please enter your email",
+                "emailInvalid": "Please enter a valid email address",
+                "phoneRequired": "Please enter your phone number",
+                "phoneMin": "Your phone number must be at least 5 characters",
+                "phoneMax": "Your phone number can be at most 50 characters",
+                "cityRequired": "Please select your city",
+                "cityMin": "Your city must be at least 2 characters",
+                "cityMax": "Your city can be at most 100 characters",
+                "subjectRequired": "Please enter a subject",
+                "subjectMin": "Subject must be at least 2 characters",
+                "subjectMax": "Subject can be at most 200 characters",
+                "messageRequired": "Please enter your message",
+                "messageMin": "Your message must be at least 2 characters",
+                "messageMax": "Your message can be at most 5000 characters"
+            },
+            "contactInfo": "You can share your feedback with us via",
+            "contactInfo2": "or the contact form.",
+            "phoneLabel": "Contact Number"
+        },
+        "info": {
+            "phone": "Phone",
+            "phoneValue": "0850 241 93 16",
+            "email": "Email",
+            "emailValue": "info@yuksi.tr"
+        }
     },
-    "title": "Corporate Membership",
-    "subtitle": "Custom solutions for your business",
-    "form": {
-      "title": "Contact Us to Become a Corporate Member",
-      "namePlaceholder": "Full Name",
-      "companyNamePlaceholder": "Business Name",
-      "emailPlaceholder": "Email",
-      "phonePlaceholder": "Phone Number",
-      "cityPlaceholder": "City",
-      "subjectPlaceholder": "Subject",
-      "messagePlaceholder": "Message",
-      "submit": "Send",
-      "submitting": "Sending...",
-      "success": "Your application has been submitted successfully! We will get back to you as soon as possible. 🎉",
-      "error": "Something went wrong. Please try again or contact us directly.",
-      "contactInfo": "You can contact us to become a corporate member via",
-      "contactInfo2": "or the contact form.",
-      "phoneLabel": "Contact Number",
-      "validation": {
-        "nameRequired": "Please enter your name",
-        "nameMin": "Your name must be at least 2 characters",
-        "nameMax": "Your name can be at most 200 characters",
-        "companyRequired": "Please enter your business name",
-        "companyMin": "Business name must be at least 2 characters",
-        "companyMax": "Business name can be at most 200 characters",
-        "emailRequired": "Please enter your email",
-        "emailInvalid": "Please enter a valid email address",
-        "phoneRequired": "Please enter your phone number",
-        "phoneMin": "Your phone number must be at least 5 characters",
-        "phoneMax": "Your phone number can be at most 50 characters",
-        "cityRequired": "Please enter your city",
-        "cityMin": "Your city must be at least 2 characters",
-        "cityMax": "Your city can be at most 100 characters",
-        "subjectRequired": "Please enter a subject",
-        "subjectMin": "Subject must be at least 2 characters",
-        "subjectMax": "Subject can be at most 200 characters",
-        "messageRequired": "Please enter your message",
-        "messageMin": "Your message must be at least 2 characters",
-        "messageMax": "Your message can be at most 5000 characters"
-      }
+    "footer": {
+        "description": "Gitgönder offers fast and reliable solutions for your modern cargo transportation needs.",
+        "quickLinks": "Quick Links",
+        "contact": "Contact",
+        "followUs": "Follow Us",
+        "rights": "All rights reserved."
+    },
+    "common": {
+        "loading": "Loading...",
+        "error": "An error occurred",
+        "success": "Success",
+        "submit": "Submit",
+        "cancel": "Cancel",
+        "save": "Save",
+        "delete": "Delete",
+        "edit": "Edit",
+        "close": "Close",
+        "back": "Back",
+        "next": "Next",
+        "previous": "Previous",
+        "search": "Search",
+        "filter": "Filter",
+        "sort": "Sort",
+        "all": "All",
+        "none": "None",
+        "yes": "Yes",
+        "no": "No",
+        "ok": "OK",
+        "confirm": "Confirm",
+        "learnMore": "Learn More",
+        "seeAll": "See All",
+        "downloadApp": "Download App"
     }
-  },
-  "footer": {
-    "description": "Gitgönder offers fast and flexible solutions for your modern logistics needs.",
-    "quickLinks": "Quick Links",
-    "contact": "Contact",
-    "followUs": "Follow Us",
-    "rights": "All rights reserved."
-  },
-  "common": {
-    "loading": "Loading...",
-    "error": "An error occurred",
-    "success": "Success",
-    "submit": "Submit",
-    "cancel": "Cancel",
-    "save": "Save",
-    "delete": "Delete",
-    "edit": "Edit",
-    "close": "Close",
-    "back": "Back",
-    "next": "Next",
-    "previous": "Previous",
-    "search": "Search",
-    "filter": "Filter",
-    "sort": "Sort",
-    "all": "All",
-    "none": "None",
-    "yes": "Yes",
-    "no": "No",
-    "ok": "OK",
-    "confirm": "Confirm",
-    "learnMore": "Learn More",
-    "seeAll": "See All",
-    "downloadApp": "Download App"
-  }
 }
+

@@ -7,11 +7,8 @@ import { Footer } from '../components/organisms/Footer'
 import { SEOHead } from '../components/molecules/SEOHead'
 import { getLocalizedPath, getAlternateUrls } from '../i18n'
 import { useLanguageFromUrl } from '../hooks/useLanguageFromUrl'
-import motorcycleImg from '../assets/services/motorcycle.png'
-import minivanImg from '../assets/services/minivan.png'
-import panelvanImg from '../assets/services/panelvan.png'
-import kamyonetImg from '../assets/services/kamyonet.png'
-import kamyonImg from '../assets/services/kamyon.png'
+import kamyonetImg from '../assets/about/gitgonder-kamyon.png'
+import kamyonImg from '../assets/services/gitgonder-kamyon1.png'
 
 export default function Services() {
     const { t } = useTranslation()
@@ -20,30 +17,10 @@ export default function Services() {
 
     const currentPath = getLocalizedPath('services', currentLang)
     const alternateUrls = getAlternateUrls('services')
-    const carrierPath = getLocalizedPath('carrier', currentLang)
+    const contactPath = getLocalizedPath('contact', currentLang)
 
+    // Only cargo vehicles: kamyonet (pickup) and kamyon (truck)
     const vehicles = [
-        {
-            title: t('services.motorcycle.title'),
-            description: t('services.motorcycle.description'),
-            image: motorcycleImg,
-            imageAlt: `Gitgönder ${t('services.motorcycle.title')}`,
-            secondaryButtonText: t('services.motorcycle.buttonText'),
-        },
-        {
-            title: t('services.minivan.title'),
-            description: t('services.minivan.description'),
-            image: minivanImg,
-            imageAlt: `Gitgönder ${t('services.minivan.title')}`,
-            secondaryButtonText: t('services.minivan.buttonText'),
-        },
-        {
-            title: t('services.panelvan.title'),
-            description: t('services.panelvan.description'),
-            image: panelvanImg,
-            imageAlt: `Gitgönder ${t('services.panelvan.title')}`,
-            secondaryButtonText: t('services.panelvan.buttonText'),
-        },
         {
             title: t('services.pickup.title'),
             description: t('services.pickup.description'),
@@ -65,7 +42,7 @@ export default function Services() {
             <SEOHead
                 title={t('services.seo.title')}
                 description={t('services.seo.description')}
-                keywords="lojistik hizmetleri, motorsiklet kurye, minivan taşımacılık, panelvan nakliye, kamyonet sevkiyat, kamyon taşımacılık, şehir içi lojistik, şehirler arası taşımacılık"
+                keywords="kargo hizmetleri, kamyonet kargo, kamyon kargo, şehir içi kargo taşımacılığı, şehirler arası kargo, ekspres kargo, ticari kargo, parça kargo, komple kargo"
                 canonical={currentPath}
                 lang={currentLang}
                 alternateLanguages={alternateUrls}
@@ -104,7 +81,7 @@ export default function Services() {
                         image={vehicle.image}
                         imageAlt={vehicle.imageAlt}
                         secondaryButtonText={vehicle.secondaryButtonText}
-                        onSecondaryClick={() => { navigate(carrierPath); window.scrollTo(0, 0); }}
+                        onSecondaryClick={() => { navigate(contactPath); window.scrollTo(0, 0); }}
                     />
                 ))}
                 <Footer />
@@ -112,3 +89,4 @@ export default function Services() {
         </>
     )
 }
+

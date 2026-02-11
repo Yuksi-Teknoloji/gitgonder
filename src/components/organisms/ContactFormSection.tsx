@@ -4,7 +4,6 @@ import toast from 'react-hot-toast';
 import { Input } from '../atoms/Input';
 import { Textarea } from '../atoms/Textarea';
 import { Button } from '../atoms/Button';
-import contactHero from '../../assets/contact/contact-hero.png';
 import instagramIcon from '../../assets/contact/instagram.svg';
 import { submitSiteContact } from '../../services/siteContactService';
 
@@ -115,123 +114,115 @@ export function ContactFormSection() {
         <section className="w-full bg-white pt-12 lg:pt-20 pb-8 lg:pb-0">
             <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start lg:items-stretch">
-                    {/* Left - Mascot image */}
+                    {/* Left - Content */}
                     <div className="w-full lg:w-[55%] flex items-start justify-center lg:justify-start">
-                        <div className="relative w-full max-w-[800px] lg:max-w-none lg:translate-x-[-40px]">
-                            <img
-                                src={contactHero}
-                                alt="Gitgönder maskotu kutu taşırken"
-                                className="w-full h-auto object-contain"
-                            />
-                        </div>
-                    </div>
-
-                    {/* Right - Form & content */}
-                    <div className="w-full lg:w-[45%] flex flex-col gap-8">
-                        <div className="text-center lg:text-left">
+                        <div className="w-full max-w-[800px]">
                             <h1
                                 className="text-[32px] sm:text-[40px] lg:text-[48px] font-bold text-[#032c95] leading-tight mb-6"
                                 style={{ fontFamily: 'Roboto, sans-serif', fontVariationSettings: '"wdth" 100' }}
                             >
                                 {t('contact.form.title')}
                             </h1>
-
-                            <form
-                                onSubmit={formik.handleSubmit}
-                                className="max-w-[532px] mx-auto lg:mx-0 space-y-4"
-                            >
-                                {/* İsim/Soy İsim */}
-                                <div>
-                                    <Input
-                                        type="text"
-                                        name="name"
-                                        value={formik.values.name}
-                                        onChange={formik.handleChange}
-                                        onBlur={formik.handleBlur}
-                                        placeholder={t('contact.form.namePlaceholder')}
-                                        error={!!(formik.touched.name && formik.errors.name)}
-                                    />
-                                    {formik.touched.name && formik.errors.name && (
-                                        <p className="mt-1 text-sm text-red-500">{formik.errors.name}</p>
-                                    )}
-                                </div>
-
-                                {/* E-mail */}
-                                <div>
-                                    <Input
-                                        type="email"
-                                        name="email"
-                                        value={formik.values.email}
-                                        onChange={formik.handleChange}
-                                        onBlur={formik.handleBlur}
-                                        placeholder={t('contact.form.emailPlaceholder')}
-                                        error={!!(formik.touched.email && formik.errors.email)}
-                                    />
-                                    {formik.touched.email && formik.errors.email && (
-                                        <p className="mt-1 text-sm text-red-500">{formik.errors.email}</p>
-                                    )}
-                                </div>
-
-                                {/* Telefon Numarası */}
-                                <div>
-                                    <Input
-                                        type="tel"
-                                        name="phone"
-                                        value={formik.values.phone}
-                                        onChange={formik.handleChange}
-                                        onBlur={formik.handleBlur}
-                                        placeholder={t('contact.form.phonePlaceholder')}
-                                        error={!!(formik.touched.phone && formik.errors.phone)}
-                                    />
-                                    {formik.touched.phone && formik.errors.phone && (
-                                        <p className="mt-1 text-sm text-red-500">{formik.errors.phone}</p>
-                                    )}
-                                </div>
-
-                                {/* Mesajınızın Konusu */}
-                                <div>
-                                    <Input
-                                        type="text"
-                                        name="subject"
-                                        value={formik.values.subject}
-                                        onChange={formik.handleChange}
-                                        onBlur={formik.handleBlur}
-                                        placeholder={t('contact.form.subjectPlaceholder')}
-                                        error={!!(formik.touched.subject && formik.errors.subject)}
-                                    />
-                                    {formik.touched.subject && formik.errors.subject && (
-                                        <p className="mt-1 text-sm text-red-500">{formik.errors.subject}</p>
-                                    )}
-                                </div>
-
-                                {/* Mesaj */}
-                                <div>
-                                    <Textarea
-                                        name="message"
-                                        value={formik.values.message}
-                                        onChange={formik.handleChange}
-                                        onBlur={formik.handleBlur}
-                                        placeholder={t('contact.form.messagePlaceholder')}
-                                        className="h-[182px]"
-                                        error={!!(formik.touched.message && formik.errors.message)}
-                                    />
-                                    {formik.touched.message && formik.errors.message && (
-                                        <p className="mt-1 text-sm text-red-500">{formik.errors.message}</p>
-                                    )}
-                                </div>
-
-                                {/* Gönder Butonu */}
-                                <div className="pt-2">
-                                    <Button
-                                        type="submit"
-                                        disabled={formik.isSubmitting}
-                                        className="w-full h-16 bg-[#333333] hover:bg-[#2a2a2a] text-white font-bold text-xl sm:text-2xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.09)] disabled:opacity-60 disabled:cursor-not-allowed"
-                                    >
-                                        {formik.isSubmitting ? t('contact.form.sending') : t('contact.form.send')}
-                                    </Button>
-                                </div>
-                            </form>
                         </div>
+                    </div>
+
+                    {/* Right - Form */}
+                    <div className="w-full lg:w-[45%] flex flex-col gap-8">
+                        <form
+                            onSubmit={formik.handleSubmit}
+                            className="max-w-[532px] mx-auto lg:mx-0 space-y-4"
+                        >
+                            {/* İsim/Soy İsim */}
+                            <div>
+                                <Input
+                                    type="text"
+                                    name="name"
+                                    value={formik.values.name}
+                                    onChange={formik.handleChange}
+                                    onBlur={formik.handleBlur}
+                                    placeholder={t('contact.form.namePlaceholder')}
+                                    error={!!(formik.touched.name && formik.errors.name)}
+                                />
+                                {formik.touched.name && formik.errors.name && (
+                                    <p className="mt-1 text-sm text-red-500">{formik.errors.name}</p>
+                                )}
+                            </div>
+
+                            {/* E-mail */}
+                            <div>
+                                <Input
+                                    type="email"
+                                    name="email"
+                                    value={formik.values.email}
+                                    onChange={formik.handleChange}
+                                    onBlur={formik.handleBlur}
+                                    placeholder={t('contact.form.emailPlaceholder')}
+                                    error={!!(formik.touched.email && formik.errors.email)}
+                                />
+                                {formik.touched.email && formik.errors.email && (
+                                    <p className="mt-1 text-sm text-red-500">{formik.errors.email}</p>
+                                )}
+                            </div>
+
+                            {/* Telefon Numarası */}
+                            <div>
+                                <Input
+                                    type="tel"
+                                    name="phone"
+                                    value={formik.values.phone}
+                                    onChange={formik.handleChange}
+                                    onBlur={formik.handleBlur}
+                                    placeholder={t('contact.form.phonePlaceholder')}
+                                    error={!!(formik.touched.phone && formik.errors.phone)}
+                                />
+                                {formik.touched.phone && formik.errors.phone && (
+                                    <p className="mt-1 text-sm text-red-500">{formik.errors.phone}</p>
+                                )}
+                            </div>
+
+                            {/* Mesajınızın Konusu */}
+                            <div>
+                                <Input
+                                    type="text"
+                                    name="subject"
+                                    value={formik.values.subject}
+                                    onChange={formik.handleChange}
+                                    onBlur={formik.handleBlur}
+                                    placeholder={t('contact.form.subjectPlaceholder')}
+                                    error={!!(formik.touched.subject && formik.errors.subject)}
+                                />
+                                {formik.touched.subject && formik.errors.subject && (
+                                    <p className="mt-1 text-sm text-red-500">{formik.errors.subject}</p>
+                                )}
+                            </div>
+
+                            {/* Mesaj */}
+                            <div>
+                                <Textarea
+                                    name="message"
+                                    value={formik.values.message}
+                                    onChange={formik.handleChange}
+                                    onBlur={formik.handleBlur}
+                                    placeholder={t('contact.form.messagePlaceholder')}
+                                    className="h-[182px]"
+                                    error={!!(formik.touched.message && formik.errors.message)}
+                                />
+                                {formik.touched.message && formik.errors.message && (
+                                    <p className="mt-1 text-sm text-red-500">{formik.errors.message}</p>
+                                )}
+                            </div>
+
+                            {/* Gönder Butonu */}
+                            <div className="pt-2">
+                                <Button
+                                    type="submit"
+                                    disabled={formik.isSubmitting}
+                                    className="w-full h-16 bg-[#333333] hover:bg-[#2a2a2a] text-white font-bold text-xl sm:text-2xl shadow-[0px_4px_15px_0px_rgba(0,0,0,0.09)] disabled:opacity-60 disabled:cursor-not-allowed"
+                                >
+                                    {formik.isSubmitting ? t('contact.form.sending') : t('contact.form.send')}
+                                </Button>
+                            </div>
+                        </form>
 
                         {/* Bottom contact information */}
                         <div className="max-w-[790px] text-[#333333] text-sm sm:text-base space-y-3">

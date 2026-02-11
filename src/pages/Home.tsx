@@ -1,9 +1,7 @@
 import { useTranslation } from 'react-i18next'
-import Hero from '../components/organisms/Hero'
 import { Header } from '../components/organisms/Header'
-import { VehicleShowcase } from '../components/organisms/VehicleShowcase'
+import Hero from '../components/organisms/Hero'
 import { BusinessPartners } from '../components/organisms/BusinessPartners'
-import { MobileJoin } from '../components/organisms/MobileJoin'
 import { ContactCTA } from '../components/organisms/ContactCTA'
 import { Footer } from '../components/organisms/Footer'
 import { SEOHead } from '../components/molecules/SEOHead'
@@ -20,7 +18,7 @@ export default function Home() {
             <SEOHead
                 title={t('home.seo.title')}
                 description={t('home.seo.description')}
-                keywords="gitgönder, lojistik, kurye, nakliye, taşımacılık, motorsiklet kurye, minivan, panelvan, kamyonet, kamyon, Türkiye lojistik, hızlı teslimat, güvenilir lojistik"
+                keywords="gitgönder, kargo, kargo gönderme, paket gönderme, Türkiye kargo, güvenilir kargo, ekspres kargo, şehir içi kargo, şehirler arası kargo"
                 canonical="/"
                 lang={currentLang}
                 alternateLanguages={alternateUrls}
@@ -46,12 +44,10 @@ export default function Home() {
                 <Header activeItem="/" />
                 <Hero />
                 <BusinessPartners />
-
-                <VehicleShowcase />
-                <MobileJoin />
                 <ContactCTA />
                 <Footer />
             </div>
         </>
     )
 }
+
