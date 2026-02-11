@@ -28,7 +28,7 @@ export default function Hero() {
                 
                 {/* Right side - White space */}
                 <div className="w-[35%] h-full bg-white relative">
-                    <HeroOverlay activeIndex={0} />
+<HeroOverlay />
                 </div>
             </div>
         </section>
