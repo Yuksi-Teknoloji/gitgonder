@@ -116,7 +116,7 @@ export const Header: React.FC<HeaderProps> = ({
                 alt={logo?.alt}
                 className={`transition-all duration-300`}
               />
-              <span className={`inline sm:inline text-[12px] sm:text-[14px] lg:text-[16px] font-bold transition-colors ${isScrolled ? 'text-gray-900' : 'text-white'}`} style={{ fontFamily: 'Roboto, sans-serif' }}>
+              <span className={`inline sm:hidden text-[12px] sm:text-[14px] lg:text-[16px] font-bold transition-colors ${isScrolled ? 'text-gray-900' : 'text-white'}`} style={{ fontFamily: 'Roboto, sans-serif' }}>
                 Git Gönder
               </span>
             </Link>
