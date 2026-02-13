@@ -4,7 +4,6 @@ import toast from 'react-hot-toast';
 import { Input } from '../atoms/Input';
 import { Textarea } from '../atoms/Textarea';
 import { Button } from '../atoms/Button';
-import instagramIcon from '../../assets/contact/instagram.svg';
 import { submitSiteContact } from '../../services/siteContactService';
 
 interface ContactFormValues {
@@ -111,7 +110,7 @@ export function ContactFormSection() {
     });
 
     return (
-        <section className="w-full bg-white pt-12 lg:pt-20 pb-8 lg:pb-0">
+        <section className="w-full bg-white pt-12 lg:pt-20 pb-16 lg:pb-32">
             <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start lg:items-stretch">
                     {/* Left - Content */}
@@ -239,25 +238,6 @@ export function ContactFormSection() {
                                 </a>{' '}
                                 {t('contact.form.contactInfo2')}
                             </p>
-                            <p style={{ fontFamily: 'Roboto, sans-serif', fontVariationSettings: '"wdth" 100' }}>
-                                {t('contact.form.phoneLabel')}:
-                                <span className="font-medium"> 0850 241 93 16</span>
-                            </p>
-                            {/* Instagram */}
-                            <a
-                                href="https://instagram.com/yuksi.tr"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="inline-flex items-center gap-2 text-[#333333] hover:text-[#032c95] transition-colors"
-                                style={{ fontFamily: 'Roboto, sans-serif', fontVariationSettings: '"wdth" 100' }}
-                            >
-                                <img
-                                    src={instagramIcon}
-                                    alt="Instagram"
-                                    className="w-6 h-6"
-                                />
-                                <span className="font-semibold">yuksi.tr</span>
-                            </a>
                         </div>
                     </div>
                 </div>

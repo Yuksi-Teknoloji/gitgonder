@@ -25,7 +25,7 @@ export function Footer() {
                         <Link to={getLocalizedPath('home', currentLang)} className="cursor-pointer">
                             <img
                                 src={logoImage}
-                                alt="Gitgönder Logo"
+                                alt="Git Gönder Logo"
                                 className="w-[120px] sm:w-[140px] md:w-[160px] lg:w-[180px] xl:w-[200px] h-auto object-contain transition-transform hover:scale-105 duration-300"
                             />
                         </Link>
@@ -79,24 +79,6 @@ export function Footer() {
                                     info@gitgönder.tr
                                 </span>
                             </a>
-
-                            {/* Phone */}
-                            <a
-                                href="tel:08502419316"
-                                className="flex items-center justify-center lg:items-start lg:justify-start gap-3 hover:opacity-90 active:opacity-70 transition-all group py-2 sm:py-0 -mx-2 px-2 sm:mx-0 sm:px-0 rounded-md sm:rounded-none touch-manipulation"
-                            >
-                                <svg
-                                    className="w-5 h-5 sm:w-5 sm:h-5 flex-shrink-0 group-hover:scale-110 transition-transform pointer-events-none"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    viewBox="0 0 24 24"
-                                >
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                </svg>
-                                <span className="text-sm sm:text-base lg:text-base font-medium text-center lg:text-left" style={{ fontFamily: 'Roboto' }}>
-                                    0850 241 93 16
-                                </span>
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -104,7 +86,7 @@ export function Footer() {
                 {/* Bottom Border */}
                 <div className="mt-8 sm:mt-10 lg:mt-12 pt-6 sm:pt-7 lg:pt-8 border-t border-white/20">
                     <p className="text-center text-xs sm:text-sm lg:text-base text-white/80 px-2" style={{ fontFamily: 'Roboto' }}>
-                        © {new Date().getFullYear()} Gitgönder. {t('footer.rights')}
+                        © {new Date().getFullYear()} Git Gönder. {t('footer.rights')}
                     </p>
                 </div>
             </div>

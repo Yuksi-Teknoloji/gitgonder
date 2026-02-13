@@ -35,7 +35,7 @@ const localeMap: Record<string, string> = {
 export function SEOHead({
     title,
     description,
-    keywords = 'gitgönder, lojistik, kurye, nakliye, taşımacılık, motorsiklet kurye, minivan, panelvan, kamyonet, kamyon, Bursa lojistik, Türkiye lojistik',
+    keywords = 'git gönder, lojistik, kurye, nakliye, taşımacılık, motorsiklet kurye, minivan, panelvan, kamyonet, kamyon, Bursa lojistik, Türkiye lojistik',
     canonical,
     ogImage = 'https://yuksi.com.tr/logo.png',
     ogType = 'website',
@@ -47,20 +47,19 @@ export function SEOHead({
     const baseUrl = 'https://yuksi.com.tr';
     const fullCanonical = canonical ? `${baseUrl}${canonical}` : baseUrl;
     const fullOgImage = ogImage.startsWith('http') ? ogImage : `${baseUrl}${ogImage}`;
-    const fullTitle = title.includes('Gitgönder') ? title : `${title} | Gitgönder`;
+    const fullTitle = title.includes('Git Gönder') ? title : `${title} | Git Gönder`;
 
     // Default structured data for Organization
     const defaultStructuredData = {
         '@context': 'https://schema.org',
         '@type': 'Organization',
         '@id': baseUrl,
-        name: 'Gitgönder',
-        alternateName: 'Gitgönder',
+        name: 'Git Gönder',
+        alternateName: 'Git Gönder',
         url: baseUrl,
         logo: `${baseUrl}/logo.png`,
         image: fullOgImage,
         description: description,
-        telephone: '+908502419316',
         email: 'info@gitgönder.tr',
         priceRange: '$$',
         areaServed: {
@@ -80,13 +79,12 @@ export function SEOHead({
         '@context': 'https://schema.org',
         '@type': 'Organization',
         '@id': `${baseUrl}#organization`,
-        name: 'Gitgönder',
-        alternateName: 'Gitgönder',
+        name: 'Git Gönder',
+        alternateName: 'Git Gönder',
         url: baseUrl,
         logo: `${baseUrl}/logo.png`,
         contactPoint: {
             '@type': 'ContactPoint',
-            telephone: '+908502419316',
             contactType: 'customer service',
             email: 'info@gitgönder.tr',
             areaServed: 'TR',
@@ -101,7 +99,7 @@ export function SEOHead({
             <meta name="title" content={fullTitle} />
             <meta name="description" content={description} />
             <meta name="keywords" content={keywords} />
-            <meta name="author" content="Gitgönder" />
+            <meta name="author" content="Git Gönder" />
             <meta name="language" content="Turkish" />
             <meta name="revisit-after" content="7 days" />
             <link rel="canonical" href={fullCanonical} />
@@ -120,7 +118,7 @@ export function SEOHead({
             <meta property="og:title" content={fullTitle} />
             <meta property="og:description" content={description} />
             <meta property="og:image" content={fullOgImage} />
-            <meta property="og:site_name" content="Gitgönder" />
+            <meta property="og:site_name" content="Git Gönder" />
             <meta property="og:locale" content={localeMap[lang] || 'tr_TR'} />
             {alternateLanguages?.filter(l => l.lang !== lang).map(({ lang: altLang }) => (
                 <meta key={altLang} property="og:locale:alternate" content={localeMap[altLang] || altLang} />
@@ -144,7 +142,7 @@ export function SEOHead({
 
             {/* AI-Friendly Meta Tags */}
             <meta name="ai:content" content={description} />
-            <meta name="ai:business-name" content="Gitgönder" />
+            <meta name="ai:business-name" content="Git Gönder" />
             <meta name="ai:business-type" content="Lojistik ve Taşımacılık" />
             <meta name="ai:location" content="Bursa, Türkiye" />
             <meta name="ai:services" content="Motorsiklet Kurye, Minivan, Panelvan, Kamyonet, Kamyon Taşımacılık" />
@@ -168,7 +166,7 @@ export function SEOHead({
                     '@type': 'WebSite',
                     '@id': `${baseUrl}#website`,
                     url: baseUrl,
-                    name: 'Gitgönder',
+                    name: 'Git Gönder',
                     description: 'Lojistik Kargo Kurye ile yanınızdayız. Motokurye, minivan, panelvan, kamyonet ve kamyon hizmetleri.',
                     publisher: {
                         '@id': `${baseUrl}#organization`,

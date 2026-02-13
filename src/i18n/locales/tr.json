@@ -16,13 +16,13 @@
     },
     "home": {
         "seo": {
-            "title": "Gitgönder - Kargo Gönderme Noktası",
-            "description": "Gitgönder ile kargo gönderme ihtiyaçlarınıza hızlı ve güvenilir çözümler. Türkiye genelinde kamyonet ve kamyon ile profesyonel kargo taşımacılığı."
+            "title": "Git Gönder - Kargo Gönderme Noktası",
+            "description": "Git Gönder ile kargo gönderme ihtiyaçlarınıza hızlı ve güvenilir çözümler. Türkiye genelinde kamyonet ve kamyon ile profesyonel kargo taşımacılığı."
         },
         "contactCta": {
-            "title": "Gitgönder İle Gönderin",
+            "title": "Git Gönder İle Gönderin",
             "subtitle": "Bizimle İletişime Geçin",
-            "description": "Gitgönder'in genişleyen kargo ağında yerinizi alın. Türkiye'nin 81 iline güvenilir kargo taşımacılık hizmeti sunuyoruz. Modern teknolojik altyapımız, rekabetçi fiyatlarımız ve güvenilir hizmet anlayışımızla yanınızdayız. Hemen iletişime geçin, kargo gönderim süreçlerinizi kolaylaştırın.",
+            "description": "Git Gönder'in genişleyen kargo ağında yerinizi alın. Türkiye'nin 81 iline güvenilir kargo taşımacılık hizmeti sunuyoruz. Modern teknolojik altyapımız, rekabetçi fiyatlarımız ve güvenilir hizmet anlayışımızla yanınızdayız. Hemen iletişime geçin, kargo gönderim süreçlerinizi kolaylaştırın.",
             "button": "İletişime Geç",
             "contactUs": "Bize Ulaşın"
         },
@@ -45,13 +45,13 @@
     "about": {
         "hero": {
             "title": "TÜRKİYE'NİN GÜVENİLİR KARGO ÇÖZÜMÜ",
-            "description": "Gitgönder olarak vizyonumuz, kargo taşımacılık sektöründe yenilikçi ve güvenilir hizmet anlayışımızla hem bireylerin hem de işletmelerin hayatını kolaylaştıran, dijital çözümlerle hız ve verimliliği en üst düzeye taşıyan öncü bir marka olmaktır. Teknolojiyi odağımıza alarak müşterilerimizin ihtiyaç duyduğu her ölçekte kargo teslimatını güvenle gerçekleştirmek, sürdürülebilirlik ilkeleriyle büyüyerek hem Türkiye'de hem de uluslararası pazarda tercih edilen kargo çözüm ortağı olmak istiyoruz.",
-            "imageAlt": "Gitgönder kargo hizmet",
-            "kangarooAlt": "Gitgönder kanguru"
+            "description": "Git Gönder olarak vizyonumuz, kargo taşımacılık sektöründe yenilikçi ve güvenilir hizmet anlayışımızla hem bireylerin hem de işletmelerin hayatını kolaylaştıran, dijital çözümlerle hız ve verimliliği en üst düzeye taşıyan öncü bir marka olmaktır. Teknolojiyi odağımıza alarak müşterilerimizin ihtiyaç duyduğu her ölçekte kargo teslimatını güvenle gerçekleştirmek, sürdürülebilirlik ilkeleriyle büyüyerek hem Türkiye'de hem de uluslararası pazarda tercih edilen kargo çözüm ortağı olmak istiyoruz.",
+            "imageAlt": "Git Gönder kargo hizmet",
+            "kangarooAlt": "Git Gönder kanguru"
         },
         "aboutUs": {
             "title": "Hakkımızda",
-            "description": "Gitgönder, kargo taşımacılık sektörüne yenilikçi çözümler sunmak amacıyla geliştirilmiş dijital bir platformdur. Gitgönder platformu sayesinde, kargo gönderenlerle taşıyıcıları güvenli, hızlı ve verimli bir şekilde bir araya getiriyoruz."
+            "description": "Git Gönder, kargo taşımacılık sektörüne yenilikçi çözümler sunmak amacıyla geliştirilmiş dijital bir platformdur. Git Gönder platformu sayesinde, kargo gönderenlerle taşıyıcıları güvenli, hızlı ve verimli bir şekilde bir araya getiriyoruz."
         },
         "serviceFeatures": {
             "title": "Hizmet Özellikleri",
@@ -103,20 +103,20 @@
             }
         },
         "seo": {
-            "title": "Hakkımızda | Gitgönder - Türkiye'nin Kargo Platformu",
-            "description": "Gitgönder hakkında bilgi edinin. Türkiye'nin yenilikçi kargo platformu olarak vizyonumuz, hizmetlerimiz ve teknolojik altyapımız."
+            "title": "Hakkımızda | Git Gönder - Türkiye'nin Kargo Platformu",
+            "description": "Git Gönder hakkında bilgi edinin. Türkiye'nin yenilikçi kargo platformu olarak vizyonumuz, hizmetlerimiz ve teknolojik altyapımız."
         }
     },
     "services": {
         "seo": {
-            "title": "Hizmetlerimiz - Gitgönder",
-            "description": "Gitgönder kargo hizmetleri: Kamyonet (1.500-3.500 kg), Kamyon (3.500-20.000 kg). Şehir içi ve şehirler arası profesyonel kargo taşımacılık çözümleri."
+            "title": "Hizmetlerimiz - Git Gönder",
+            "description": "Git Gönder kargo hizmetleri: Kamyonet (1.500-3.500 kg), Kamyon (3.500-20.000 kg). Şehir içi ve şehirler arası profesyonel kargo taşımacılık çözümleri."
         },
         "hero": {
-            "title": "SİZE YÜKSE BİZE GİTGÖNDER",
-            "description": "Gitgönder, modern kargo taşımacılık ihtiyaçlarınıza hızlı ve esnek çözümler sunar. Kamyonet ve kamyon filomuzla gönderilerinizi güvenle taşıtabilirsiniz. Hızlı, pratik ve güvenilir kargo hizmeti için Gitgönder her zaman yanınızda.",
-            "backgroundAlt": "Gitgönder kargo hizmet",
-            "kangarooAlt": "Gitgönder kanguru"
+            "title": "GÜVENLE TAŞIYORUZ, GİT GÖNDER'LE",
+            "description": "Git Gönder, modern kargo taşımacılık ihtiyaçlarınıza hızlı ve esnek çözümler sunar. Kamyonet ve kamyon filomuzla gönderilerinizi güvenle taşıtabilirsiniz. Hızlı, pratik ve güvenilir kargo hizmeti için Git Gönder her zaman yanınızda.",
+            "backgroundAlt": "Git Gönder kargo hizmet",
+            "kangarooAlt": "Git Gönder kanguru"
         },
         "pickup": {
             "title": "Kamyonet",
@@ -131,11 +131,11 @@
     },
     "help": {
         "seo": {
-            "title": "Yardım ve Destek - Gitgönder",
-            "description": "Gitgönder yardım merkezi. Sık sorulan sorular, kullanım kılavuzu, teknik destek ve müşteri hizmetleri. Size nasıl yardımcı olabiliriz?",
-            "backgroundAlt": "Gitgönder kargo hizmet",
-            "kangarooPhoneAlt": "Gitgönder telefon kanguru",
-            "logoAlt": "Gitgönder Logo"
+            "title": "Yardım ve Destek - Git Gönder",
+            "description": "Git Gönder yardım merkezi. Sık sorulan sorular, kullanım kılavuzu, teknik destek ve müşteri hizmetleri. Size nasıl yardımcı olabiliriz?",
+            "backgroundAlt": "Git Gönder kargo hizmet",
+            "kangarooPhoneAlt": "Git Gönder telefon kanguru",
+            "logoAlt": "Git Gönder Logo"
         },
         "hero": {
             "titleLine1": "SANA NASIL",
@@ -160,7 +160,7 @@
             }
         },
         "content": {
-            "intro": "Her zaman yanınızdayız! Gitgönder yardım hattına şu konularda bizimle iletişime geçebilirsiniz",
+            "intro": "Her zaman yanınızdayız! Git Gönder yardım hattına şu konularda bizimle iletişime geçebilirsiniz",
             "topics": {
                 "shipping": {
                     "title": "Gönderi Takibi: ",
@@ -191,8 +191,8 @@
     },
     "contact": {
         "seo": {
-            "title": "İletişim - Gitgönder",
-            "description": "Gitgönder ile iletişime geçin. Sorularınız, önerileriniz veya destek talepleriniz için bizimle iletişime geçebilirsiniz. Telefon: 0850 241 93 16 | Email: info@yuksi.tr"
+            "title": "İletişim - Git Gönder",
+            "description": "Git Gönder ile iletişime geçin. Sorularınız, önerileriniz veya destek talepleriniz için bizimle iletişime geçebilirsiniz. Email: info@yuksi.tr"
         },
         "title": "İletişim",
         "subtitle": "Bizimle İletişime Geçin",
@@ -232,14 +232,12 @@
             "phoneLabel": "İletişim Numarası"
         },
         "info": {
-            "phone": "Telefon",
-            "phoneValue": "0850 241 93 16",
             "email": "E-posta",
             "emailValue": "info@yuksi.tr"
         }
     },
     "footer": {
-        "description": "Gitgönder, modern kargo taşımacılık ihtiyaçlarınıza hızlı ve güvenilir çözümler sunar.",
+        "description": "Git Gönder, modern kargo taşımacılık ihtiyaçlarınıza hızlı ve güvenilir çözümler sunar.",
         "quickLinks": "Hızlı Bağlantılar",
         "contact": "İletişim",
         "followUs": "Bizi Takip Edin",

@@ -16,13 +16,13 @@
     },
     "home": {
         "seo": {
-            "title": "Gitgönder - Frachtversandstelle",
-            "description": "Schnelle und zuverlässige Lösungen für Ihre Frachtversandbedürfnisse mit Gitgönder. Professioneller Frachttransport in der gesamten Türkei mit Pickups und LKWs."
+            "title": "Git Gönder - Frachtversandstelle",
+            "description": "Schnelle und zuverlässige Lösungen für Ihre Frachtversandbedürfnisse mit Git Gönder. Professioneller Frachttransport in der gesamten Türkei mit Pickups und LKWs."
         },
         "contactCta": {
-            "title": "Versenden Sie mit Gitgönder",
+            "title": "Versenden Sie mit Git Gönder",
             "subtitle": "Kontaktieren Sie Uns",
-            "description": "Nehmen Sie Ihren Platz im expandierenden Frachtnetzwerk von Gitgönder ein. Wir bieten zuverlässige Frachttransportdienstleistungen in alle 81 Provinzen der Türkei. Mit unserer modernen technologischen Infrastruktur, wettbewerbsfähigen Preisen und zuverlässigem Serviceansatz sind wir immer an Ihrer Seite. Kontaktieren Sie uns jetzt, um Ihre Frachtversandprozesse zu vereinfachen.",
+            "description": "Nehmen Sie Ihren Platz im expandierenden Frachtnetzwerk von Git Gönder ein. Wir bieten zuverlässige Frachttransportdienstleistungen in alle 81 Provinzen der Türkei. Mit unserer modernen technologischen Infrastruktur, wettbewerbsfähigen Preisen und zuverlässigem Serviceansatz sind wir immer an Ihrer Seite. Kontaktieren Sie uns jetzt, um Ihre Frachtversandprozesse zu vereinfachen.",
             "button": "Kontaktieren Sie Uns",
             "contactUs": "Erreichen Sie Uns"
         },
@@ -45,13 +45,13 @@
     "about": {
         "hero": {
             "title": "DIE ZUVERLÄSSIGE FRACHTLÖSUNG DER TÜRKEI",
-            "description": "Als Gitgönder ist unsere Vision, eine wegweisende Marke zu sein, die mit unserem innovativen und zuverlässigen Serviceansatz in der Frachttransportbranche das Leben von Einzelpersonen und Unternehmen vereinfacht und Geschwindigkeit und Effizienz mit digitalen Lösungen maximiert. Mit Fokus auf Technologie möchten wir Fracht jeder Größenordnung sicher liefern, mit Nachhaltigkeitsprinzipien wachsen und der bevorzugte Frachtlösungspartner sowohl in der Türkei als auch auf internationalen Märkten werden.",
-            "imageAlt": "Gitgönder Frachtdienst",
-            "kangarooAlt": "Gitgönder Känguru"
+            "description": "Als Git Gönder ist unsere Vision, eine wegweisende Marke zu sein, die mit unserem innovativen und zuverlässigen Serviceansatz in der Frachttransportbranche das Leben von Einzelpersonen und Unternehmen vereinfacht und Geschwindigkeit und Effizienz mit digitalen Lösungen maximiert. Mit Fokus auf Technologie möchten wir Fracht jeder Größenordnung sicher liefern, mit Nachhaltigkeitsprinzipien wachsen und der bevorzugte Frachtlösungspartner sowohl in der Türkei als auch auf internationalen Märkten werden.",
+            "imageAlt": "Git Gönder Frachtdienst",
+            "kangarooAlt": "Git Gönder Känguru"
         },
         "aboutUs": {
             "title": "Über Uns",
-            "description": "Gitgönder ist eine digitale Plattform, die entwickelt wurde, um innovative Lösungen für die Frachttransportbranche anzubieten. Über die Gitgönder-Plattform bringen wir Frachtversender und Spediteure auf sichere, schnelle und effiziente Weise zusammen."
+            "description": "Git Gönder ist eine digitale Plattform, die entwickelt wurde, um innovative Lösungen für die Frachttransportbranche anzubieten. Über die Git Gönder-Plattform bringen wir Frachtversender und Spediteure auf sichere, schnelle und effiziente Weise zusammen."
         },
         "serviceFeatures": {
             "title": "Serviceleistungen",
@@ -103,20 +103,20 @@
             }
         },
         "seo": {
-            "title": "Über Uns | Gitgönder - Die Frachtplattform der Türkei",
-            "description": "Erfahren Sie mehr über Gitgönder. Unsere Vision als innovative Frachtplattform der Türkei, unsere Dienstleistungen und technologische Infrastruktur."
+            "title": "Über Uns | Git Gönder - Die Frachtplattform der Türkei",
+            "description": "Erfahren Sie mehr über Git Gönder. Unsere Vision als innovative Frachtplattform der Türkei, unsere Dienstleistungen und technologische Infrastruktur."
         }
     },
     "services": {
         "seo": {
-            "title": "Unsere Dienstleistungen - Gitgönder",
-            "description": "Gitgönder Frachtdienstleistungen: Pickup (1.500-3.500 kg), LKW (3.500-20.000 kg). Professionelle Lösungen für urbanen und intercity Frachttransport."
+            "title": "Unsere Dienstleistungen - Git Gönder",
+            "description": "Git Gönder Frachtdienstleistungen: Pickup (1.500-3.500 kg), LKW (3.500-20.000 kg). Professionelle Lösungen für urbanen und intercity Frachttransport."
         },
         "hero": {
-            "title": "IHRE LAST IST UNSER GESCHÄFT",
-            "description": "Gitgönder bietet schnelle und flexible Lösungen für Ihre modernen Frachttransportbedürfnisse. Mit unserer Pickup- und LKW-Flotte können Sie Ihre Sendungen sicher transportieren. Gitgönder ist immer an Ihrer Seite für schnellen, praktischen und zuverlässigen Frachtservice.",
-            "backgroundAlt": "Gitgönder Frachtdienst",
-            "kangarooAlt": "Gitgönder Känguru"
+            "title": "VERSENDEN MIT ZUTRAUEN, GİT GÖNDER",
+            "description": "Git Gönder bietet schnelle und flexible Lösungen für Ihre modernen Frachttransportbedürfnisse. Mit unserer Pickup- und LKW-Flotte können Sie Ihre Sendungen sicher transportieren. Git Gönder ist immer an Ihrer Seite für schnellen, praktischen und zuverlässigen Frachtservice.",
+            "backgroundAlt": "Git Gönder Frachtdienst",
+            "kangarooAlt": "Git Gönder Känguru"
         },
         "pickup": {
             "title": "Pickup",
@@ -131,11 +131,11 @@
     },
     "help": {
         "seo": {
-            "title": "Hilfe und Support - Gitgönder",
-            "description": "Gitgönder Hilfecenter. Häufig gestellte Fragen, Benutzerhandbuch, technischer Support und Kundenservice. Wie können wir Ihnen helfen?",
-            "backgroundAlt": "Gitgönder Frachtdienst",
-            "kangarooPhoneAlt": "Gitgönder Telefon Känguru",
-            "logoAlt": "Gitgönder Logo"
+            "title": "Hilfe und Support - Git Gönder",
+            "description": "Git Gönder Hilfecenter. Häufig gestellte Fragen, Benutzerhandbuch, technischer Support und Kundenservice. Wie können wir Ihnen helfen?",
+            "backgroundAlt": "Git Gönder Frachtdienst",
+            "kangarooPhoneAlt": "Git Gönder Telefon Känguru",
+            "logoAlt": "Git Gönder Logo"
         },
         "hero": {
             "titleLine1": "WIE KÖNNEN WIR",
@@ -160,7 +160,7 @@
             }
         },
         "content": {
-            "intro": "Wir sind immer an Ihrer Seite! Sie können uns über die Gitgönder-Helpline zu folgenden Themen kontaktieren",
+            "intro": "Wir sind immer an Ihrer Seite! Sie können uns über die Git Gönder-Helpline zu folgenden Themen kontaktieren",
             "topics": {
                 "shipping": {
                     "title": "Sendungsverfolgung: ",
@@ -191,8 +191,8 @@
     },
     "contact": {
         "seo": {
-            "title": "Kontakt - Gitgönder",
-            "description": "Kontaktieren Sie Gitgönder. Kontaktieren Sie uns für Ihre Fragen, Vorschläge oder Supportanfragen. Telefon: 0850 241 93 16 | E-Mail: info@yuksi.tr"
+            "title": "Kontakt - Git Gönder",
+            "description": "Kontaktieren Sie Git Gönder. Kontaktieren Sie uns für Ihre Fragen, Vorschläge oder Supportanfragen. E-Mail: info@yuksi.tr"
         },
         "title": "Kontakt",
         "subtitle": "Kontaktieren Sie Uns",
@@ -232,14 +232,12 @@
             "phoneLabel": "Kontaktnummer"
         },
         "info": {
-            "phone": "Telefon",
-            "phoneValue": "0850 241 93 16",
             "email": "E-Mail",
             "emailValue": "info@yuksi.tr"
         }
     },
     "footer": {
-        "description": "Gitgönder bietet schnelle und zuverlässige Lösungen für Ihre modernen Frachttransportbedürfnisse.",
+        "description": "Git Gönder bietet schnelle und zuverlässige Lösungen für Ihre modernen Frachttransportbedürfnisse.",
         "quickLinks": "Schnelllinks",
         "contact": "Kontakt",
         "followUs": "Folgen Sie uns",

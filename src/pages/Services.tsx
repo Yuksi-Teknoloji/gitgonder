@@ -25,14 +25,14 @@ export default function Services() {
             title: t('services.pickup.title'),
             description: t('services.pickup.description'),
             image: kamyonetImg,
-            imageAlt: `Gitgönder ${t('services.pickup.title')}`,
+            imageAlt: `Git Gönder ${t('services.pickup.title')}`,
             secondaryButtonText: t('services.pickup.buttonText'),
         },
         {
             title: t('services.truck.title'),
             description: t('services.truck.description'),
             image: kamyonImg,
-            imageAlt: `Gitgönder ${t('services.truck.title')}`,
+            imageAlt: `Git Gönder ${t('services.truck.title')}`,
             secondaryButtonText: t('services.truck.buttonText'),
         },
     ]

@@ -19,7 +19,7 @@ export default function Help() {
             <SEOHead
                 title={t('help.seo.title')}
                 description={t('help.seo.description')}
-                keywords="gitgönder yardım, lojistik destek, müşteri hizmetleri, sık sorulan sorular, teknik destek, kullanım kılavuzu"
+                keywords="git gönder yardım, lojistik destek, müşteri hizmetleri, sık sorulan sorular, teknik destek, kullanım kılavuzu"
                 canonical={currentPath}
                 lang={currentLang}
                 alternateLanguages={alternateUrls}

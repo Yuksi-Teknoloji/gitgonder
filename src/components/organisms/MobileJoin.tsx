@@ -109,7 +109,7 @@ export function MobileJoin() {
                         <div className="relative z-20">
                             <img
                                 src={phoneScreen}
-                                alt="Gitgönder Mobile App"
+                                alt="Git Gönder Mobile App"
                                 className="w-[260px] sm:w-[300px] md:w-[320px] lg:w-[360px] xl:w-[400px] h-auto object-contain drop-shadow-2xl"
                             />
                         </div>

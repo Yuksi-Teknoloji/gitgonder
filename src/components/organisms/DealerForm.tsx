@@ -160,7 +160,7 @@ export function DealerForm() {
                         <div className="relative w-full max-w-[800px] lg:max-w-none lg:translate-x-[-40px]">
                             <img
                                 src={bayiImage}
-                                alt="Gitgönder Bayi"
+                                alt="Git Gönder Bayi"
                                 className="w-full h-auto object-contain"
                             />
                         </div>
@@ -318,10 +318,6 @@ export function DealerForm() {
                                     info@gitgönder.tr
                                 </a>{' '}
                                 {t('dealer.form.contactInfo2')}
-                            </p>
-                            <p style={{ fontFamily: 'Roboto, sans-serif', fontVariationSettings: '"wdth" 100' }}>
-                                {t('dealer.form.phoneLabel')}:
-                                <span className="font-medium"> 0850 241 93 16</span>
                             </p>
                         </div>
                     </div>

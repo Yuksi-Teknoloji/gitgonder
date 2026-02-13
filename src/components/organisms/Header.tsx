@@ -108,7 +108,7 @@ export const Header: React.FC<HeaderProps> = ({
           <div className="flex justify-between items-center h-16 sm:h-20 md:h-24 lg:h-28">
             <Link
               to={getLocalizedPath('home', currentLang)}
-              className={`flex-shrink-0 ${logoWrapper} order-2 lg:order-1 pl-4 lg:pl-0 cursor-pointer`}
+              className={`flex-shrink-0 ${logoWrapper} order-2 lg:order-1 pl-4 lg:pl-0 cursor-pointer flex items-center gap-2`}
             >
               <Logo
                 src={logo?.src}
@@ -116,6 +116,9 @@ export const Header: React.FC<HeaderProps> = ({
                 alt={logo?.alt}
                 className={`transition-all duration-300`}
               />
+              <span className={`inline sm:inline text-[12px] sm:text-[14px] lg:text-[16px] font-bold transition-colors ${isScrolled ? 'text-gray-900' : 'text-white'}`} style={{ fontFamily: 'Roboto, sans-serif' }}>
+                Git Gönder
+              </span>
             </Link>
 
             <div className="hidden lg:flex lg:items-center gap-8 lg:order-2">
@@ -146,7 +149,7 @@ export const Header: React.FC<HeaderProps> = ({
                 <div className="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-200 absolute right-0 mt-2 w-[220px] bg-white rounded-[12px] shadow-[0_10px_40px_rgba(0,0,0,0.15)] border border-gray-100 overflow-hidden z-50">
                   <div className="py-2">
                     <a
-                      href="https://kurumsal.yuksi.dev/"
+                      href="https://kurumsal.gitgonder.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-3 px-4 py-3 hover:bg-primary-50 transition-colors duration-200"
@@ -159,23 +162,6 @@ export const Header: React.FC<HeaderProps> = ({
                       <div>
                         <p className="text-[14px] font-semibold text-[#3A3A3A]" style={{ fontFamily: 'Roboto, sans-serif' }}>{t('nav.corporateLogin')}</p>
                         <p className="text-[12px] text-gray-500">{t('nav.corporateLoginDesc')}</p>
-                      </div>
-                    </a>
-                    <a
-                      href="https://bayi.yuksi.dev/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-3 px-4 py-3 hover:bg-primary-50 transition-colors duration-200"
-                    >
-                      <div className="w-10 h-10 bg-gradient-to-br from-[#032c95] to-[#004899] rounded-full flex items-center justify-center flex-shrink-0">
-                        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                        </svg>
-                      </div>
-                      <div>
-                        <p className="text-[14px] font-semibold text-[#3A3A3A]" style={{ fontFamily: 'Roboto, sans-serif' }}>{t('nav.dealerLogin')}</p>
-                        <p className="text-[12px] text-gray-500">{t('nav.dealerLoginDesc')}</p>
                       </div>
                     </a>
                   </div>
@@ -275,7 +261,7 @@ export const Header: React.FC<HeaderProps> = ({
                 <div className={`overflow-hidden transition-all duration-300 ${isLoginMenuOpen ? 'max-h-[400px] opacity-100 mt-4' : 'max-h-0 opacity-0'}`}>
                   <div className="grid gap-3">
                     <a 
-                      href="https://kurumsal.yuksi.dev/" 
+                      href="https://kurumsal.gitgonder.com/" 
                       target="_blank" 
                       rel="noopener noreferrer" 
                       className="group flex items-center gap-4 p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:border-primary-200 hover:shadow-md hover:bg-primary-50/30 transition-all duration-200"
@@ -288,26 +274,6 @@ export const Header: React.FC<HeaderProps> = ({
                       <div className="min-w-0 flex-1">
                         <p className="text-[15px] font-bold text-gray-900">{t('nav.corporateLogin')}</p>
                         <p className="text-[12px] text-gray-500 mt-0.5">{t('nav.corporateLoginDesc')}</p>
-                      </div>
-                      <svg className="w-5 h-5 text-primary-500 group-hover:translate-x-1 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                      </svg>
-                    </a>
-                    <a 
-                      href="https://bayi.yuksi.dev/" 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="group flex items-center gap-4 p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:border-primary-200 hover:shadow-md hover:bg-primary-50/30 transition-all duration-200"
-                    >
-                      <div className="w-11 h-11 bg-gradient-to-br from-[#032c95] to-[#004899] rounded-full flex items-center justify-center text-white flex-shrink-0 group-hover:scale-110 transition-transform">
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                        </svg>
-                      </div>
-                      <div className="min-w-0 flex-1">
-                        <p className="text-[15px] font-bold text-gray-900">{t('nav.dealerLogin')}</p>
-                        <p className="text-[12px] text-gray-500 mt-0.5">{t('nav.dealerLoginDesc')}</p>
                       </div>
                       <svg className="w-5 h-5 text-primary-500 group-hover:translate-x-1 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

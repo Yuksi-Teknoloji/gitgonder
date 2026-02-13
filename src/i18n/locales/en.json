@@ -16,13 +16,13 @@
     },
     "home": {
         "seo": {
-            "title": "Gitgönder - Cargo Shipping Point",
-            "description": "Fast and reliable solutions for your cargo shipping needs with Gitgönder. Professional cargo transportation across Turkey with pickup trucks and trucks."
+            "title": "Git Gönder - Cargo Shipping Point",
+            "description": "Fast and reliable solutions for your cargo shipping needs with Git Gönder. Professional cargo transportation across Turkey with pickup trucks and trucks."
         },
         "contactCta": {
-            "title": "Ship with Gitgönder",
+            "title": "Ship with Git Gönder",
             "subtitle": "Get in Touch With Us",
-            "description": "Take your place in Gitgönder's expanding cargo network. We offer reliable cargo transportation services to all 81 provinces of Turkey. With our modern technological infrastructure, competitive prices, and reliable service approach, we are always by your side. Contact us now to simplify your cargo shipping processes.",
+            "description": "Take your place in Git Gönder's expanding cargo network. We offer reliable cargo transportation services to all 81 provinces of Turkey. With our modern technological infrastructure, competitive prices, and reliable service approach, we are always by your side. Contact us now to simplify your cargo shipping processes.",
             "button": "Contact Us",
             "contactUs": "Reach Out"
         },
@@ -45,13 +45,13 @@
     "about": {
         "hero": {
             "title": "TURKEY'S RELIABLE CARGO SOLUTION",
-            "description": "As Gitgönder, our vision is to be a pioneering brand that simplifies the lives of both individuals and businesses with our innovative and reliable service approach in the cargo transportation sector, maximizing speed and efficiency with digital solutions. By focusing on technology, we want to safely deliver cargo of any scale our customers need, grow with sustainability principles, and become the preferred cargo solution partner in both Turkey and international markets.",
-            "imageAlt": "Gitgönder cargo service",
-            "kangarooAlt": "Gitgönder kangaroo"
+            "description": "As Git Gönder, our vision is to be a pioneering brand that simplifies the lives of both individuals and businesses with our innovative and reliable service approach in the cargo transportation sector, maximizing speed and efficiency with digital solutions. By focusing on technology, we want to safely deliver cargo of any scale our customers need, grow with sustainability principles, and become the preferred cargo solution partner in both Turkey and international markets.",
+            "imageAlt": "Git Gönder cargo service",
+            "kangarooAlt": "Git Gönder kangaroo"
         },
         "aboutUs": {
             "title": "About Us",
-            "description": "Gitgönder is a digital platform developed to offer innovative solutions to the cargo transportation industry. Through the Gitgönder platform, we bring cargo shippers and carriers together in a secure, fast, and efficient way."
+            "description": "Git Gönder is a digital platform developed to offer innovative solutions to the cargo transportation industry. Through the Git Gönder platform, we bring cargo shippers and carriers together in a secure, fast, and efficient way."
         },
         "serviceFeatures": {
             "title": "Service Features",
@@ -103,20 +103,20 @@
             }
         },
         "seo": {
-            "title": "About Us | Gitgönder - Turkey's Cargo Platform",
-            "description": "Learn about Gitgönder. Our vision as Turkey's innovative cargo platform, our services, and technological infrastructure."
+            "title": "About Us | Git Gönder - Turkey's Cargo Platform",
+            "description": "Learn about Git Gönder. Our vision as Turkey's innovative cargo platform, our services, and technological infrastructure."
         }
     },
     "services": {
         "seo": {
-            "title": "Our Services - Gitgönder",
-            "description": "Gitgönder cargo services: Pickup Truck (1,500-3,500 kg), Truck (3,500-20,000 kg). Professional urban and intercity cargo transportation solutions."
+            "title": "Our Services - Git Gönder",
+            "description": "Git Gönder cargo services: Pickup Truck (1,500-3,500 kg), Truck (3,500-20,000 kg). Professional urban and intercity cargo transportation solutions."
         },
         "hero": {
-            "title": "YOUR LOAD IS OUR BUSINESS",
-            "description": "Gitgönder offers fast and flexible solutions for your modern cargo transportation needs. With our pickup truck and truck fleet, you can safely transport your shipments. Gitgönder is always by your side for fast, practical and reliable cargo service.",
-            "backgroundAlt": "Gitgönder cargo service",
-            "kangarooAlt": "Gitgönder kangaroo"
+            "title": "SHIP WITH CONFIDENCE, GİT GÖNDER",
+            "description": "Git Gönder offers fast and flexible solutions for your modern cargo transportation needs. With our pickup truck and truck fleet, you can safely transport your shipments. Git Gönder is always by your side for fast, practical and reliable cargo service.",
+            "backgroundAlt": "Git Gönder cargo service",
+            "kangarooAlt": "Git Gönder kangaroo"
         },
         "pickup": {
             "title": "Pickup Truck",
@@ -131,11 +131,11 @@
     },
     "help": {
         "seo": {
-            "title": "Help and Support - Gitgönder",
-            "description": "Gitgönder help center. Frequently asked questions, user guide, technical support and customer service. How can we help you?",
-            "backgroundAlt": "Gitgönder cargo service",
-            "kangarooPhoneAlt": "Gitgönder phone kangaroo",
-            "logoAlt": "Gitgönder Logo"
+            "title": "Help and Support - Git Gönder",
+            "description": "Git Gönder help center. Frequently asked questions, user guide, technical support and customer service. How can we help you?",
+            "backgroundAlt": "Git Gönder cargo service",
+            "kangarooPhoneAlt": "Git Gönder phone kangaroo",
+            "logoAlt": "Git Gönder Logo"
         },
         "hero": {
             "titleLine1": "HOW CAN WE",
@@ -160,7 +160,7 @@
             }
         },
         "content": {
-            "intro": "We are always with you! You can contact us at Gitgönder help line on the following topics",
+            "intro": "We are always with you! You can contact us at Git Gönder help line on the following topics",
             "topics": {
                 "shipping": {
                     "title": "Shipment Tracking: ",
@@ -191,8 +191,8 @@
     },
     "contact": {
         "seo": {
-            "title": "Contact - Gitgönder",
-            "description": "Get in touch with Gitgönder. Contact us for your questions, suggestions or support requests. Phone: 0850 241 93 16 | Email: info@yuksi.tr"
+            "title": "Contact - Git Gönder",
+            "description": "Get in touch with Git Gönder. Contact us for your questions, suggestions or support requests. Email: info@yuksi.tr"
         },
         "title": "Contact",
         "subtitle": "Get in Touch With Us",
@@ -232,14 +232,12 @@
             "phoneLabel": "Contact Number"
         },
         "info": {
-            "phone": "Phone",
-            "phoneValue": "0850 241 93 16",
             "email": "Email",
             "emailValue": "info@yuksi.tr"
         }
     },
     "footer": {
-        "description": "Gitgönder offers fast and reliable solutions for your modern cargo transportation needs.",
+        "description": "Git Gönder offers fast and reliable solutions for your modern cargo transportation needs.",
         "quickLinks": "Quick Links",
         "contact": "Contact",
         "followUs": "Follow Us",

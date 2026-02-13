@@ -18,7 +18,7 @@ export default function Home() {
             <SEOHead
                 title={t('home.seo.title')}
                 description={t('home.seo.description')}
-                keywords="gitgönder, kargo, kargo gönderme, paket gönderme, Türkiye kargo, güvenilir kargo, ekspres kargo, şehir içi kargo, şehirler arası kargo"
+                keywords="git gönder, kargo, kargo gönderme, paket gönderme, Türkiye kargo, güvenilir kargo, ekspres kargo, şehir içi kargo, şehirler arası kargo"
                 canonical="/"
                 lang={currentLang}
                 alternateLanguages={alternateUrls}
@@ -26,12 +26,11 @@ export default function Home() {
                     '@context': 'https://schema.org',
                     '@type': 'Organization',
                     '@id': 'https://yuksi.com.tr',
-                    name: 'Gitgönder',
-                    alternateName: 'Gitgönder',
+                    name: 'Git Gönder',
+                    alternateName: 'Git Gönder',
                     url: 'https://yuksi.com.tr',
                     logo: 'https://yuksi.com.tr/logo.png',
                     description: t('home.seo.description'),
-                    telephone: '+908502419316',
                     email: 'info@gitgönder.tr',
                     priceRange: '$$',
                     areaServed: {

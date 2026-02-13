@@ -172,7 +172,7 @@ export function CorporateForm() {
                         <div className="relative w-full max-w-[800px] lg:max-w-none lg:translate-x-[-40px] transform translate-y-8 lg:-translate-y-8 lg:-mt-8">
                             <img
                                 src={kurumsalImage}
-                                alt="Gitgönder Kurumsal Üyelik"
+                                alt="Git Gönder Kurumsal Üyelik"
                                 className="w-full h-auto object-contain"
                             />
                         </div>
@@ -346,10 +346,6 @@ export function CorporateForm() {
                                     info@gitgönder.tr
                                 </a>{' '}
                                 {t('corporate.form.contactInfo2')}
-                            </p>
-                            <p style={{ fontFamily: 'Roboto, sans-serif', fontVariationSettings: '"wdth" 100' }}>
-                                {t('corporate.form.phoneLabel')}:
-                                <span className="font-medium"> 0850 241 93 16</span>
                             </p>
                         </div>
                     </div>

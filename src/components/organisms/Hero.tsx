@@ -9,7 +9,7 @@ export default function Hero() {
                 <img
                     src={heroBg}
                     className="w-full h-[420px] object-cover"
-                    alt="Gitgönder kargo"
+                    alt="Git Gönder kargo"
                 />
                 <div className="bg-[#FFF6ED] rounded-t-[40px] px-6 pt-20 pb-10"></div>
             </div>
@@ -21,7 +21,7 @@ export default function Hero() {
                     <img 
                         src={heroBg} 
                         className="w-full h-full object-cover" 
-                        alt="Gitgönder kargo"
+                        alt="Git Gönder kargo"
                     />
                     <div className="absolute inset-0 bg-gradient-to-r from-black/30 to-transparent"></div>
                 </div>

@@ -40,7 +40,7 @@ export const HeroOverlay: React.FC = () => {
                         textShadow: '0 4px 12px rgba(255, 91, 4, 0.3)',
                     }}
                 >
-                    GİTGÖNDER KARGO
+                    GİT GÖNDER KARGO
                 </div>
             </div>
         </div>

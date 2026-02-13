@@ -10,7 +10,7 @@ interface LogoProps {
 
 export const Logo: React.FC<LogoProps> = ({
   src,
-alt = 'Gitgönder Logo',
+alt = 'Git Gönder Logo',
   className = '',
 }) => {
   const logoSrc = src || logoImage;
