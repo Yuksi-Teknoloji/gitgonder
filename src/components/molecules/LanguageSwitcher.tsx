@@ -13,6 +13,13 @@ export function LanguageSwitcher() {
     const currentLang = i18n.language as keyof typeof languages;
     const currentLanguage = languages[currentLang] || languages.tr;
 
+    // HashRouter için path alma yardımcı fonksiyonu
+    const getHashPath = (): string => {
+        const hash = location.hash;
+        if (!hash || hash === '#') return '/';
+        return hash.replace('#', '') || '/';
+    };
+
     useEffect(() => {
         function handleClickOutside(event: MouseEvent) {
             if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
@@ -25,7 +32,7 @@ export function LanguageSwitcher() {
     }, []);
 
     const getCurrentRoute = (): string | null => {
-        const path = location.pathname.slice(1); // Remove leading slash
+        const path = getHashPath().slice(1); // Remove leading slash
 
         // Check for home page
         if (!path) {
@@ -49,7 +56,7 @@ export function LanguageSwitcher() {
             const newPath = routeTranslations[currentRoute][lang];
             i18n.changeLanguage(lang);
             // For home page, newPath is empty string
-            navigate(newPath ? `/${newPath}` : '/');
+            navigate(newPath ? `/${newPath}` : '/', { replace: true });
         } else {
             i18n.changeLanguage(lang);
         }

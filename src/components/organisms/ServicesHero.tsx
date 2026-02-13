@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import servicesHeroBg from '../../assets/services/hero-bg.png';
+import servicesHeroBg from '../../assets/services/gitgonder-bg.png';
 
 export function ServicesHero() {
     const { t } = useTranslation();
@@ -11,8 +11,7 @@ export function ServicesHero() {
                 <img
                     src={servicesHeroBg}
                     alt={t('services.hero.backgroundAlt')}
-                    className="absolute h-[155.84%] left-0 top-[-56.81%] w-[100.09%] max-w-none object-cover"
-                    style={{ transform: 'scaleX(-1)' }}
+                    className="absolute w-full h-full object-cover"
                 />
                 {/* Overlay for better text readability */}
                 <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-transparent" />

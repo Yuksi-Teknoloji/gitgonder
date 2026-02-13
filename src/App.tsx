@@ -1,5 +1,5 @@
 import { Suspense, lazy } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import { Toaster } from 'react-hot-toast'
 
 // Lazy load pages for code splitting
@@ -18,7 +18,7 @@ const PageLoader = () => (
 
 function App() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Suspense fallback={<PageLoader />}>
                 <Routes>
                     {/* Home - all languages use root */}
@@ -53,7 +53,7 @@ function App() {
                     },
                 }}
             />
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 
