@@ -70,9 +70,20 @@ export const routeTranslations: Record<string, Record<string, string>> = {
   },
 };
 
+// HashRouter için URL'den path kısmını al
+function getPathFromHash(): string {
+  if (typeof window === 'undefined') return '/';
+  const hash = window.location.hash;
+  if (!hash || hash === '#') return '/';
+  // Remove the # and get the path
+  return hash.replace('#', '') || '/';
+}
+
 // URL path'inden hangi dil olduğunu bul
 export function getLanguageFromPath(path: string): string | null {
-  const segment = path.split('/').filter(Boolean)[0];
+  // HashRouter için hash'i kontrol et
+  const actualPath = typeof window !== 'undefined' ? getPathFromHash() : path;
+  const segment = actualPath.split('/').filter(Boolean)[0];
 
   // Ana sayfa için null döndür, böylece mevcut dil korunur
   if (!segment) {
@@ -92,7 +103,9 @@ export function getLanguageFromPath(path: string): string | null {
 
 // URL path'inden route adını bul
 export function getRouteFromPath(path: string): string | null {
-  const segment = path.split('/').filter(Boolean)[0];
+  // HashRouter için hash'i kontrol et
+  const actualPath = typeof window !== 'undefined' ? getPathFromHash() : path;
+  const segment = actualPath.split('/').filter(Boolean)[0];
 
   if (!segment) {
     return 'home';

@@ -42,8 +42,15 @@ export const Header: React.FC<HeaderProps> = ({
   // Dinamik navigation items oluştur
   const currentLang = i18n.language as 'tr' | 'en' | 'de';
 
+  // HashRouter için path alma yardımcı fonksiyonu
+  const getHashPath = (): string => {
+    const hash = location.hash;
+    if (!hash || hash === '#') return '/';
+    return hash.replace('#', '') || '/';
+  };
+
   const getCurrentRoute = (): string | null => {
-    const path = location.pathname.slice(1); // Remove leading slash
+    const path = getHashPath().slice(1); // Remove leading slash
 
     // Check for home page
     if (!path) {
@@ -79,7 +86,7 @@ export const Header: React.FC<HeaderProps> = ({
   }, []);
 
   const resolvedActiveItem =
-    activeItem ?? (typeof window !== 'undefined' ? window.location.pathname : undefined);
+    activeItem ?? (typeof window !== 'undefined' ? getHashPath() : undefined);
 
   const defaultNavItems: NavigationItem[] =
     navigationItems.length > 0 ? navigationItems : BASE_NAV_ITEMS;
@@ -322,7 +329,7 @@ export const Header: React.FC<HeaderProps> = ({
                               if (currentRoute && routeTranslations[currentRoute]) {
                                 const newPath = routeTranslations[currentRoute][code];
                                 i18n.changeLanguage(code);
-                                navigate(newPath ? `/${newPath}` : '/');
+                                navigate(newPath ? `/${newPath}` : '/', { replace: true });
                               } else {
                                 i18n.changeLanguage(code);
                               }
